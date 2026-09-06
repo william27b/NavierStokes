@@ -23,4 +23,4 @@ if __name__ == "__main__":
 
     pyplot.close()
     pyplot.plot(np.linspace(0, 2, nx), u)
-    pyplot.savefig("02_plot_wave_propagated.png")
+    pyplot.savefig("02_plot_wave_diffused.png")
