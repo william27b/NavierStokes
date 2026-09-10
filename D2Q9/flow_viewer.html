@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="flow-runs-url" content="api/runs">
+<title>D2Q9 · Saved flow</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;color:#ededed;background:#111}
+*{box-sizing:border-box}body{margin:0;padding:28px 24px 20px}main{max-width:1600px;margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.eyebrow{font:11px ui-monospace,monospace;letter-spacing:.16em;color:#b8b8b8}
+button{font:inherit;font-size:13px;background:#292929;color:#ededed;border:1px solid #4b4b4b;border-radius:6px;padding:9px 14px;cursor:pointer}
+button:hover{background:#3b3b3b}button:disabled{opacity:.4;cursor:default}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+#status{font-size:12px;color:#b3b3b3;min-height:18px;margin:18px 0}
+#status.error{color:#fff;font-weight:600}
+.controls{display:flex;align-items:center;gap:12px 18px;flex-wrap:wrap;border-block:1px solid #333;padding:13px 0}
+.controls label{font-size:12px;color:#c7c7c7;display:flex;align-items:center;gap:8px}
+input[type=range]{width:105px;accent-color:#ddd}output{font:11px ui-monospace,monospace;min-width:44px}
+#stage{position:relative;max-width:780px;margin:20px auto;background:#000;border:1px solid #3b3b3b}
+canvas{display:block;width:100%;height:auto}
+#empty{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:20px;background:#1a1a1a;color:#b5b5b5}
+#empty[hidden]{display:none}#empty strong{color:#eaeaea;font-size:17px;font-weight:500}
+#empty p{font-size:13px}
+.legend{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;font:11px ui-monospace,monospace;color:#bdbdbd}
+.ramp{width:140px;height:7px;background:linear-gradient(90deg,#440154,#46327e,#365c8d,#277f8e,#1fa187,#4ac16d,#a0da39,#fde725)}
+.solid{display:inline-block;width:10px;height:10px;background:#000;border:1px solid #626262;vertical-align:middle;margin-right:5px}
+.note{max-width:780px;margin:17px auto 0;color:#a5a5a5;font-size:12px;line-height:1.6}
+@media(max-width:550px){body{padding:18px 14px}.controls{gap:12px}.controls label{flex-wrap:wrap}input[type=range]{width:90px}}
+.gallery{margin:24px 0 18px}
+.gallery-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.gallery-head h2{font-size:15px;font-weight:500;margin:0}
+#gallery-status{font-size:12px;color:#aaa;margin:0;flex:1;min-width:160px}
+.gallery-head button{font-size:12px;padding:7px 10px}
+.carousel{--active-width:min(780px,calc(100vw - 112px));--preview-width:240px;display:flex;align-items:center;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-color:#555 #111;padding:12px 0 20px}
+.carousel::before,.carousel::after{content:"";flex:0 0 max(0px,calc((100% - var(--preview-width))/2 - 24px))}
+#visualizer{flex:0 0 var(--active-width);min-width:0}
+#visualizer #status{margin:3px 0 16px;line-height:1.6;overflow-wrap:anywhere;text-align:center}
+#visualizer .controls{justify-content:center}
+.gallery.standalone .gallery-head,.gallery.standalone .run-card{display:none}
+.gallery.standalone .carousel{display:block;max-width:980px;margin:auto;overflow:visible}
+.gallery.standalone .carousel::before,.gallery.standalone .carousel::after{display:none}
+.run-card{flex:0 0 var(--preview-width);min-width:0;text-align:left;padding:10px;background:#191919;opacity:.72}
+.run-card:hover,.run-card:focus-visible{opacity:1}
+.run-card[hidden]{display:none}
+.run-card strong,.run-card>span{display:block;overflow-wrap:anywhere}
+.run-card strong{font:11px ui-monospace,monospace;margin:12px 0 8px}
+.run-card>span{font-size:11px;line-height:1.5;color:#bdbdbd}
+.run-preview{height:210px;position:relative;display:grid;place-items:center;background:#111;color:#777;font-size:12px;overflow:hidden}
+.run-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#111}
+@media(max-width:700px){
+.carousel{--active-width:calc(100vw - 64px);--preview-width:200px;gap:16px}
+.run-preview{height:170px}
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div><div class="eyebrow">D2Q9 / FIELD VIEWER</div></div>
+</header>
+<section id="gallery" class="gallery" aria-labelledby="gallery-title">
+<div class="gallery-head">
+<h2 id="gallery-title">Saved runs</h2>
+<p id="gallery-status" role="status" aria-live="polite">Checking saved runs…</p>
+<button id="gallery-prev" aria-label="Previous run" title="Previous run" disabled>←</button>
+<button id="gallery-next" aria-label="Next run" title="Next run" disabled>→</button>
+</div>
+<div id="gallery-track" class="carousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Saved fields; scroll horizontally or use the arrow keys">
+<section id="visualizer" aria-label="Active flow visualizer">
+<p id="status" role="status" aria-live="polite">Loading saved runs...</p>
+<div class="controls">
+<label for="speed">Speed <input id="speed" type="range" min="0" max="1000" step="5" value="160"><output id="speedValue">160</output></label>
+<label for="count">Particles <input id="count" type="range" min="0" max="10000" step="5" value="1800"><output id="countValue">1800</output></label>
+</div>
+<div id="stage">
+<canvas id="canvas" width="780" height="520" role="img" aria-label="Pressure field with white particles following saved velocity. Solids are black."></canvas>
+<div id="empty"><strong>Follow the saved current</strong><p>Saved runs will appear here.</p></div>
+</div>
+<div class="legend"><span>PRESSURE</span><span id="pmin">—</span><span class="ramp"></span><span id="pmax">—</span><span><i class="solid"></i>SOLID</span></div>
+</section>
+</div>
+</section>
+</main>
+<script id="run-data" type="application/json">null</script>
+<script>
+"use strict";
+const el = id => document.getElementById(id);
+const canvas = el("canvas"), ctx = canvas.getContext("2d");
+const texture = document.createElement("canvas"), trails = document.createElement("canvas");
+const trailCtx = trails.getContext("2d");
+const viridis = [[68,1,84],[70,50,126],[54,92,141],[39,127,142],[31,161,135],[74,193,109],[160,218,57],[253,231,37]];
+let field = null, particles = [], cells = [], cumulative = [], pressureMin = 0, pressureMax = 1;
+let weightTotal = 0, maxSpeed = 0, lastTime = 0;
+if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    el("speed").value = "0";
+    el("speedValue").value = "0";
+}
+
+function showError(error) {
+    el("status").textContent = error.message || String(error);
+    el("status").classList.add("error");
+}
+function pressureFraction(p) {
+    if (pressureMax === pressureMin) return 0.5;
+    const scale = Math.max(Math.abs(pressureMin), Math.abs(pressureMax), 1);
+    return (p / scale - pressureMin / scale) / (pressureMax / scale - pressureMin / scale);
+}
+function colorAt(t) {
+    const n = Math.max(0, Math.min(1, t)) * (viridis.length - 1);
+    const lo = Math.min(viridis.length - 2, Math.floor(n)), a = n - lo;
+    return viridis[lo].map((v, k) => Math.round(v * (1 - a) + viridis[lo + 1][k] * a));
+}
+function loadData(data) {
+    if (!data || data.schema !== "comms-flow-v1") throw new Error("Unsupported saved flow format.");
+    const {nx, ny} = data, size = nx * ny;
+    if (!Number.isInteger(nx) || !Number.isInteger(ny) || nx < 2 || ny < 2 || size > 4000000)
+        throw new Error("Unsupported grid dimensions.");
+    for (const key of ["pressure", "ux", "uy", "solid"]) {
+        if (!Array.isArray(data[key]) || data[key].length !== size)
+            throw new Error("The " + key + " field does not match the grid dimensions.");
+    }
+    const valid = new Uint8Array(size), indices = [];
+    let pmin = Infinity, pmax = -Infinity, peak = 0, invalid = 0;
+    for (let i = 0; i < size; i++) {
+        if (data.solid[i] !== 0 && data.solid[i] !== 1 && typeof data.solid[i] !== "boolean")
+            throw new Error("The solid field must contain zeroes and ones.");
+        if (data.solid[i]) continue;
+        if (![data.pressure[i], data.ux[i], data.uy[i]].every(Number.isFinite)) { invalid++; continue; }
+        valid[i] = 1;
+        indices.push(i);
+        pmin = Math.min(pmin, data.pressure[i]);
+        pmax = Math.max(pmax, data.pressure[i]);
+        peak = Math.max(peak, Math.hypot(data.ux[i], data.uy[i]));
+    }
+    if (!indices.length) throw new Error("This snapshot has no valid fluid cells to animate. Check the saved simulation data.");
+    field = {...data, valid};
+    cells = indices;
+    pressureMin = pmin; pressureMax = pmax; maxSpeed = peak;
+    weightTotal = 0;
+    cumulative = new Float64Array(cells.length);
+    for (let j = 0; j < cells.length; j++) {
+        // Relative pressure gives visible contrast even when p is nearly uniform.
+        weightTotal += pmax === pmin ? 1 : 0.1 + 0.9 * pressureFraction(data.pressure[cells[j]]);
+        cumulative[j] = weightTotal;
+    }
+    texture.width = nx; texture.height = ny;
+    const image = texture.getContext("2d").createImageData(nx, ny);
+    for (let y = 0; y < ny; y++) for (let x = 0; x < nx; x++) {
+        const i = y * nx + x, pixel = ((ny - 1 - y) * nx + x) * 4;
+        const color = data.solid[i] ? [0,0,0] : valid[i] ? colorAt(pressureFraction(data.pressure[i])) : [83,83,83];
+        image.data.set([...color, 255], pixel);
+    }
+    texture.getContext("2d").putImageData(image, 0, 0);
+    const stageTop = el("stage").getBoundingClientRect().top + scrollY;
+    const scale = Math.min(Math.min(1000, el("visualizer").clientWidth) / nx,
+        Math.max(260, innerHeight - stageTop - 80) / ny);
+    canvas.width = Math.round(nx * scale);
+    canvas.height = Math.round(ny * scale);
+    trails.width = canvas.width; trails.height = canvas.height;
+    el("stage").style.maxWidth = canvas.width + "px";
+    el("empty").hidden = true;
+    el("pmin").textContent = pmin.toPrecision(5);
+    el("pmax").textContent = pmax.toPrecision(5);
+    const meta = data.metadata || {};
+    el("status").textContent = shapeName(meta) +
+        (invalid ? " · " + invalid + " invalid cells excluded (gray)" : "");
+    el("status").classList.remove("error");
+    resetParticles();
+}
+function spawn() {
+    const target = Math.random() * weightTotal;
+    let low = 0, high = cumulative.length - 1;
+    while (low < high) {
+        const middle = (low + high) >>> 1;
+        if (cumulative[middle] > target) high = middle; else low = middle + 1;
+    }
+    const index = cells[low];
+    return {
+        x: index % field.nx + 0.05 + 0.9 * Math.random(),
+        y: Math.floor(index / field.nx) + 0.05 + 0.9 * Math.random(),
+        life: 8 + Math.random() * 12,
+    };
+}
+function resetParticles() {
+    if (!field) return;
+    particles = Array.from({length: Number(el("count").value)}, spawn);
+    trailCtx.clearRect(0, 0, trails.width, trails.height);
+    lastTime = 0;
+    draw();
+}
+function fluidAt(x, y) {
+    return x >= 0 && y >= 0 && x < field.nx && y < field.ny &&
+        field.valid[Math.floor(y) * field.nx + Math.floor(x)] === 1;
+}
+function velocityAt(x, y) {
+    if (!fluidAt(x, y)) return null;
+    // Saved values lie at cell centers. Interpolate only valid fluid neighbors.
+    const gx = Math.max(0, Math.min(field.nx - 1, x - 0.5));
+    const gy = Math.max(0, Math.min(field.ny - 1, y - 0.5));
+    const x0 = Math.floor(gx), y0 = Math.floor(gy), tx = gx - x0, ty = gy - y0;
+    let ux = 0, uy = 0, weight = 0;
+    for (let dy = 0; dy < 2; dy++) for (let dx = 0; dx < 2; dx++) {
+        const i = Math.min(y0 + dy, field.ny - 1) * field.nx + Math.min(x0 + dx, field.nx - 1);
+        const w = (dx ? tx : 1 - tx) * (dy ? ty : 1 - ty);
+        if (field.valid[i]) { ux += w * field.ux[i]; uy += w * field.uy[i]; weight += w; }
+    }
+    return weight > 0 ? [ux / weight, uy / weight] : null;
+}
+function advance(dt) {
+    // Limit travel to 0.4 cells per substep to avoid jumping across thin walls.
+    const requested = dt * Number(el("speed").value);
+    const latticeDt = maxSpeed > 0 ? Math.min(requested, 6.4 / maxSpeed) : requested;
+    const substeps = Math.max(1, Math.min(16, Math.ceil(latticeDt * maxSpeed / 0.4)));
+    const h = latticeDt / substeps, sx = canvas.width / field.nx, sy = canvas.height / field.ny;
+    trailCtx.globalCompositeOperation = "destination-out";
+    trailCtx.fillStyle = "rgba(0,0,0," + (1 - Math.exp(-4 * dt)) + ")";
+    trailCtx.fillRect(0, 0, trails.width, trails.height);
+    trailCtx.globalCompositeOperation = "source-over";
+    trailCtx.strokeStyle = "rgba(255,255,255,0.7)";
+    trailCtx.lineWidth = 1;
+    trailCtx.beginPath();
+    for (let j = 0; j < particles.length; j++) {
+        const p = particles[j];
+        p.life -= dt;
+        if (p.life <= 0) { particles[j] = spawn(); continue; }
+        for (let k = 0; k < substeps; k++) {
+            const v = velocityAt(p.x, p.y);
+            const mid = v && velocityAt(p.x + 0.5 * h * v[0], p.y + 0.5 * h * v[1]);
+            if (!mid) { particles[j] = spawn(); break; }
+            const x = p.x + h * mid[0], y = p.y + h * mid[1];
+            if (!fluidAt(x, y)) { particles[j] = spawn(); break; }
+            trailCtx.moveTo(p.x * sx, (field.ny - p.y) * sy);
+            trailCtx.lineTo(x * sx, (field.ny - y) * sy);
+            p.x = x; p.y = y;
+        }
+    }
+    trailCtx.stroke();
+}
+function draw() {
+    if (!field) return;
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(texture, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(trails, 0, 0);
+    ctx.fillStyle = "rgba(255,255,255,0.85)";
+    const sx = canvas.width / field.nx, sy = canvas.height / field.ny;
+    for (const p of particles) ctx.fillRect(p.x * sx - 0.6, (field.ny - p.y) * sy - 0.6, 1.2, 1.2);
+}
+function frame(time) {
+    const dt = lastTime ? Math.min((time - lastTime) / 1000, 0.05) : 0;
+    lastTime = time;
+    if (field && dt > 0 && Number(el("speed").value) > 0) { advance(dt); draw(); }
+    requestAnimationFrame(frame);
+}
+el("speed").addEventListener("input", () => {
+    el("speedValue").value = el("speed").value;
+    lastTime = 0;
+});
+el("count").addEventListener("input", () => {
+    el("countValue").value = el("count").value;
+    resetParticles();
+});
+document.addEventListener("visibilitychange", () => { lastTime = 0; });
+
+let galleryRuns = [], gallerySelection = null, galleryRevision = 0, loadRevision = 0;
+const galleryCards = new Map();
+
+function shapeName(meta) {
+    const shape = meta?.solid_name;
+    return typeof shape === "string" && shape.trim() ? shape.replaceAll("_", " ") : "Unknown shape";
+}
+function stepSummary(meta) {
+    const parts = [];
+    if (Number.isInteger(meta.steps) && meta.steps >= 0) {
+        let steps = meta.steps.toLocaleString();
+        if (Number.isInteger(meta.max_steps) && meta.max_steps >= meta.steps)
+            steps += " / " + meta.max_steps.toLocaleString();
+        parts.push(steps + " steps");
+    }
+    if (meta.converged === true) parts.push("converged");
+    else if (meta.stop_reason === "max_steps") parts.push("step limit reached");
+    else if (meta.stop_reason === "nonfinite_fields") parts.push("stopped: nonfinite fields");
+    return parts.join(" · ");
+}
+function centerVisualizer() {
+    const track = el("gallery-track"), active = el("visualizer");
+    track.scrollLeft += active.getBoundingClientRect().left - track.getBoundingClientRect().left -
+        (track.clientWidth - active.offsetWidth) / 2;
+}
+function arrangeCarousel(center = true) {
+    const track = el("gallery-track"), active = el("visualizer");
+    const previousOffset = active.getBoundingClientRect().left;
+    const selected = galleryRuns.findIndex(run => run.id === gallerySelection);
+    const middle = Math.floor(galleryRuns.length / 2);
+    const start = selected < 0 ? 0 : (selected - middle + galleryRuns.length) % galleryRuns.length;
+    const items = [];
+    for (let offset = 0; offset < galleryRuns.length; offset++) {
+        const run = galleryRuns[(start + offset) % galleryRuns.length];
+        const card = galleryCards.get(run.id);
+        card.hidden = run.id === gallerySelection;
+        card.setAttribute("aria-pressed", String(card.hidden));
+        if (offset === middle) items.push(active);
+        items.push(card);
+    }
+    if (!items.includes(active)) items.push(active);
+    track.replaceChildren(...items);
+    el("gallery-prev").disabled = el("gallery-next").disabled = galleryRuns.length < 2;
+    if (center) centerVisualizer();
+    else track.scrollLeft += active.getBoundingClientRect().left - previousOffset;
+}
+function selectGalleryCard(id) {
+    gallerySelection = id;
+    arrangeCarousel();
+}
+function adjacentRun(direction) {
+    if (!galleryRuns.length) return;
+    const index = galleryRuns.findIndex(run => run.id === gallerySelection);
+    loadGalleryRun(galleryRuns[(Math.max(0, index) + direction + galleryRuns.length) % galleryRuns.length]);
+}
+el("gallery-prev").addEventListener("click", () => adjacentRun(-1));
+el("gallery-next").addEventListener("click", () => adjacentRun(1));
+el("gallery-track").addEventListener("keydown", event => {
+    if (event.target !== el("gallery-track") && !event.target.closest(".run-card")) return;
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        adjacentRun(event.key === "ArrowLeft" ? -1 : 1);
+    }
+});
+el("gallery-track").addEventListener("wheel", event => {
+    if (event.ctrlKey || event.shiftKey || event.deltaX || event.target.closest("input")) return;
+    const track = el("gallery-track");
+    const amount = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? track.clientWidth : 1);
+    const next = Math.max(0, Math.min(track.scrollWidth - track.clientWidth, track.scrollLeft + amount));
+    if (next !== track.scrollLeft) {
+        event.preventDefault();
+        track.scrollLeft = next;
+    }
+}, {passive: false});
+window.addEventListener("resize", centerVisualizer);
+async function loadGalleryRun(run) {
+    const revision = ++loadRevision;
+    el("status").textContent = "Loading " + shapeName(run.metadata) + "…";
+    el("status").classList.remove("error");
+    try {
+        const data = await fetchJSON(run.fields_url);
+        if (revision !== loadRevision) return;
+        loadData(data);
+        selectGalleryCard(run.id);
+    } catch (error) {
+        if (revision === loadRevision) showError(new Error("Could not open " + shapeName(run.metadata) + ": " + error.message));
+    }
+}
+async function fetchJSON(url) {
+    const response = await fetch(url, {cache: "no-store"});
+    if (!response.ok) throw new Error("File unavailable (" + response.status + "). Reload the page and try again.");
+    return response.json();
+}
+function renderGallery(runs) {
+    galleryRuns = runs;
+    galleryCards.clear();
+    for (const run of runs) {
+        const card = document.createElement("button");
+        card.className = "run-card";
+        card.dataset.runId = run.id;
+        card.setAttribute("aria-pressed", String(run.id === gallerySelection));
+        const preview = document.createElement("div");
+        preview.className = "run-preview";
+        preview.textContent = "Saved field";
+        const src = run.preview_url;
+        if (src) {
+            const img = document.createElement("img");
+            img.alt = "";
+            img.loading = "lazy";
+            img.src = src;
+            img.addEventListener("error", () => img.remove());
+            preview.append(img);
+        }
+        const title = document.createElement("strong");
+        title.textContent = shapeName(run.metadata);
+        title.title = title.textContent;
+        const detail = document.createElement("span");
+        const meta = run.metadata || {};
+        detail.textContent = [
+            Number.isInteger(meta.nx) && Number.isInteger(meta.ny) ? meta.nx + " × " + meta.ny : "",
+            stepSummary(meta),
+        ].filter(Boolean).join(" · ") || "Saved snapshot";
+        card.append(preview, title, detail);
+        card.addEventListener("click", () => loadGalleryRun(run));
+        galleryCards.set(run.id, card);
+    }
+    arrangeCarousel(!field);
+    el("gallery-status").textContent = runs.length ?
+        runs.length + " saved " + (runs.length === 1 ? "run" : "runs") + " · scroll to browse" :
+        "No saved runs available.";
+}
+async function loadGallery() {
+    const revision = ++galleryRevision, selectionRevision = loadRevision;
+    el("gallery-status").textContent = "Loading saved runs...";
+    try {
+        if (location.protocol === "file:") {
+            el("gallery-status").textContent = "Open the gallery through its website or local server.";
+            el("status").textContent = "";
+            return;
+        }
+        const listing = document.querySelector('meta[name="flow-runs-url"]')?.content || "api/runs";
+        const data = await fetchJSON(new URL(listing, location.href));
+        if (!Array.isArray(data.runs)) throw new Error("No run listing");
+        if (revision !== galleryRevision) return;
+        renderGallery(data.runs);
+        if (!field && data.runs.length && selectionRevision === loadRevision)
+            await loadGalleryRun(data.runs[0]);
+        else if (!field) el("status").textContent = "";
+    } catch (_) {
+        if (revision === galleryRevision) {
+            el("gallery-status").textContent = "Unable to load saved runs. Reload the page to try again.";
+            if (!field) el("status").textContent = "";
+        }
+    }
+}
+
+centerVisualizer();
+try {
+    const embedded = JSON.parse(el("run-data").textContent);
+    if (embedded) {
+        el("gallery").classList.add("standalone");
+        loadData(embedded);
+    } else loadGallery();
+} catch (error) { showError(error); }
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

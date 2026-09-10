@@ -1,0 +1,165 @@
+{
+  "schema": "flow-gallery-v1",
+  "runs": [
+    {
+      "id": "20260909T192127.389291-0700_constriction",
+      "metadata": {
+        "run_id": "20260909T192127.389291-0700_constriction",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:21:27.389291-07:00",
+        "solid_name": "constriction",
+        "steps": 25800,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192127.389291-0700_constriction/fields.json",
+      "preview_url": "runs/20260909T192127.389291-0700_constriction/flow.png"
+    },
+    {
+      "id": "20260909T192121.287049-0700_staggered_cylinders",
+      "metadata": {
+        "run_id": "20260909T192121.287049-0700_staggered_cylinders",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:21:21.287049-07:00",
+        "solid_name": "staggered_cylinders",
+        "steps": 8500,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192121.287049-0700_staggered_cylinders/fields.json",
+      "preview_url": "runs/20260909T192121.287049-0700_staggered_cylinders/flow.png"
+    },
+    {
+      "id": "20260909T192115.611544-0700_two_cylinders",
+      "metadata": {
+        "run_id": "20260909T192115.611544-0700_two_cylinders",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:21:15.611544-07:00",
+        "solid_name": "two_cylinders",
+        "steps": 12100,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192115.611544-0700_two_cylinders/fields.json",
+      "preview_url": "runs/20260909T192115.611544-0700_two_cylinders/flow.png"
+    },
+    {
+      "id": "20260909T192109.826472-0700_diamond",
+      "metadata": {
+        "run_id": "20260909T192109.826472-0700_diamond",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:21:09.826472-07:00",
+        "solid_name": "diamond",
+        "steps": 13200,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192109.826472-0700_diamond/fields.json",
+      "preview_url": "runs/20260909T192109.826472-0700_diamond/flow.png"
+    },
+    {
+      "id": "20260909T192104.046029-0700_ellipse",
+      "metadata": {
+        "run_id": "20260909T192104.046029-0700_ellipse",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:21:04.046029-07:00",
+        "solid_name": "ellipse",
+        "steps": 17800,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192104.046029-0700_ellipse/fields.json",
+      "preview_url": "runs/20260909T192104.046029-0700_ellipse/flow.png"
+    },
+    {
+      "id": "20260909T192058.088022-0700_rectangle",
+      "metadata": {
+        "run_id": "20260909T192058.088022-0700_rectangle",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:20:58.088022-07:00",
+        "solid_name": "rectangle",
+        "steps": 15100,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192058.088022-0700_rectangle/fields.json",
+      "preview_url": "runs/20260909T192058.088022-0700_rectangle/flow.png"
+    },
+    {
+      "id": "20260909T192052.196078-0700_cylinder",
+      "metadata": {
+        "run_id": "20260909T192052.196078-0700_cylinder",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:20:52.196078-07:00",
+        "solid_name": "cylinder",
+        "steps": 16800,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192052.196078-0700_cylinder/fields.json",
+      "preview_url": "runs/20260909T192052.196078-0700_cylinder/flow.png"
+    },
+    {
+      "id": "20260909T192046.095110-0700_channel",
+      "metadata": {
+        "run_id": "20260909T192046.095110-0700_channel",
+        "nx": 64,
+        "ny": 64,
+        "finished_at": "2026-09-09T19:20:46.095110-07:00",
+        "solid_name": "channel",
+        "steps": 18500,
+        "max_steps": 100000,
+        "tau": 0.8,
+        "converged": true,
+        "stop_reason": "converged",
+        "field_stage": "after_streaming",
+        "units": "lattice",
+        "invalid_fluid_cells": 0
+      },
+      "fields_url": "runs/20260909T192046.095110-0700_channel/fields.json",
+      "preview_url": "runs/20260909T192046.095110-0700_channel/flow.png"
+    }
+  ]
+}
