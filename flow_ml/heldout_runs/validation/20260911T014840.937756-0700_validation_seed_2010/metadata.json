@@ -1,0 +1,120 @@
+{
+  "run_id": "20260911T014840.937756-0700_validation_seed_2010",
+  "solid_name": "validation_seed_2010",
+  "finished_at": "2026-09-11T01:48:40.937756-07:00",
+  "nx": 64,
+  "ny": 64,
+  "steps": 78500,
+  "max_steps": 500000,
+  "tau": 0.53,
+  "converged": true,
+  "stop_reason": "converged",
+  "convergence": {
+    "check_every": 100,
+    "velocity_tolerance": 1e-08,
+    "density_tolerance": 1e-08,
+    "required_stable_checks": 5,
+    "stable_checks": 5,
+    "checks_performed": 785,
+    "last_velocity_change": 4.6446135904334995e-09,
+    "last_density_change": 7.45281236724793e-09
+  },
+  "field_stage": "pre_collision_after_boundary_regularization",
+  "population_stage": "pre_collision_after_boundary_regularization",
+  "open_boundary_method": "zou_he_second_order_regularized",
+  "lattice_viscosity": 0.010000000000000009,
+  "units": "lattice",
+  "kernel_sha256": "51e11e42099084379d39a97c084a378e9203d8a1c6d1d23fc499011bb8fb2757",
+  "invalid_fluid_cells": 0,
+  "generation": {
+    "seed": 2010,
+    "config": {
+      "nx": 64,
+      "ny": 64,
+      "ux_range": [
+        0.01,
+        0.01
+      ],
+      "tau_range": [
+        0.53,
+        0.53
+      ],
+      "uy": 0.0,
+      "convex_probability": 0.5,
+      "radius_range": [
+        4.0,
+        9.0
+      ],
+      "component_count_choices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "component_count_weights": [
+        45,
+        40,
+        12,
+        3
+      ],
+      "convex_point_choices": [
+        3,
+        4,
+        5
+      ],
+      "convex_point_weights": [
+        45,
+        45,
+        10
+      ],
+      "convex_options": {
+        "irregularity": 0.35,
+        "normalize_area": true
+      },
+      "organic_options": {
+        "roughness": 0.4,
+        "harmonics": 6,
+        "smoothness": 1.5
+      },
+      "boundary_clearance": 4,
+      "max_attempts": 100,
+      "x_mean": 32.0,
+      "y_mean": 32.0,
+      "x_std": 10.666666666666666,
+      "y_std": 10.666666666666666
+    },
+    "sampling": {
+      "method": "component_masks_v3",
+      "component_count": 1,
+      "attempts": 1,
+      "convex_probability": 0.5,
+      "boundary_clearance": 4,
+      "components": [
+        {
+          "kind": "organic",
+          "center": [
+            24.83959214008165,
+            37.629896434786346
+          ],
+          "radius": 5.203970657569958,
+          "options": {
+            "roughness": 0.4,
+            "harmonics": 6,
+            "smoothness": 1.5,
+            "axis_scale": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "split": "validation",
+  "screening": {
+    "max_mach": 0.029453912132203348,
+    "max_density_deviation": 0.003418788745447543,
+    "accepted": true
+  }
+}

@@ -1,0 +1,1738 @@
+{
+  "train": {
+    "fingerprint": "0eb06d10a1f19b47bed587c6ccf4e07f8ece2383bea5018336dd6a43edcc91cd",
+    "runs": [
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005027.108699-0700_organic, organic",
+        "seed": 1000,
+        "fields_sha256": "92c83317bf7fa5a8a23b68513e2d86ccc441cdae0b1e5a813c67200b738db8c7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005028.789260-0700_convex (3 points), convex (5 points)",
+        "seed": 1001,
+        "fields_sha256": "65cfc4414c11bdce08c78576dd156d33afbfeff9deb11c3433ca8a7c34e7b01b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005031.349858-0700_convex (4 points)",
+        "seed": 1002,
+        "fields_sha256": "ab6854b747068a22b9789c366f90da8f3bbed00d18cdd2555ed547c2343169fc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005034.077272-0700_organic",
+        "seed": 1003,
+        "fields_sha256": "89c2fc386d46d44624c902ec156b0a8484c839b4af32d389bce105b5faae28d9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005036.008872-0700_organic",
+        "seed": 1004,
+        "fields_sha256": "06b80ba5265ed2e1dd9fc4bfc8a3f487898b20e78e2834b6a0f73f83a1b67cd3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005037.781747-0700_organic",
+        "seed": 1005,
+        "fields_sha256": "ec70a102b7ec414b85bd29eb9b41cea1e0a14a740598bf1d6d07083232b559f5"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005040.602453-0700_organic",
+        "seed": 1006,
+        "fields_sha256": "d653b327f7df9269cd6b139bcd118c8ad29bc54cd1ba83a1e73607b456a2f8b2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005043.201561-0700_organic",
+        "seed": 1007,
+        "fields_sha256": "6ac03ef56715c28ecd16cd94da9af531f6dc5b2b35cfa88f54c624ffb9cb5eb8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005046.232506-0700_organic",
+        "seed": 1008,
+        "fields_sha256": "e02ede578ff235223c803f3732bc3a6f8d8b20c94dba19cfc9651f2643cc02fb"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005048.732399-0700_organic",
+        "seed": 1009,
+        "fields_sha256": "d7a63152dc5da313828e69d99f030c52f18eb7cf0e76aef63143b78dca5119e8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005050.166248-0700_organic",
+        "seed": 1010,
+        "fields_sha256": "cf1c9866d7daf14433f9c02b26ca04370fd5e6ebbd31e6bd535dcd614122e154"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005053.093152-0700_convex (3 points)",
+        "seed": 1011,
+        "fields_sha256": "d243e4998f98b99cc414688a8ee54a9df91f2853b2dfcbc2aa3154daa8d4c635"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005055.910827-0700_convex (4 points)",
+        "seed": 1012,
+        "fields_sha256": "241d58941a5e9187eee1193799f3678fc2c10b337499c186bbff7d4f52f5689e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005057.718021-0700_organic, organic",
+        "seed": 1013,
+        "fields_sha256": "6ebb710d49a21ec2c8515bef15d28b3762c6a57d2c4e86fe1d6b89074a0e4370"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005059.810570-0700_organic",
+        "seed": 1014,
+        "fields_sha256": "9195a61004b070d7faf8ae2b1efaff74696c9a8096e5de23a1f46f821b38646a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005102.098433-0700_convex (3 points)",
+        "seed": 1015,
+        "fields_sha256": "4ebf0d5298c2d6753c7cb44d1ada67e8f51ef886c77d6dc21f680c9ea4949a59"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005104.594193-0700_convex (4 points)",
+        "seed": 1016,
+        "fields_sha256": "3bc9b3eb9c3f276a20dcdb8971d9e21404dd75418895efeb93c7c167825b73b2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005106.316939-0700_convex (3 points), organic, convex (3 points)",
+        "seed": 1017,
+        "fields_sha256": "1cd8ff2934da07e872fe81851ea28d39148ac0463045a835f43bea90110c396a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005109.020598-0700_organic, organic",
+        "seed": 1018,
+        "fields_sha256": "14dc5d71490581f7b1d51887979b474be2f479c5f3169462743ef1e27be914b1"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005111.239636-0700_convex (4 points)",
+        "seed": 1019,
+        "fields_sha256": "35e3e569c32b0043d61aa72f85690525025db53cd77c66bd28fe7dcf6898e612"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005113.364307-0700_convex (3 points), organic",
+        "seed": 1020,
+        "fields_sha256": "e434b4ad9360943f6b57b429a6894fcd16055a81f68140c24219712bb6d365ad"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005115.902539-0700_convex (5 points)",
+        "seed": 1021,
+        "fields_sha256": "5eba5d92dcaba4c51feb802965f576f179ef504c03286ba3d42a23a56277863f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005118.241544-0700_organic",
+        "seed": 1022,
+        "fields_sha256": "33cd80fbceff3a06b1b39cc5840050de59d023099bd35a500752451a07187522"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005119.740814-0700_organic",
+        "seed": 1023,
+        "fields_sha256": "f4a4c559e893260632eda4f4ebd1e52329b1e09083521b1c49aa4b9b21265b85"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005122.594826-0700_organic",
+        "seed": 1024,
+        "fields_sha256": "4537120b8db6cf98103c20b4ff367dad75e5f7e441ecdaa8631805c32c91a63d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005124.363745-0700_convex (4 points), organic",
+        "seed": 1025,
+        "fields_sha256": "1a2217eed91f30b80ba19691747ec0d65102408f1142044be60dbe609246390b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005126.348810-0700_organic",
+        "seed": 1026,
+        "fields_sha256": "2b2701eea3621bc93a2c0fcffeba50f53049e786f0e6ec758df81ea5043fd43b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005128.498119-0700_organic",
+        "seed": 1027,
+        "fields_sha256": "5fbe27b171614735e7f55ef8cdd60f1dc95a9ff97120092206f78bbe12ebdce2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005130.880611-0700_organic, organic",
+        "seed": 1028,
+        "fields_sha256": "8c10327e913b271ac354d8365fd7686d9f4694b8a4205d50fa101ca562154340"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005132.474549-0700_convex (4 points), convex (5 points)",
+        "seed": 1029,
+        "fields_sha256": "2cb6f23f28ac24a9d542cbfa374c643a8f929105cf7a5d04cac4d76a09c9bb5b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005135.278320-0700_organic",
+        "seed": 1030,
+        "fields_sha256": "c86b170edfde165068c3f0ec2cb8eda2a45b6898d31526b7f445a073fd56d8f3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005136.833298-0700_convex (4 points), convex (3 points)",
+        "seed": 1031,
+        "fields_sha256": "5b945e47c18430944a8c10de97a203a958014183c158efc44c430666facbccae"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005139.157980-0700_organic, convex (5 points), convex (3 points)",
+        "seed": 1032,
+        "fields_sha256": "31935ef17c6c55ebb9a53fb99bb974fb77f00b4b2ad65e4b0a1e70ac35e8aff5"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005140.904519-0700_organic, convex (3 points)",
+        "seed": 1033,
+        "fields_sha256": "ced0396eada8cc4e35131eebb121d03794908c793ac043c7009d87040690d73b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005148.866050-0700_organic, organic, organic, convex (3 points)",
+        "seed": 1034,
+        "fields_sha256": "8d9056d67bedbd6da337477b87780c7f81f661d21af13b91572cf008a4c8cfcb"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005150.518673-0700_organic",
+        "seed": 1035,
+        "fields_sha256": "424d5c62b2020251dce209ec1bb35f5059d4ffe9cac0bfa0904f0e48e0060833"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005152.515703-0700_convex (3 points)",
+        "seed": 1036,
+        "fields_sha256": "62e0b2c82b99acc30614bc8fff29623626d6c780fadb7c9ed6a7696525c540c8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005154.927622-0700_organic",
+        "seed": 1037,
+        "fields_sha256": "cc295787382f4348aecd3e00858d8c7c17443817bd56297c1dcad8ae43559995"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005157.630657-0700_organic",
+        "seed": 1038,
+        "fields_sha256": "6cf8d9598c438b78a40255132184edb207b7b1ec2aba55353a150250d0f0897a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005159.649926-0700_organic, convex (3 points), convex (3 points)",
+        "seed": 1039,
+        "fields_sha256": "be1c0dcc158cbd2f048821e26884d83f5dac2d93f6450b05d05f595052baf1e6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005201.613555-0700_convex (4 points), convex (4 points)",
+        "seed": 1040,
+        "fields_sha256": "8938b608a81f29462704876bb5b1510762025f69397cd43b375c37afebf53383"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005204.013888-0700_organic, convex (3 points), convex (4 points)",
+        "seed": 1041,
+        "fields_sha256": "bbe681b3189090039dc0e547390b8a2a29c59a86b00c0725f329bb3c6359d384"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005206.885621-0700_convex (4 points)",
+        "seed": 1042,
+        "fields_sha256": "f25d0d15c20be6f622e8fbec44be13031cbab8cd68bf08afdbda42bb08caa392"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005208.352343-0700_convex (4 points)",
+        "seed": 1043,
+        "fields_sha256": "f6931ff2503f5ea70c63d3741b1a6034aacda79b3a1996859a7bfa6fd972e207"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005211.052441-0700_organic",
+        "seed": 1044,
+        "fields_sha256": "862e574458b9d01725e12a6e8bcc4eb51f5a8cab8774989dbf787cd14d7f6916"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005212.094083-0700_organic, convex (4 points)",
+        "seed": 1045,
+        "fields_sha256": "8f5f160fa0de74f0c7f06489eb2134fbb096e3e2a8b02b8c26cd9316eea57224"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005214.075039-0700_convex (3 points)",
+        "seed": 1046,
+        "fields_sha256": "6c7b46bf569e1de8c1f6774d725082f7cec603dd4eb09f9b73ea6a25e4a41e5f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005217.111774-0700_organic, convex (3 points)",
+        "seed": 1047,
+        "fields_sha256": "6fedee18a13b985cd0e2c3f0ca57e50678ffa4d180191568d4d7307ed26eb99e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005218.655653-0700_organic, convex (3 points)",
+        "seed": 1048,
+        "fields_sha256": "dd4b75efedea0fea82b8c1a9c9eb0b5d533fd54670cdf440cf3e6eb0d1eb828b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005220.550137-0700_convex (4 points)",
+        "seed": 1049,
+        "fields_sha256": "9b8727a2c882aca642d06260aa98aefb7774892c4ae81a6812a71d391c5dd2a4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005223.638939-0700_organic, organic",
+        "seed": 1050,
+        "fields_sha256": "86a83da1703a6f8289b0a8cf45208d4c902f9157e20bb1ba7bdcdfe2a9c48a2e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005226.254477-0700_organic, convex (3 points)",
+        "seed": 1051,
+        "fields_sha256": "8f3d694e856f0e3b910b70d450297ed406ee51c64f9bd678611525b08fe9ff84"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005228.241567-0700_organic",
+        "seed": 1052,
+        "fields_sha256": "20f34c10f8cb29114743a2624510323fe7f3f2d1c89388089e4803c43be358db"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005230.749371-0700_organic, organic",
+        "seed": 1053,
+        "fields_sha256": "2c859b86e70c12bb878577af4c26584c841b0c9da378a8d8fccc651cd0fdedfc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005233.536066-0700_convex (3 points)",
+        "seed": 1054,
+        "fields_sha256": "7b68c9c55901cabc7805e29dad4a4107ec67c62fa1b540778552de2ac1cb4cd8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005235.067272-0700_convex (3 points), organic",
+        "seed": 1055,
+        "fields_sha256": "1ee10153f4a3d3c81b16033d3729ffb6c4af44ad93dd79c87a4fae66cb5dd38f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005237.648607-0700_organic, organic, convex (3 points)",
+        "seed": 1056,
+        "fields_sha256": "331aab586b082a184184db7a1845634a31c1d5a7b8c25582fb6d7550487b83c0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005240.372566-0700_convex (4 points)",
+        "seed": 1057,
+        "fields_sha256": "7ba41d70b2991f2b7cd42dd507bc3f6efb2f66c54ca2825bd80a750b6ecda524"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005243.055546-0700_convex (4 points)",
+        "seed": 1058,
+        "fields_sha256": "0cacb28686db5c22c1425935a5eb82d5828571f858d5ccc2fe2db6d7a9fe154c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005245.688320-0700_organic, convex (4 points)",
+        "seed": 1059,
+        "fields_sha256": "0c8f5bd72195780ba1c2d3dfdb1b735e4a3a00ecfe9f08928b57c602fbff262b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005246.952154-0700_convex (3 points), convex (4 points), convex (4 points), convex (3 points)",
+        "seed": 1060,
+        "fields_sha256": "496de9aa73ce3fe0de1efd4c7dd8cc6170be737d258057617fc469f698d4c01f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005248.886489-0700_convex (4 points), convex (3 points)",
+        "seed": 1061,
+        "fields_sha256": "e9573dfac93cacae3b312256616600c68de97777144d2088f3caf8072c068938"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005250.106070-0700_organic, convex (3 points)",
+        "seed": 1062,
+        "fields_sha256": "42fb8f26d814c9a282466e139dd5216c59f4c78349053bf4909dd1f18c6f8191"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005251.636457-0700_convex (4 points), organic, organic",
+        "seed": 1063,
+        "fields_sha256": "d79920001e7f2aa5a0547e799601fb992f9765004dbfefe1477384d8c33f3b80"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005253.257074-0700_convex (3 points)",
+        "seed": 1064,
+        "fields_sha256": "838b745b3181284bdd773eff6ece447259bc34a0ddab3aebc0dafa7a23a71ca2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005255.786995-0700_convex (3 points), convex (4 points), convex (3 points), organic",
+        "seed": 1065,
+        "fields_sha256": "4a500d598f2bfb77345ef6814ac6b22d72a91eb7b77173e92025811dfdf237d4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005257.462044-0700_organic",
+        "seed": 1066,
+        "fields_sha256": "859b2b6dac8002a6f2b7c764f5da31490248514a7f3d56571c42184fb5125bc8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005259.172654-0700_organic, organic, organic",
+        "seed": 1067,
+        "fields_sha256": "4272f2e368e8320ded013364a8c0e14ecd083e70f3b46c4e24c49faca5f5b9e7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005300.800110-0700_convex (3 points), organic",
+        "seed": 1068,
+        "fields_sha256": "bbd3c4ba9e7c5ed666f5d93094402c836216f2f0de69d5042c6e322b7fe7d4c7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005302.006015-0700_organic, organic, organic, organic",
+        "seed": 1069,
+        "fields_sha256": "02c370c5891a057c6daa36d52a50da874c597e4423879796449a75dc30ccc0ff"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005304.212012-0700_organic",
+        "seed": 1070,
+        "fields_sha256": "24e3c820752ef589dfe43fb1d5accbd69af8f6588e75b7915020c3961b78509e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005308.619182-0700_convex (4 points)",
+        "seed": 1071,
+        "fields_sha256": "a43f3af9f18512ddaa7e7a4c58bfa8b7bb1d61046bcca7d1e6b617ac747b3ae3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005310.216773-0700_organic, organic",
+        "seed": 1072,
+        "fields_sha256": "c9d134473de3f861c63c1bb0d5b5a9f74066230b211f9748199b597e4f7caef4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005312.722628-0700_convex (4 points)",
+        "seed": 1073,
+        "fields_sha256": "764d74a3d7e090fbab7f189c977e59e09bd3199777da7ef34689f5ea2e7a435f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005314.544186-0700_organic, organic, convex (4 points), organic",
+        "seed": 1074,
+        "fields_sha256": "51a1773cbf51914ca95cd804c79380147ee9d8f3d938b170005f74b32b720fc5"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005316.814642-0700_convex (3 points), organic",
+        "seed": 1075,
+        "fields_sha256": "5f44f1bfa154cb472e62a40e25191fc05f2b63349d5951b727cbe97ad6f680fc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005319.647232-0700_organic",
+        "seed": 1076,
+        "fields_sha256": "b836675284e4bdc9ba19a58523bb3b7d9914a7c45af00ad319b29e044a56f833"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005321.473340-0700_organic, convex (4 points), convex (4 points)",
+        "seed": 1077,
+        "fields_sha256": "48b7b85c410193e1159f405a32568ae3c95a1244f84ffe6eff1c37f9275c01ac"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005324.078337-0700_convex (3 points), convex (4 points), convex (3 points)",
+        "seed": 1078,
+        "fields_sha256": "60149a7c26d031bae5f8505894947cb978f290089e30a90184770c87abc7fbd1"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005325.318866-0700_organic, organic, convex (3 points)",
+        "seed": 1079,
+        "fields_sha256": "3be8001d5fdb851a895e2c81529e6a2cdbd78ad56c5fd49ad438939bc174d4b7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005326.948849-0700_organic, convex (4 points), convex (3 points)",
+        "seed": 1080,
+        "fields_sha256": "2bcf438820a433492f9841b0b197dfcf346ac24beda50d439e8d6b98f4566cdf"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005329.365287-0700_organic",
+        "seed": 1081,
+        "fields_sha256": "42dbc4b0ed930e5d1a49df9b58588fe16b80cad6a7c3ead47cc859878d07db0d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005331.029807-0700_convex (3 points), convex (4 points)",
+        "seed": 1082,
+        "fields_sha256": "db4d7ab6a7dbe3dc3245621b9c6ddecbda105de5a08c1daf5fa92ddae3252dbc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005333.351696-0700_organic",
+        "seed": 1083,
+        "fields_sha256": "ddb5fc13dbd953786b985215e25b8de0ee8f5988e3543cb980591e42f6777793"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005334.877614-0700_organic, convex (3 points)",
+        "seed": 1084,
+        "fields_sha256": "08028ecc3127af8caa412f2fd4d721ae53c6a992c71eedd14e7c4bee14d851c9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005338.401113-0700_organic, organic, organic",
+        "seed": 1085,
+        "fields_sha256": "b44f191e7b333ef0ce0fe41c49b814a44030d99e18687a8d46212139b17c3cc2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005340.015604-0700_organic, convex (4 points)",
+        "seed": 1086,
+        "fields_sha256": "3eb089336c1c3ccd671c8e7fa7b2c873e26e2b092f6998ede128ebd0e726cc63"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005341.601649-0700_organic, convex (4 points)",
+        "seed": 1087,
+        "fields_sha256": "ec85f76735bd8601870f7c648e25335f06726110e7a86b89ffd666b99382ce75"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005343.079787-0700_organic, convex (4 points)",
+        "seed": 1088,
+        "fields_sha256": "179eb86668986bc1a7b396696829c6cca6e88204017c4c4f42132d8f7f232e40"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005345.335881-0700_organic",
+        "seed": 1089,
+        "fields_sha256": "9e3c6a9579a7fc166ac62ffbeb009423b0719e6e57c76c8002a33d689256cfe1"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005347.643686-0700_convex (5 points), convex (3 points)",
+        "seed": 1090,
+        "fields_sha256": "4580534b8c48fa74f8d1c61f2862eed21db7e47e1fe35290db86d28c09174e8e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005349.393373-0700_organic",
+        "seed": 1091,
+        "fields_sha256": "d325db611829460247fbaff90af64ffc17eac0727e98576eed35249c51baec62"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005350.922476-0700_organic",
+        "seed": 1092,
+        "fields_sha256": "b689e8d2fee15b999fc31bbc5016801112505339225a566f30de6d35f1730398"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005352.483098-0700_convex (4 points), convex (3 points)",
+        "seed": 1093,
+        "fields_sha256": "c4b7958650824436999920a67b1272cc9d1699afc0c860961422f904cf5190e2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005353.904233-0700_convex (3 points), convex (4 points)",
+        "seed": 1094,
+        "fields_sha256": "1c4b92c983070681ce86ed3d54edb5c4f6f3dc8513d0fa5809a920b679812e9d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005356.224168-0700_organic, convex (4 points)",
+        "seed": 1095,
+        "fields_sha256": "22b688e2dbf0332b020af04f69561da418a261d2499386bc832a07abfb00a208"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005357.418195-0700_organic, convex (4 points), organic",
+        "seed": 1096,
+        "fields_sha256": "2c4995370a5a5a810f14cd5b4a60190af66bb953e9769ddfe47babf4b2bef902"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005359.006968-0700_organic, convex (4 points)",
+        "seed": 1097,
+        "fields_sha256": "008486d6f7a62b2579602e681019c07adc32eaa5ed6a1d0eda0c2735e58802a2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005403.373856-0700_organic, convex (3 points)",
+        "seed": 1098,
+        "fields_sha256": "f5ff8f4480a214097c4b9db2b5b90d86b3d08f0a290676957ddb334f9997ad8c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005405.487108-0700_organic",
+        "seed": 1099,
+        "fields_sha256": "415f591dcce33a74dbe7c43577937a29d884c063a3436a7ede9fecc3c323ec22"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005408.025321-0700_convex (4 points)",
+        "seed": 1100,
+        "fields_sha256": "e28bbb5f21f7a2c4e28d81f8900d3ebe7820724f0ed508bc6bc3e0be2066a45e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005409.468869-0700_convex (4 points), organic, convex (3 points)",
+        "seed": 1101,
+        "fields_sha256": "acd77bfb59c05570e7777c6268a8477876f3c9bc9810566d712855dae9fba793"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005411.979338-0700_convex (3 points), convex (4 points)",
+        "seed": 1102,
+        "fields_sha256": "515f8a3e40ffb56dbb7be0aeb62f6893937267aa9b7f6c56f127c08ae81b6ddf"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005414.327689-0700_organic",
+        "seed": 1103,
+        "fields_sha256": "88ebd459661eab264969077b8926608f7b373ec438eaf6885578aac14128edf8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005415.711645-0700_convex (3 points)",
+        "seed": 1104,
+        "fields_sha256": "1b9c287030daa73aa0872468f3f4fe29043ae6ed5c673c7eab0d3c88a77ebe30"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005417.602075-0700_organic, convex (4 points)",
+        "seed": 1105,
+        "fields_sha256": "89d400b7ca77bd34b9fdab8ec63e2e9aa93c1636f00fa1ad6aa716b686e764a8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005419.207637-0700_organic, organic",
+        "seed": 1106,
+        "fields_sha256": "3c26882a9c70092283e5e4d5f5496af5adccfd7f1360800b16f1260d748fa481"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005420.878774-0700_organic, convex (5 points)",
+        "seed": 1107,
+        "fields_sha256": "fe639af30747306199cdea62b5ec5ecb49b52f19b3be59f28c9b4afb2ca01030"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005423.587110-0700_organic",
+        "seed": 1108,
+        "fields_sha256": "f84a10c477f1b221b4fc04a545fa1b158fb59954785f1dfdf379755d04526b62"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005425.111578-0700_convex (4 points)",
+        "seed": 1109,
+        "fields_sha256": "4106cefaed4ef773bb3c0c27183881db81905118bf6c35d07b4c139edc6f51e9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005427.627550-0700_organic, organic",
+        "seed": 1110,
+        "fields_sha256": "09d60f0163b8e19971216754510524e8bf9b423741ee62a0975310fadb8992aa"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005429.552399-0700_organic, convex (3 points), organic",
+        "seed": 1111,
+        "fields_sha256": "f934ec0325befd6d4debbd2d52b086dd6a5f3eb032e959503fdc8553b2fbbaca"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005430.510739-0700_convex (4 points), convex (4 points)",
+        "seed": 1112,
+        "fields_sha256": "60f906efd47292f24d2fb7dcbbbcbe1f9faa0a93c5bf55bc7aae513ef24462de"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005434.222029-0700_convex (4 points), convex (3 points), convex (4 points), convex (4 points)",
+        "seed": 1113,
+        "fields_sha256": "f08bc30e31d078b09f273c035a31745add9d2f3afc4bbe25ce865f24ebaf6976"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005435.945307-0700_organic",
+        "seed": 1114,
+        "fields_sha256": "0527faaa7807501b65f79d4ff375d2ece6e3c64937d224cbc92c3b30dcf6e851"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005437.648332-0700_organic",
+        "seed": 1115,
+        "fields_sha256": "0754e30d4271eb8098f2c945e17b01e950b2e1f8a7f3dbdc41ae47c053e05aa6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005439.162511-0700_organic, convex (3 points), organic",
+        "seed": 1116,
+        "fields_sha256": "3200d712562c2d44c47e30872db61f1f18aaeee19a84c25b698aa636412b172c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005440.893475-0700_organic, organic",
+        "seed": 1117,
+        "fields_sha256": "52f01edfdef7a010bac96e0c499818404ff74c9ba711bdaaaedfc3d5c4c18e33"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005442.767001-0700_convex (4 points)",
+        "seed": 1118,
+        "fields_sha256": "947857e35badd116159339d44c20e45dcb15066687bc19951e8cd535c0dc4d79"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005444.689412-0700_organic, organic",
+        "seed": 1119,
+        "fields_sha256": "f0ad0c978af367e7bf56371a6fcf933d1704774e097458efbb2c85aba0705ef6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005447.493356-0700_convex (4 points)",
+        "seed": 1120,
+        "fields_sha256": "ca770702b6f0c640ab4e41b72d0f2952965e8b89af5066eb31aa315708cc4daa"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005449.378860-0700_convex (4 points)",
+        "seed": 1121,
+        "fields_sha256": "9f8bf1249f5eec5b4d4a7fb08bba9458eab06602b4b209aa7187f979ff7fbe77"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005450.546158-0700_organic, convex (3 points), organic, organic",
+        "seed": 1122,
+        "fields_sha256": "0b6ee59e111829cbb31b3ea414b9e8421f7a296ccd5995509689e31c3d783af4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005452.501578-0700_convex (3 points)",
+        "seed": 1123,
+        "fields_sha256": "4ba7ebc876675368e1e98bc9a96f63ec332ce3a35b6ac2d5eafb9a9d16ece3e4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005454.101207-0700_convex (4 points)",
+        "seed": 1124,
+        "fields_sha256": "96a79521d4bead420469949da1f6df0416035b71698dadc3c5d7f817ef9854f2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005455.346072-0700_convex (3 points), convex (3 points), organic, convex (5 points)",
+        "seed": 1125,
+        "fields_sha256": "960af2b27156b6fa690bf7c96b377b9f77d6b6c722fe8f59d85b35ceabf4c0a9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005458.044778-0700_convex (3 points)",
+        "seed": 1126,
+        "fields_sha256": "a54af454b9e1687fcba5db6c793976136b96279d0c1b990342a0e7e458a487d3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005500.048943-0700_organic, convex (3 points)",
+        "seed": 1127,
+        "fields_sha256": "05e3b3790ae67050619239042cad7af7fe5bfcf49a3ca90bab3f99372b60c207"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005501.610542-0700_organic, convex (5 points), convex (3 points)",
+        "seed": 1128,
+        "fields_sha256": "31a176e177ab1233de5905b2bf653460c605d6f9983fbf9d0ec48ddae66c59de"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005503.980756-0700_organic, convex (4 points)",
+        "seed": 1129,
+        "fields_sha256": "59eabd1ab8b4da303d553958ab38b29ff2802b87af3c6c5a9e96bf6b5fbe6384"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005507.041491-0700_convex (4 points)",
+        "seed": 1130,
+        "fields_sha256": "54afadf831be6a40627f5b69c81e2c945b4a8a23b6966cb158c7991d8a89caea"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005509.399764-0700_organic, organic",
+        "seed": 1131,
+        "fields_sha256": "c1f60e064df998895f9c7f1c6e9c870d05b79b2b659970d7f4d512f12db73389"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005511.538379-0700_convex (3 points)",
+        "seed": 1132,
+        "fields_sha256": "74486526e78752a23bd1565cfbe120a786ea11891e6bd01845f8640c1e5534bd"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005514.678306-0700_convex (3 points)",
+        "seed": 1133,
+        "fields_sha256": "d97d5a98d010a83ca07d3ff3fc5514fb67a993352436cdc221768ddd30372437"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005516.685603-0700_organic, convex (3 points)",
+        "seed": 1134,
+        "fields_sha256": "437e558dad51c6780d3bd656f2f0a09133ae951c4ff9f5f13ff16edb72cdbf70"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005518.271251-0700_organic, organic",
+        "seed": 1135,
+        "fields_sha256": "172f8e6bcda060543d1bb18b166ba1400dc7eb2344976c899cd53979faaaf325"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005522.368768-0700_convex (3 points), organic, organic, organic",
+        "seed": 1136,
+        "fields_sha256": "efd66fd7992feb491b0f7e10c0ccdbb0a38272b2171fe8f4ceabd139fce1068a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005524.585331-0700_convex (4 points)",
+        "seed": 1137,
+        "fields_sha256": "3332241ddf66f3fecfde0b2589217fef6d1c2a2b929ef2f5979122f45ba3bd2a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005526.554309-0700_convex (4 points), organic",
+        "seed": 1138,
+        "fields_sha256": "4c0e264ec5ded022b910f57e2b202865e75048f9967730b8c417c7dd96dcb274"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005528.457809-0700_organic, convex (3 points)",
+        "seed": 1139,
+        "fields_sha256": "113e87baa3f565163f372addedfb389fbe269b73a9c24bcca84c8edffc9920a7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005531.377405-0700_convex (3 points)",
+        "seed": 1140,
+        "fields_sha256": "a7936f09e58ae0c9be79e92085e8aceae0f574937dbf721adac9ab3adbdd506a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005533.980611-0700_convex (3 points)",
+        "seed": 1141,
+        "fields_sha256": "7199c3d094fc1fe728ac7f5ea6417b39dc3cb29d8001efd2d284ea8f2f967bc0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005535.577727-0700_organic",
+        "seed": 1142,
+        "fields_sha256": "e0d21adf94dd7498dddbc622ec6894d6ec3f92d2ad040682f5cc295c5a659821"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005536.892469-0700_convex (3 points), convex (3 points)",
+        "seed": 1143,
+        "fields_sha256": "fd8bf4ec4fc415e8983b5021d26954992919ff0bc652956eda779cb2b9991e36"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005539.529522-0700_convex (4 points), organic",
+        "seed": 1144,
+        "fields_sha256": "94de21b70144a183b2de51e1a6fe695eed7be7819317bd074465f52d1522c796"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005541.514230-0700_organic",
+        "seed": 1145,
+        "fields_sha256": "4d7add316d90e523782aadec06cfbdaa89f2a8a40ec7fe166b65e2c4f201b70d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005543.283680-0700_organic",
+        "seed": 1146,
+        "fields_sha256": "510309174b4173daba1c24ea78712ce21d25d49c00a86a2001a2fc6bdaa26c42"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005544.811029-0700_organic, organic",
+        "seed": 1147,
+        "fields_sha256": "f3600d3ee36e1d02560c7df104ffd3f075bcc18057333f4e2585a279d78c8da3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005546.641322-0700_convex (5 points), organic, organic",
+        "seed": 1148,
+        "fields_sha256": "83a6d80ffc79ace941b3b66e482450a3290805b7de4755c28c5719d2b37c4186"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005548.505073-0700_convex (4 points), convex (4 points)",
+        "seed": 1149,
+        "fields_sha256": "a6856a00eb6d715416f444e5910a112826d7e66b2b7f9ebcf2a6edd129729233"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005551.411774-0700_convex (3 points), organic",
+        "seed": 1150,
+        "fields_sha256": "5ae36a1dec5d55615830197cf99b99e811ea945dbf7fcaafb85cf5f7d4b081ad"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005553.277634-0700_organic, organic",
+        "seed": 1151,
+        "fields_sha256": "ba8717754d32c706cda699536797c3ed0fcefb94ab6056c11b1132284b816743"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005555.904468-0700_organic",
+        "seed": 1152,
+        "fields_sha256": "fd6569a09f4443ce99117b3c25c2c9fcc9969316b84adbbfa01b9f175a107df9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005558.154245-0700_convex (4 points)",
+        "seed": 1153,
+        "fields_sha256": "44fd4c6405f40b0e0102fdf9706fd6da2301fd957fbf43dcd0e1df7a6e1b1fdd"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005559.416003-0700_organic, convex (4 points)",
+        "seed": 1154,
+        "fields_sha256": "2dd76bbbb4e4a68ee795670558dccbe1f0a0e583220de841c182bf82d8b08cb0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005601.254845-0700_convex (4 points)",
+        "seed": 1155,
+        "fields_sha256": "20b71f1470d81b9c4c1aa8e9cf8b53fff6c78d91d7013b901d44172eb52b93f6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005604.279931-0700_organic, convex (4 points)",
+        "seed": 1156,
+        "fields_sha256": "06c5da82801b1318a988ea99ab72247c34fea9a6ac3199e95add6b8fd888ba5b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005607.667321-0700_organic, convex (3 points)",
+        "seed": 1157,
+        "fields_sha256": "2a0d11f3ebfec02f853fa009f9688db34630626318152ca154058931e0890a24"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005610.645069-0700_convex (4 points)",
+        "seed": 1158,
+        "fields_sha256": "a121072aff7d4e3713d626806f1626ca91481a2690f88d08e9ec58455c498cb4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005612.345036-0700_organic, organic, convex (3 points)",
+        "seed": 1159,
+        "fields_sha256": "3d3f47e9e317ba0086b050c6c23fc958a176c113b1c224e2c94baeb11fd015db"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005614.476091-0700_convex (4 points)",
+        "seed": 1160,
+        "fields_sha256": "43200ce1d6c7beffd1dd287890312ef27850f7c19203c1af6e7c40aeb5c07b46"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005615.983326-0700_organic, organic",
+        "seed": 1161,
+        "fields_sha256": "e4f4f42e90382f09ebd92c821a18893c32da6ec39eb6d7e731a3d3ea7c9aee12"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005617.884007-0700_organic",
+        "seed": 1162,
+        "fields_sha256": "45177542c682d4d6036a625bcb8a3c80e6cc24014f6edaf49ae6be325cbd6933"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005619.847502-0700_organic",
+        "seed": 1163,
+        "fields_sha256": "ca2c163801005a793d9b6bdf18fbe6d40c86d7c2b0242a2d0c54b7e4be772309"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005622.536463-0700_convex (4 points), convex (3 points)",
+        "seed": 1164,
+        "fields_sha256": "478c0e5506d61419f1ecb6d7a46bda11d685e2af307d3d2a331a764b5c4e64c0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005624.322357-0700_convex (3 points), organic",
+        "seed": 1165,
+        "fields_sha256": "9e13ddd3293036fcbc415842a870700cd97b879b682d0cd87800f02796aa64b8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005626.820905-0700_organic, organic, organic",
+        "seed": 1166,
+        "fields_sha256": "d605baa9127c3277831fd9c3edfbb8b478fda24a1bbbf10bb3f4b717856c4751"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005628.365018-0700_convex (4 points), organic",
+        "seed": 1167,
+        "fields_sha256": "936db55d730ce2a7ecac6987f33381f94ab6ebf43029caf4030bd74d7e1c6769"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005630.388422-0700_convex (4 points)",
+        "seed": 1168,
+        "fields_sha256": "00fbcc1072c667f0e335ed09754bd9bbf70e2c5e59fe7b90b82ad7b1b4649430"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005633.081703-0700_organic",
+        "seed": 1169,
+        "fields_sha256": "f044b5d74ded3f81d9d9c57ff218580367d9ce6c29cae6e41fa627438f845ede"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005634.982405-0700_organic",
+        "seed": 1170,
+        "fields_sha256": "485704ac75c0766717f41157c5acabe924d58de36a9fe684ab37afb6c1f245aa"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005636.916520-0700_organic, convex (5 points)",
+        "seed": 1171,
+        "fields_sha256": "25390f5c14fbd910554c4465d7df7738513a9bb2ee9f2e91944a5f89debdf5f3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005638.645188-0700_convex (3 points), convex (4 points), organic",
+        "seed": 1172,
+        "fields_sha256": "81c5d8fb75e2c655023f7fca6bec22f203fe426500d8cc16ac1a2d4aad8f0c63"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005639.856090-0700_convex (5 points), convex (4 points)",
+        "seed": 1173,
+        "fields_sha256": "63c0249b7545229835fd6246bc50d6b954f4ebdf40d8c4597ed59129e5dbb485"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005641.371578-0700_convex (3 points), convex (4 points)",
+        "seed": 1174,
+        "fields_sha256": "74766bfb24e9e5316052e04298c75f06bd8d8df83fd3ba8ed5bb7f9c97928d62"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005643.861885-0700_organic, organic",
+        "seed": 1175,
+        "fields_sha256": "5a0ca877f5d625b1cad9346b4bb44fb5379d899c1e8cf2c08170cee859c0c4a0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005646.694182-0700_convex (4 points), convex (4 points)",
+        "seed": 1176,
+        "fields_sha256": "040a33cde6c8fb47c3f4ef9be70d9ebd01eaab1539195f98f4d2568a90c2ed98"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005648.837171-0700_convex (4 points)",
+        "seed": 1177,
+        "fields_sha256": "10e9636314411c12eaf7cbe7df6e459f40b05836520fa8f6c07e36d57c5f1449"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005651.264178-0700_organic",
+        "seed": 1178,
+        "fields_sha256": "cb9609277a785a8a57bdd1afa46e3c88366bb930fb01b448fbf88f82a953e0b2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005653.429252-0700_convex (3 points)",
+        "seed": 1179,
+        "fields_sha256": "4e0c47f0c05d22edf1ede17547d7cf177e81b50ce35c3aada65c9c55c17e51f8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005655.150451-0700_convex (4 points), convex (5 points)",
+        "seed": 1180,
+        "fields_sha256": "bce38a06388244e60c9c6005bd14e5bf9ab8c306965c62a12cedf2c10f7ef26b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005657.576332-0700_convex (4 points)",
+        "seed": 1181,
+        "fields_sha256": "315e5da5fcec0259cdd532bb74402860592a3568c0bb27cd88d2734eb1535e79"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005659.431509-0700_convex (4 points), organic",
+        "seed": 1182,
+        "fields_sha256": "64dc42f0a3cb66a0b0759ed91df30a56c5f7efd0989ff52be913f1a69dc114ff"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005701.923929-0700_organic",
+        "seed": 1183,
+        "fields_sha256": "d09847b06a2ebca23fed06ac159f4be37ad46d86e30494877aaba3e01cabc7c7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005703.440772-0700_organic, convex (3 points)",
+        "seed": 1184,
+        "fields_sha256": "565651fe92cde42fa6a459ea86fd81570529dd1d482471b3a9317aef2f1af538"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005705.778593-0700_convex (3 points), organic",
+        "seed": 1185,
+        "fields_sha256": "dd01ffebc4054147e15fcf51cc27d7287905d45a34a634e8964a7422e4272400"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005707.521020-0700_organic, convex (4 points), convex (3 points)",
+        "seed": 1186,
+        "fields_sha256": "4743320a62b0686ad579a11fd11bca34e50cef5d0b059a0fd85733784b03fa54"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005709.502476-0700_organic, convex (3 points)",
+        "seed": 1187,
+        "fields_sha256": "b709a4028e4aa91ed01ec79ba9e30c069f038df006d0bb6b0abd4c7237dfa0ea"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005712.494990-0700_convex (4 points)",
+        "seed": 1188,
+        "fields_sha256": "26729f16984b86913c6ebd0b2a475f766f6dcb404e41660841e1bd3cf541cdaf"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005714.447588-0700_organic, organic",
+        "seed": 1189,
+        "fields_sha256": "fb79e56e19a08753ccbbf2038543b4ffda2cb8eec6f82de82374ff42a2be9a1f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005716.003412-0700_organic, convex (4 points)",
+        "seed": 1190,
+        "fields_sha256": "ae5d5e15ab9e12c33d40d12a95fe3861d8180b127e3ba124ed150a7bb4dbd945"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005717.989697-0700_organic",
+        "seed": 1191,
+        "fields_sha256": "b3a4a4f38e6c2c06632b7a13ac64e3c9401a376f9852d210f2cd637cbf88b90e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005719.063279-0700_convex (5 points), convex (3 points), organic",
+        "seed": 1192,
+        "fields_sha256": "353114a429a61331b9c15dcd0c26dea2d4a61535e938dcb75f3ea885b1a12f73"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005720.899727-0700_organic",
+        "seed": 1193,
+        "fields_sha256": "c449206de0947473a563856632734e92c7e2508bb84a8557b5f9002439063db0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005722.900489-0700_organic, convex (3 points)",
+        "seed": 1194,
+        "fields_sha256": "f6e20fdfaa7ca30bea7ac642d25b01ea07e978152a5dd139da6c8f4c64e924ba"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005724.085093-0700_convex (3 points), convex (4 points), convex (4 points)",
+        "seed": 1195,
+        "fields_sha256": "a0d4fd2fc669a460e6d511b02139535ff2cf4899fdebd07827ab85bd9c59d8dd"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005725.597962-0700_convex (4 points)",
+        "seed": 1196,
+        "fields_sha256": "7ad3e570c14b958d9be038e8328caa865245d17b3ad550e977d860ca366c770f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005727.627278-0700_organic, organic",
+        "seed": 1197,
+        "fields_sha256": "9757c3fa14535a5e10b5dd16496f18a93a08cb8950e3532c6965a13de6e0b9d3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005730.370449-0700_organic",
+        "seed": 1198,
+        "fields_sha256": "a5aa397bf797222d169ef576395bdd75c9eed734fd99d2b6660b55938be7cc8b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005732.608600-0700_convex (4 points), organic, convex (4 points), organic",
+        "seed": 1199,
+        "fields_sha256": "020d1926e07fb152d415b77b476d1daabacb7a3bbc8243fffddf37b0b3bde2dc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005733.785031-0700_convex (3 points), organic",
+        "seed": 1200,
+        "fields_sha256": "de246238a8740c36c2e833a199b2a0eff0419cb075683e453d86694e798e1450"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005735.946011-0700_organic",
+        "seed": 1201,
+        "fields_sha256": "99684c2d26c5fa83d929d536ee42c014d9db9ebc63945fc0af5c9b157220d947"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005738.287019-0700_organic",
+        "seed": 1202,
+        "fields_sha256": "86e67bd7a1413104633111d8fb48760ee5057f7e5a7e888c4ebcdfe5133989a0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005740.320119-0700_organic",
+        "seed": 1203,
+        "fields_sha256": "b9ab0bee510dd705f54d14007394b4d85d0f4c827f98f1f018ae28637060a275"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005743.050516-0700_organic, convex (4 points)",
+        "seed": 1204,
+        "fields_sha256": "7b231451960f52fb8faf8cff6eaf4218592497882b23245b7928ea03591f3c11"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005745.482906-0700_organic, organic",
+        "seed": 1205,
+        "fields_sha256": "3d4c9b969c6f7a3d306341c9689c72c3b8269ce8e2b80baa9c0b69cd5809bb0f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005747.103364-0700_convex (4 points)",
+        "seed": 1206,
+        "fields_sha256": "3f21ce385a94268a6c3bca00184def7e80815931c7a8e5e1e44c903376682cbd"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005749.583628-0700_convex (4 points)",
+        "seed": 1207,
+        "fields_sha256": "e3f4449716938026d8fd29a0a04f2fd649c72dc9276a7102be1ae4baf05c897e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005751.078347-0700_organic, organic",
+        "seed": 1208,
+        "fields_sha256": "a6437ed378d572e25fffe81addda66539d917d72e1c24b6ae77afe9b2b410076"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005753.506367-0700_convex (4 points)",
+        "seed": 1209,
+        "fields_sha256": "18aab282010b5754cf7b7ee528099cb11320819fc65acb5997143a95049ef65a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005755.677840-0700_convex (4 points)",
+        "seed": 1210,
+        "fields_sha256": "0043da50bc7ff6f2d8ff517b0b8029c2e38b93684db0fa20e45ab163e146230c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005757.603475-0700_organic, convex (3 points)",
+        "seed": 1211,
+        "fields_sha256": "ffe0df9019f21f6697901277acdd9afc6efb2c9ad1f99988b1fc6ca38bca153c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005759.495489-0700_organic",
+        "seed": 1212,
+        "fields_sha256": "ef13500cac06b213b3c48e881afb6361f1071e65927cea92460b470eecccc251"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005800.708665-0700_organic, organic",
+        "seed": 1213,
+        "fields_sha256": "c95f539ba2dbb99d3ddd43c03053052fc2f8637f77e0b2cb334105faf390fd96"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005802.267142-0700_organic, convex (3 points), organic",
+        "seed": 1214,
+        "fields_sha256": "f8cb06db9d0fdfd48fab8bbb5e14015a64e1a195fd9c53141ac2419cc8c72fa7"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005804.271378-0700_convex (3 points)",
+        "seed": 1215,
+        "fields_sha256": "0f7aca6368ed3fe0a4d197b45b2dbaebca747d4dfa73474b2a3932a0a5d7c00e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005806.841618-0700_organic",
+        "seed": 1216,
+        "fields_sha256": "ec4e60ec4fd48a27e7556d92089778d67e54d881dbcbe5f433d925df1c6535e8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005809.392699-0700_organic, organic",
+        "seed": 1217,
+        "fields_sha256": "00383dd8f1b9f8cc5368e33080451762e4e3d1c457cd9a42d46f87fae7dcaec4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005810.664655-0700_convex (4 points), organic",
+        "seed": 1218,
+        "fields_sha256": "4ca156fcc0a34ce32e48b255ca645b96d4b8b79f00f108391ccf151c95683ba4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005812.218353-0700_convex (3 points), organic",
+        "seed": 1219,
+        "fields_sha256": "8e4bdefc6036be4eaa70c51c22243fe9a494e6ddf351728a128d31a72ff3ea14"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005814.061724-0700_convex (5 points), convex (3 points)",
+        "seed": 1220,
+        "fields_sha256": "0c3234d1cd4d4981fee7b8ae7df2f358e5718be4238ce2e44c690bd8cd463f71"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005817.808702-0700_convex (3 points), convex (4 points)",
+        "seed": 1221,
+        "fields_sha256": "99c64847714a08295f3ee74d32863bd1a156d5297b33010b09b02e1d38554e26"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005819.356246-0700_convex (3 points)",
+        "seed": 1222,
+        "fields_sha256": "be23329496382e2cdc2a7124d0ea55e86910771a22f880919038afea5b1bd0b6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005820.884807-0700_organic",
+        "seed": 1223,
+        "fields_sha256": "8c44f45745aa83910a70c8efa6f3d5bed29f82a282e752d0cb3fe22607ce5e95"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005822.357229-0700_convex (3 points)",
+        "seed": 1224,
+        "fields_sha256": "ac3a1426408e7fde067aabc299b3e9de8c4b329e0f1dd193be842796247a44d9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005824.109526-0700_organic, convex (3 points)",
+        "seed": 1225,
+        "fields_sha256": "f21dfc39747a53a37006b5636c5b2c32998a02ecfcffac1c787cf727855cdf71"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005825.981491-0700_convex (4 points)",
+        "seed": 1226,
+        "fields_sha256": "57bd4c97005c630308726d49e92c8bb87b4af12b78cf91924c7cf5e8e01036e9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005827.591412-0700_convex (3 points)",
+        "seed": 1227,
+        "fields_sha256": "c2b057159e957b731240db478c5b43f1da0d40aba3c0d35b6322bf0c5852d2cc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005829.587105-0700_organic, organic",
+        "seed": 1228,
+        "fields_sha256": "f478c652887c8c82ccca3deb0d429ea438aa201df210462a33fc488662aff99c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005832.312433-0700_convex (3 points)",
+        "seed": 1229,
+        "fields_sha256": "baf1ef130c95e4400390b18e61fa344992954975f37c8f3d89a60a646714ba19"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005834.364435-0700_convex (3 points)",
+        "seed": 1230,
+        "fields_sha256": "2d633a65ee7998318cfd1fac5bed634a89aa68648a812578679ba9cdc131c651"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005836.740083-0700_convex (4 points), convex (4 points), organic, organic",
+        "seed": 1231,
+        "fields_sha256": "0ce1005c638677bf2695484110dbc33153bc43aa09c2a278073d48051fc8839d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005838.356161-0700_convex (4 points), convex (3 points), organic, convex (3 points)",
+        "seed": 1232,
+        "fields_sha256": "7cab5ce55dfb7c9c0a7e6b4662afb8efd76c72f502d97daf1db585ef2223d6f5"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005840.796452-0700_organic, convex (3 points)",
+        "seed": 1233,
+        "fields_sha256": "9ed6567eb8c8752f860ed1e7eaa9c2b29a650f40dcb4d67006f5dc91ee60f0c8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005845.229958-0700_convex (3 points), organic, organic, convex (3 points)",
+        "seed": 1234,
+        "fields_sha256": "21ab0c577ed6b3a5aff109a048809b61ff44ac493029699c5368c88df1e50015"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005847.367442-0700_organic",
+        "seed": 1235,
+        "fields_sha256": "a8cfc25e1216375c451b18bad2a17de859fc45f58ade81f4c2cb9915be82aeae"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005850.080873-0700_organic, organic",
+        "seed": 1236,
+        "fields_sha256": "8bdc389263a1be7767359aa5ccf24662462d43e1cde0b7c3798594b4f4a204f4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005851.446283-0700_convex (4 points), organic",
+        "seed": 1237,
+        "fields_sha256": "5e51f7c9d8fb2342e2465041c7b731a650108768d4457dd7076e0fc0823edf3c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005852.848268-0700_convex (3 points), organic, organic",
+        "seed": 1238,
+        "fields_sha256": "753ff762aace86794dd259c741f011f88f29c3714f10236eddb729c2cf2cb65f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005854.648351-0700_organic, organic",
+        "seed": 1239,
+        "fields_sha256": "828e865a9c1b72645a3011e2fb97d716be3ae9a99f682e5b01ed49e61a61a1d9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005856.979097-0700_convex (4 points)",
+        "seed": 1240,
+        "fields_sha256": "a4673763803169bfdfe5a750539572c9c303ab70d368cec23839106667c40baa"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005858.631826-0700_organic, convex (4 points)",
+        "seed": 1241,
+        "fields_sha256": "6f2c2a35819bb3a470e9bfa8ea37eed4334e605835e6a35cdeb60589eb370543"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005900.778846-0700_convex (4 points)",
+        "seed": 1242,
+        "fields_sha256": "eecb4ff922f36516bad4445b9ff38069d146631f2c8a4dfbb26a9fb146764285"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005902.345926-0700_convex (4 points)",
+        "seed": 1243,
+        "fields_sha256": "cc7730b10a63378f7002f9777eefb252fba8018fb4d8ae6d66263ae4a8d476b8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005903.870063-0700_organic, convex (4 points), organic",
+        "seed": 1244,
+        "fields_sha256": "4f0288e192dcf67605472950bfa1d6adf408af95168f05ada5270f7347ced948"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005906.214660-0700_convex (4 points), organic",
+        "seed": 1245,
+        "fields_sha256": "e0a2d4b7f63cde0cf7ff0f764681578c12116f36c8da603a38a7c03ac7810a3a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005907.966806-0700_organic, organic",
+        "seed": 1246,
+        "fields_sha256": "b478024fa478ee572a2d66724a5cbc77c0cfdb032610721e02e89269c796f63b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005910.253049-0700_organic",
+        "seed": 1247,
+        "fields_sha256": "809d8a0bb092c90f4241b27c9929d4af01135292ba14ab9d414aba3cacba7119"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005911.680581-0700_organic",
+        "seed": 1248,
+        "fields_sha256": "260183a3b2bbe1df5c9e8468716a8d779c6bb0f6c529ec0447f10cd19c934d48"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005913.489534-0700_convex (4 points)",
+        "seed": 1249,
+        "fields_sha256": "280e96d539087e0069455985976a6172c06b9c1d820689856d9bf973de0f7fd9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005914.728292-0700_organic, organic",
+        "seed": 1250,
+        "fields_sha256": "074d4c0a41d7d3a63d848194f5b255481322c3b2dc660f1bfc9d58070c6dfa13"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005916.964575-0700_organic",
+        "seed": 1251,
+        "fields_sha256": "900282f727141b172c0abce988170ea1a78becd4daeb0b25c27ef1361f9ac104"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005918.361775-0700_organic",
+        "seed": 1252,
+        "fields_sha256": "6f1c217ba793c0d95e7b29b10bbca9c4953bfee8d2fcadd479c2accd94660794"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005920.597758-0700_organic, organic",
+        "seed": 1253,
+        "fields_sha256": "8b30b153701d4002997d5c4f67ee0fde5628107f76e213c7361bb1b0e0740376"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005922.633304-0700_convex (4 points)",
+        "seed": 1254,
+        "fields_sha256": "fd0d6aa04e0ffc49188b02bef3a2129c12802a71f6ffa41ba0e3e90a7f8f7804"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005924.921299-0700_organic",
+        "seed": 1255,
+        "fields_sha256": "5f51c18acbd37cfdeb760e3537dfec8b5cfca0a67a49df114228416ce59c80ec"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005927.235017-0700_organic",
+        "seed": 1256,
+        "fields_sha256": "33ebed9613795d7c7f1b813b03d2d73da21275106718452df97b3223e1546432"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005928.979852-0700_organic",
+        "seed": 1257,
+        "fields_sha256": "916b49e39c99243ebbdac5f68ce4b25db1f01a2294fc3a3bef083a85f9f09144"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005930.620642-0700_organic, organic",
+        "seed": 1258,
+        "fields_sha256": "adabb1b3821e930325f359204cd4097c4dd49f991c85cc6ebdfb0e0115ca9fcb"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005933.096799-0700_convex (3 points)",
+        "seed": 1259,
+        "fields_sha256": "69a65084ded7c1ae6bead0636ce4467b62951d72c3d362b85ffedafef2aaac63"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005935.666841-0700_organic, organic",
+        "seed": 1260,
+        "fields_sha256": "5b2ec8a5570e322722309991ef1bb0980eaccb92bfdcbce01c574463db512d8c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005938.238212-0700_convex (3 points)",
+        "seed": 1261,
+        "fields_sha256": "a9b4ff0ada6a64aec137bc9e6979b0277fbdfddfdafbdf3c77ea9e02fc455a9f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005939.942003-0700_organic, organic, convex (3 points)",
+        "seed": 1262,
+        "fields_sha256": "ffa57d3e8e78a61057126a7baee25a5ce3cc46a5cff66163a204bbcdafc579d5"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005941.668339-0700_convex (3 points)",
+        "seed": 1263,
+        "fields_sha256": "b29e976918db0cb55a7fc4ea39e97fcea98572ba7491977b177c60899f98153e"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005943.579622-0700_convex (5 points), organic, convex (4 points)",
+        "seed": 1264,
+        "fields_sha256": "073db7aa3ceb1864f6446d38437e550f8a451a0078a97a80a1f236731465d47c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005945.604754-0700_organic, convex (4 points)",
+        "seed": 1265,
+        "fields_sha256": "7c4c8c525374830f218ea84066cc397ebaa43efe8bf213fb4150a3656d2a9908"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005947.173966-0700_convex (3 points), organic",
+        "seed": 1266,
+        "fields_sha256": "720b75750c5ece780189d7332e45115436c8ffb8653ffc50d958cb2bbce994f0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005949.647503-0700_organic",
+        "seed": 1267,
+        "fields_sha256": "e3e21dfc8260fe1104c5014fd9edaeffb5c6b82e148540980e5cb18307ce076a"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005951.276508-0700_convex (3 points), organic, organic",
+        "seed": 1268,
+        "fields_sha256": "1ae02587e3695980aa6b92b8674ba7eac076a82bb631e9eb51a9a980279014be"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005953.973155-0700_convex (3 points)",
+        "seed": 1269,
+        "fields_sha256": "f6041fb9c2b8cb4bac1cc480b2014b6d444976e35261bc6ffd04a5335152ceea"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005955.788294-0700_convex (3 points), organic, convex (4 points)",
+        "seed": 1270,
+        "fields_sha256": "d458670ddab085e8e5cb171e7a137f6efd0d3f94b3c36c06f4648ba3fbc2183f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005958.315056-0700_organic, convex (4 points), convex (3 points)",
+        "seed": 1271,
+        "fields_sha256": "af06482a897d6570eebc4727518ec75d3497a1a0ef5d76d32c4dfed885f03c19"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010000.808079-0700_convex (4 points), organic",
+        "seed": 1272,
+        "fields_sha256": "87c3746c10b7b73cf56fe6ced231e6def53d05777fdb24543f9a7ada7f182ee0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010002.872161-0700_organic, organic",
+        "seed": 1273,
+        "fields_sha256": "87bc292402122e00b61767baf98d1ab30771338a38b06856109a3815be387f89"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010005.341447-0700_convex (3 points)",
+        "seed": 1274,
+        "fields_sha256": "07ad851b18e9af599c641ff2955aa2c56890ab1a19bb5c022431a9d1b4ab4657"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010007.818847-0700_organic",
+        "seed": 1275,
+        "fields_sha256": "f0c48f2473a79b442881accce8b52202ce114f7a4862198fde6f5760bbd321d8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010009.569540-0700_convex (4 points)",
+        "seed": 1276,
+        "fields_sha256": "6a2001ebf212cc0a76db55af8dd097d3ca9bc0c211cf412fad4cda4203603125"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010011.984502-0700_organic",
+        "seed": 1277,
+        "fields_sha256": "213c4cf61d175cf97b4d14977e3439685e952038ea0fb5fcb8516dcf332220ce"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010014.279382-0700_convex (4 points), organic",
+        "seed": 1278,
+        "fields_sha256": "87fd9e2b93ba811ca332ede90ab5b12ab60108f0dab750ca7e7078d95db43e5c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010020.955388-0700_organic, convex (4 points)",
+        "seed": 1279,
+        "fields_sha256": "70ea3ce8da433a9569646a29158c6398ae038735750570342cbfd1bc3b02f172"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010023.007431-0700_convex (4 points), organic, organic",
+        "seed": 1280,
+        "fields_sha256": "0eb19918d2fdce8db85920d64d74d13c9cae9948d079d288b0cf1550717312ad"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010025.080395-0700_organic, organic",
+        "seed": 1281,
+        "fields_sha256": "ebe188a27e3a1503c551c822df116f5057e1e3e4b125bf1869b48bfdcb7fd949"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010027.762688-0700_organic, organic",
+        "seed": 1282,
+        "fields_sha256": "e28d1a83c3d7341e39ed415630b4ab3e6ce42accc8fafbbacb6a4e47923902eb"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010029.338817-0700_organic, convex (3 points)",
+        "seed": 1283,
+        "fields_sha256": "24dc0ddff9553f7e49fa7ef61f8c473cc8b95f89c783aa600550f198731bb337"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010031.155986-0700_convex (4 points)",
+        "seed": 1284,
+        "fields_sha256": "67e70f338636217fce49ca555c8a77b55d695151c739afc09d5ee83c11063400"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010033.148667-0700_organic",
+        "seed": 1285,
+        "fields_sha256": "8b37e0e82ba5fa3604c3d9139ab5af7e2cdbbec0bdf96902f899d83e373e15d2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010034.634656-0700_organic",
+        "seed": 1286,
+        "fields_sha256": "69c1e324b2b7da1e06e1a3af6fd88b0abd5d839980d6b51184b5b2e9444f6133"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010036.079863-0700_convex (3 points), organic",
+        "seed": 1287,
+        "fields_sha256": "1d8ba768618cebfe3bca9acc8e5cc4f1dc01c9ccd02ab1601def859d6b003deb"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010038.919172-0700_convex (4 points)",
+        "seed": 1288,
+        "fields_sha256": "c95dc4cecbbdfa43543e4dd2f3d180857affcc9c310abcec62a2d9addc8dde67"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010040.692942-0700_convex (5 points)",
+        "seed": 1289,
+        "fields_sha256": "c6a3bad61e2d4d91bb0e7b4efcd88959ec498875b3de83afd1034e1c1f0fd926"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010042.759683-0700_organic, organic",
+        "seed": 1290,
+        "fields_sha256": "1d3aff0ffa664fcc082f8a2926ce30e961189ab75313a4990619e4a60e1293df"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010044.440816-0700_organic",
+        "seed": 1291,
+        "fields_sha256": "8c2e9c1b4029b85c61fe63633d4c7a8e789d38db47dec659870a104c47d5309b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010045.963264-0700_convex (5 points), convex (4 points)",
+        "seed": 1292,
+        "fields_sha256": "3b26347755590a97bba5ba6dbee3e66e86b8b954234622d891e98425b0d033cc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010049.362961-0700_convex (3 points), convex (3 points), convex (3 points), convex (3 points)",
+        "seed": 1293,
+        "fields_sha256": "4545f4c8ff8cf2c4e7fb7904b691dfcda080da9e3ce200b0504c13d8cc52204d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010050.637464-0700_convex (3 points)",
+        "seed": 1294,
+        "fields_sha256": "a8309e8a985f670c8ba3fbee93cddf36657ced166495db07c90d97839d9e92c2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010053.417056-0700_organic",
+        "seed": 1295,
+        "fields_sha256": "f5291fedba92c3fce29c29eb3c96e833cb228dea0947d6f6b1f7db98ed73ee34"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010055.796949-0700_convex (3 points)",
+        "seed": 1296,
+        "fields_sha256": "0392e926de5e7263f59597b424f86d2da0ef90c3e90e745a4970b6b1c9e7c292"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010100.935403-0700_organic, convex (4 points)",
+        "seed": 1297,
+        "fields_sha256": "f5fbaf38ffdb0558d6efd58dd2d871ea3524ff2e3908bd930f55c96e2059e4e4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010103.476064-0700_organic",
+        "seed": 1298,
+        "fields_sha256": "bf875f47cf0b1771346d978f6886f1e8d5f5392fb9b1c9de7768752a86655a81"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010105.549229-0700_organic",
+        "seed": 1299,
+        "fields_sha256": "dac791d0cf6f040de337cf20ecc65dfce2c77fcd80b9dbeb9559b3272cbfba46"
+      }
+    ]
+  },
+  "validation": {
+    "fingerprint": "3572f30b383445027f3f41abc25020adc75243e903684e14a3ab81cdb8e1ffb3",
+    "runs": [
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014816.164604-0700_validation_seed_2000",
+        "seed": 2000,
+        "fields_sha256": "82f86ea541b0e01eff6e9696f78062de04fbb48d8b4216f0c361f12d4b3dd018"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014818.822926-0700_validation_seed_2001",
+        "seed": 2001,
+        "fields_sha256": "39a8ceccd93e763b3f1c90e3d66b2309ec60c1c1c92e077d5f96486b2e9649eb"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014820.437129-0700_validation_seed_2002",
+        "seed": 2002,
+        "fields_sha256": "63d021366131612649cd6ba44be75798c5df8bbc56281187062f886c7cfb4b7c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014821.994075-0700_validation_seed_2003",
+        "seed": 2003,
+        "fields_sha256": "10bc7c98f8622a6ec855f8383db747195fed972b91e8d27c1c6d51a67e6adeb8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014824.203150-0700_validation_seed_2004",
+        "seed": 2004,
+        "fields_sha256": "3ed63cf6412a66960e58d4de1fd23c0b80e8ed33917dcb9ee76e7c0c00210ce0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014825.523462-0700_validation_seed_2005",
+        "seed": 2005,
+        "fields_sha256": "ec246a28bceb5793a30a8efdeac464f313f7cd9ad3cb58d979afa167c9e294f9"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014832.901523-0700_validation_seed_2006",
+        "seed": 2006,
+        "fields_sha256": "72847e57970b61df29b3b35ccca5659cdfbb83dbb0d5ba7eafaece89d89cb537"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014834.678510-0700_validation_seed_2007",
+        "seed": 2007,
+        "fields_sha256": "97d9b5609a7b2431a10686feb8e5cedd737abbba3a2cb96c49e8b5b476f3a954"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014836.400616-0700_validation_seed_2008",
+        "seed": 2008,
+        "fields_sha256": "9c5c4e789865890fb98d520a602dd3ce365b52d712b1ad726c99fc0802459e26"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014838.851492-0700_validation_seed_2009",
+        "seed": 2009,
+        "fields_sha256": "0b16f44bb2f7a67252c5cee43ceffc04d0ebfaea2fe39b48751347d98483c196"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014840.937756-0700_validation_seed_2010",
+        "seed": 2010,
+        "fields_sha256": "15e52b25e09d131189494bf0a23820e6bacba8aa52a6032f143a6dc2bd6f86d4"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014843.297473-0700_validation_seed_2011",
+        "seed": 2011,
+        "fields_sha256": "5fba6a732ca1ab0c0cfdc2238fdb28e0bd47d9282bd2526346f3337b14d5edc2"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014845.052031-0700_validation_seed_2012",
+        "seed": 2012,
+        "fields_sha256": "6742555d6895bc549cb499a52d49bd233cfe9b6f38673bbe948a47dbf4eeec51"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014846.582259-0700_validation_seed_2013",
+        "seed": 2013,
+        "fields_sha256": "ee3e973275ea70ba2f316677bce0d426f6b6d170504918c15faf3ffd4e3cce2f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014848.105095-0700_validation_seed_2014",
+        "seed": 2014,
+        "fields_sha256": "83e11d7f03b2d1c7ec66541e5d648dd4709cb7d15fab17994ed769d7643e5bf0"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014850.992109-0700_validation_seed_2015",
+        "seed": 2015,
+        "fields_sha256": "bdc9f184b7f0bd976536ebaa7e706100231d5c5be1ad4d00025720784cddf20f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014852.548602-0700_validation_seed_2016",
+        "seed": 2016,
+        "fields_sha256": "c844089a5f95aa9f78072f1120999bf95c93925cfe5d3ad9ac3e70146fcd48c6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014854.578414-0700_validation_seed_2017",
+        "seed": 2017,
+        "fields_sha256": "59c61fe5a63658f9c7db3fdc514718e84605834af8defdb416ddf065ee27c857"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014856.099414-0700_validation_seed_2018",
+        "seed": 2018,
+        "fields_sha256": "324449ac33379a2d15764643be8c7a4ddc8774c55a79d941ea33fac099f72200"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014858.806439-0700_validation_seed_2019",
+        "seed": 2019,
+        "fields_sha256": "d9e32385566657c4fa0a288884b70afa91b6e92e16f951b4d79cef816613e419"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014901.648986-0700_validation_seed_2020",
+        "seed": 2020,
+        "fields_sha256": "98c159cfcf72a6bc5e06ced80e08c9216a630b32e0ecaf16dd626d97669038c5"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014905.019414-0700_validation_seed_2021",
+        "seed": 2021,
+        "fields_sha256": "b04cf25874daf425c55fa0c9f2cbbeea0f8ae4b95466b83cb44fb863091c2f4f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014907.126684-0700_validation_seed_2022",
+        "seed": 2022,
+        "fields_sha256": "146e82de9d1af70d721ef89598fd245398887568c7f786cd48ffefe5d207a307"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014909.818057-0700_validation_seed_2023",
+        "seed": 2023,
+        "fields_sha256": "7f4c77d9d8e13342f271a35530b1afd28a95fb889c19867e359341ec0ddfb37c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014912.306719-0700_validation_seed_2024",
+        "seed": 2024,
+        "fields_sha256": "809a32bb11bd9759b055659a240f7c997f4b31157dcf288ace90ecda887e8cac"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014914.695847-0700_validation_seed_2025",
+        "seed": 2025,
+        "fields_sha256": "e1419135d3da481ffdeb2a9765b86f794629149f6001a5a2c7311fcbaebf9b29"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014917.562566-0700_validation_seed_2026",
+        "seed": 2026,
+        "fields_sha256": "44bfa2086276669de570b13fdbceb7ae290e74e42d37ab4091dd6a167ef2961c"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014919.357792-0700_validation_seed_2027",
+        "seed": 2027,
+        "fields_sha256": "1249f8c08fcb07f6517d85f0a930331f92a41b8f5c1ebf8bdb00a698e6e4ccfa"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014922.286601-0700_validation_seed_2028",
+        "seed": 2028,
+        "fields_sha256": "54fdaeea3d17034d91339fdf5c9f4b4e265d92b2f72e25f3a6fcb34c4d10db0d"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014924.440243-0700_validation_seed_2029",
+        "seed": 2029,
+        "fields_sha256": "f4c9e80d3a45e20a57593283ef1518012faf97e70a58a1435297aed4b37e780b"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014926.920385-0700_validation_seed_2030",
+        "seed": 2030,
+        "fields_sha256": "161f18b8b634c36e801cbf2e0f7d7fc663dd647bfea4c2affd99525bd19d4ef6"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014928.906899-0700_validation_seed_2031",
+        "seed": 2031,
+        "fields_sha256": "8e2781eef1bb9099ab14541a6525d9ba4fbc837d27a2b0abf6bec05da3fe16fc"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014930.307682-0700_validation_seed_2032",
+        "seed": 2032,
+        "fields_sha256": "2f071b67a38741cc6d7c38604bbdfa850b9c1e6131a2c80934c20e542098ffed"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014931.812906-0700_validation_seed_2033",
+        "seed": 2033,
+        "fields_sha256": "177d3fd04d58058701981e4aa3111db3cfe14ff767f92ad7faa8f31e5bcf55c8"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014933.647592-0700_validation_seed_2034",
+        "seed": 2034,
+        "fields_sha256": "1563c5a12e8770e988691f1e983cd22f2d1cb5e86cbb47b22cab3e15f0bc08ab"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014935.916212-0700_validation_seed_2035",
+        "seed": 2035,
+        "fields_sha256": "20bbb284a3378da006fed7b677fa85bf48a83d09c33eb817ec72317f25e9c53f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014937.349057-0700_validation_seed_2036",
+        "seed": 2036,
+        "fields_sha256": "293fb1fa8531a14beec1921358618986d0b68a4791d5660ec8bc502a0d4c884f"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014939.108108-0700_validation_seed_2037",
+        "seed": 2037,
+        "fields_sha256": "4b0b0008f88031f741df0527cee0c40c7bfef0fe19db0f1f1e1163fdbb01a159"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014941.101029-0700_validation_seed_2038",
+        "seed": 2038,
+        "fields_sha256": "531e3c12015c1ebc662d1cf63852b78ad6eaf2395731a2c9f45620f8259191e3"
+      },
+      {
+        "path": "/home/william/NavierStokes/flow_ml/heldout_runs/validation/20260911T014943.355395-0700_validation_seed_2039",
+        "seed": 2039,
+        "fields_sha256": "bf447892d7956a691e4ef4efd81ef90bf7c71961e29d9d9083492731df8f59a3"
+      }
+    ]
+  },
+  "args": {
+    "tag": "multiscale_v1",
+    "epochs": 160,
+    "hidden": 64,
+    "levels": 5,
+    "local_steps": 2,
+    "coarse_steps": 8,
+    "batch_size": 4,
+    "lr": 0.0003,
+    "gradient_weight": 0.15,
+    "coarse_weight": 0.25,
+    "seed": 512,
+    "evaluate_every": 5,
+    "smoke": false,
+    "resume": false,
+    "final": false
+  },
+  "baseline_checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/checkpoint_epoch_140.pt",
+  "baseline_sha256": "8669fee3101242f61d11313b819eddac673a8f4c46e2bc9c43166a5b04d9fd7b",
+  "selection": "minimum validation field + gradient matching + coarse-pressure objective",
+  "success_criteria": "lower held-out field and pressure-gradient errors, lower far-field pressure error, and no fixed-radius halo in inspected fields",
+  "source_sha256": {
+    "multiscale_graph.py": "2c5046a888b6da9fa62c6316d3b204b5b899f93c6ac81ed9c9fee5b7e7ab97b5",
+    "multiscale_model.py": "9ee52430328c8bec504bf7b2f82f43f33daafe8158cbcb0baa708c8d18645356",
+    "train_multiscale.py": "9cb70a92c93e2cd430f5ecffe8e51efa46cb588be546ce7d622a3352ad1bd0d4"
+  }
+}

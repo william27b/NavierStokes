@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>Flow Canvas browser verification</title>
+<style>body{font:15px system-ui;padding:30px;max-width:1050px;margin:auto;background:#101722;color:#e6eef8}button{font:inherit;padding:10px 16px;margin-right:10px}pre{white-space:pre-wrap;line-height:1.5}h1{font-size:25px}</style>
+<h1>Browser model verification</h1><p>The same Web Worker used by the drawing page is checked against saved PyTorch predictions.</p>
+<button id="gpu">Test WebGPU</button><button id="cpu">Test CPU fallback</button><pre id="output">Choose a backend.</pre>
+<script>
+let worker=null;const out=document.getElementById('output');
+async function test(cpu){if(worker)worker.terminate();out.textContent='Loading fixtures…';let cases=await(await fetch('./verification-fixtures.json')).json(),index=0,rows=[],mode='';worker=new Worker('./inference-worker.js');
+function next(){if(index>=cases.length){out.textContent=JSON.stringify({passed:true,backend:mode,cases:rows},null,2);document.body.dataset.passed='true';return;}out.textContent=`${mode}: checking ${cases[index].name}…\n`+JSON.stringify(rows,null,2);worker.postMessage({type:'predict',solid:cases[index].solid,revision:index});}
+worker.onmessage=event=>{const m=event.data;if(m.type==='progress'){out.textContent=m.text;}else if(m.type==='ready'){mode=m.config.device;next();}else if(m.type==='backend'){mode=m.device;}else if(m.type==='prediction'){const fixture=cases[index],expected=fixture.expected;let j=0,max=0,sq=0;for(let i=0;i<4096;i++)if(!fixture.solid[i]){const actual=[m.ux[i]/.05,m.uy[i]/.05,(m.pressure[i]-1/3)/.0025];for(let c=0;c<3;c++){const e=actual[c]-expected[j++];max=Math.max(max,Math.abs(e));sq+=e*e;}}const row={case:fixture.name,max_normalized_error:max,normalized_rmse:Math.sqrt(sq/j),update_ms:m.total_ms,model_ms:m.model_ms,nodes:m.hierarchy_nodes};rows.push(row);if(max>2e-5){out.textContent=JSON.stringify({passed:false,backend:mode,cases:rows},null,2);document.body.dataset.passed='false';return;}index++;next();}else if(m.type==='error'){out.textContent=m.error;document.body.dataset.passed='false';}};
+worker.onerror=e=>{out.textContent=e.message;document.body.dataset.passed='false';};worker.postMessage({type:'init',forceCPU:cpu});}
+document.getElementById('gpu').onclick=()=>test(false);document.getElementById('cpu').onclick=()=>test(true);
+</script>

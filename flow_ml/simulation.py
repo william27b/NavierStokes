@@ -14,13 +14,14 @@ class D2Q9Solver:
         self.source = kernel_path.read_text(encoding="utf-8")
         module = cp.RawModule(code=self.source)
         self.fused = module.get_function("fused")
+        self.reconstruct_state = module.get_function("reconstruct_state")
 
     def solve(
             self, solid, solid_name, *, ux, tau, uy=0.0,
-            max_steps=100_000,
+            max_steps=500_000,
             check_every=100,
-            velocity_tolerance=1e-6,
-            density_tolerance=1e-6,
+            velocity_tolerance=1e-8,
+            density_tolerance=1e-8,
             required_stable_checks=5,
             extra_metadata=None,
             save=True
@@ -34,15 +35,15 @@ class D2Q9Solver:
         ny, nx = solid.shape
 
         rho = cp.ones((ny, nx), dtype=cp.float64)
-        u = cp.empty((2, ny, nx), dtype=cp.float64)
+        u = cp.zeros((2, ny, nx), dtype=cp.float64)
         applied_u = cp.zeros((2, ny, 1), dtype=cp.float64)
         applied_u[0, :] = ux
         applied_u[1, :] = uy
 
-        c = cp.array([(0, 0), (1, 0), (0, 1), (-1, 0), (0, -1), (1, 1), (-1, 1), (-1, -1), (1, -1)])
         w = cp.array([4.0/9, 1.0/9, 1.0/9, 1.0/9, 1.0/9, 1.0/36, 1.0/36, 1.0/36, 1.0/36])
         f = w[:, None, None] * rho[None, :, :]
         f_out = f.copy()
+        snapshot = cp.empty_like(f)
 
         block = (16, 16, 1)
         grid = (
@@ -50,7 +51,8 @@ class D2Q9Solver:
             (ny + block[1] - 1) // block[1],
             1,
         )
-        # Compare post-streaming fields so the check uses the same state we save.
+        # Compare reconstructed boundary fields in a separate snapshot. This
+        # never changes the populations used to advance the simulation.
         fluid = ~solid
         if not bool(cp.any(fluid).get()):
             raise ValueError("Convergence checking needs at least one fluid cell.")
@@ -59,8 +61,9 @@ class D2Q9Solver:
         if not np.isfinite([velocity_tolerance, density_tolerance]).all() or min(velocity_tolerance, density_tolerance) < 0:
             raise ValueError("Convergence tolerances must be finite and nonnegative.")
 
-        previous_rho = f.sum(axis=0)[fluid]
-        previous_u = (cp.einsum("qa,qyx->ayx", c, f) / f.sum(axis=0)[None, :, :])[:, fluid]
+        self.reconstruct_state(grid, block, (f, snapshot, rho, u, applied_u, solid, np.int32(nx), np.int32(ny)))
+        previous_rho = rho[fluid]
+        previous_u = u[:, fluid]
         steps_completed = 0
         stable_checks = 0
         checks_performed = 0
@@ -80,10 +83,9 @@ class D2Q9Solver:
             if steps_completed % check_every != 0 and steps_completed != max_steps:
                 continue
 
-            current_rho = f.sum(axis=0)
-            current_u = cp.einsum("qa,qyx->ayx", c, f) / current_rho[None, :, :]
-            current_rho = current_rho[fluid]
-            current_u = current_u[:, fluid]
+            self.reconstruct_state(grid, block, (f, snapshot, rho, u, applied_u, solid, np.int32(nx), np.int32(ny)))
+            current_rho = rho[fluid]
+            current_u = u[:, fluid]
             checks_performed += 1
 
             # Transfer only the two maximum changes and a finite-field flag to the CPU.
@@ -119,16 +121,17 @@ class D2Q9Solver:
         else:
             print(f"Reached the maximum of {steps_completed:,} steps without convergence.", flush=True)
 
-        # Recompute fields from the final, post-streaming populations.
-        rho_final = f.sum(axis=0)
-        u_final = cp.einsum("qa,qyx->ayx", c, f) / rho_final[None, :, :]
+        # Export the same pre-collision state used by the boundary treatment.
+        # Save its populations too, keeping rho/u consistent with archived f.
+        self.reconstruct_state(grid, block, (f, snapshot, rho, u, applied_u, solid, np.int32(nx), np.int32(ny)))
 
         # Save a new archive each time; previous runs are never overwritten.
         finished_at = datetime.now(tz=ZoneInfo("America/Los_Angeles"))
         run_dir = Path(__file__).resolve().parent / "solver_runs" / (finished_at.strftime("%Y%m%dT%H%M%S.%f%z") + "_" + solid_name)
         if save: run_dir.mkdir(parents=True, exist_ok=False)
-        density_cpu = rho_final.get()
-        velocity_cpu = u_final.get()
+        populations_cpu = snapshot.get()
+        density_cpu = rho.get()
+        velocity_cpu = u.get()
         solid_cpu = solid.get()
         pressure_cpu = density_cpu / 3.0
         valid = np.isfinite(pressure_cpu) & np.isfinite(velocity_cpu).all(axis=0)
@@ -150,7 +153,10 @@ class D2Q9Solver:
                 "last_velocity_change": last_velocity_change,
                 "last_density_change": last_density_change,
             },
-            "field_stage": "after_streaming",
+            "field_stage": "pre_collision_after_boundary_regularization",
+            "population_stage": "pre_collision_after_boundary_regularization",
+            "open_boundary_method": "zou_he_second_order_regularized",
+            "lattice_viscosity": (tau - 0.5) / 3.0,
             "units": "lattice",
             "kernel_sha256": hashlib.sha256(self.source.encode("utf-8")).hexdigest(),
             "invalid_fluid_cells": int(np.count_nonzero(~valid & ~solid_cpu)),
@@ -159,7 +165,7 @@ class D2Q9Solver:
         if save:
             np.savez_compressed(
                 run_dir / "fields.npz",
-                f=f.get(), rho=density_cpu, u=velocity_cpu, pressure=pressure_cpu,
+                f=populations_cpu, rho=density_cpu, u=velocity_cpu, pressure=pressure_cpu,
                 solid=solid_cpu, applied_u=applied_u.get(), solid_name=solid_name,
                 nx=nx, ny=ny, tau=tau, steps=steps_completed, max_steps=max_steps,
                 converged=converged, stop_reason=stop_reason,
@@ -167,7 +173,7 @@ class D2Q9Solver:
             (run_dir / "metadata.json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
 
         return {
-            "f": f.get(),
+            "f": populations_cpu,
             "rho": density_cpu,
             "u": velocity_cpu,
             "pressure": pressure_cpu,

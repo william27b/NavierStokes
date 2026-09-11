@@ -1,0 +1,174 @@
+{
+  "run_id": "20260911T014914.695847-0700_validation_seed_2025",
+  "solid_name": "validation_seed_2025",
+  "finished_at": "2026-09-11T01:49:14.695847-07:00",
+  "nx": 64,
+  "ny": 64,
+  "steps": 87600,
+  "max_steps": 500000,
+  "tau": 0.53,
+  "converged": true,
+  "stop_reason": "converged",
+  "convergence": {
+    "check_every": 100,
+    "velocity_tolerance": 1e-08,
+    "density_tolerance": 1e-08,
+    "required_stable_checks": 5,
+    "stable_checks": 5,
+    "checks_performed": 876,
+    "last_velocity_change": 9.744859801041894e-09,
+    "last_density_change": 1.278654959691039e-11
+  },
+  "field_stage": "pre_collision_after_boundary_regularization",
+  "population_stage": "pre_collision_after_boundary_regularization",
+  "open_boundary_method": "zou_he_second_order_regularized",
+  "lattice_viscosity": 0.010000000000000009,
+  "units": "lattice",
+  "kernel_sha256": "51e11e42099084379d39a97c084a378e9203d8a1c6d1d23fc499011bb8fb2757",
+  "invalid_fluid_cells": 0,
+  "generation": {
+    "seed": 2025,
+    "config": {
+      "nx": 64,
+      "ny": 64,
+      "ux_range": [
+        0.01,
+        0.01
+      ],
+      "tau_range": [
+        0.53,
+        0.53
+      ],
+      "uy": 0.0,
+      "convex_probability": 0.5,
+      "radius_range": [
+        4.0,
+        9.0
+      ],
+      "component_count_choices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "component_count_weights": [
+        45,
+        40,
+        12,
+        3
+      ],
+      "convex_point_choices": [
+        3,
+        4,
+        5
+      ],
+      "convex_point_weights": [
+        45,
+        45,
+        10
+      ],
+      "convex_options": {
+        "irregularity": 0.35,
+        "normalize_area": true
+      },
+      "organic_options": {
+        "roughness": 0.4,
+        "harmonics": 6,
+        "smoothness": 1.5
+      },
+      "boundary_clearance": 4,
+      "max_attempts": 100,
+      "x_mean": 32.0,
+      "y_mean": 32.0,
+      "x_std": 10.666666666666666,
+      "y_std": 10.666666666666666
+    },
+    "sampling": {
+      "method": "component_masks_v3",
+      "component_count": 4,
+      "attempts": 2,
+      "convex_probability": 0.5,
+      "boundary_clearance": 4,
+      "components": [
+        {
+          "kind": "organic",
+          "center": [
+            33.44818220079364,
+            34.20932239242691
+          ],
+          "radius": 6.5881076615090315,
+          "options": {
+            "roughness": 0.4,
+            "harmonics": 6,
+            "smoothness": 1.5,
+            "axis_scale": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0.0
+          }
+        },
+        {
+          "kind": "convex",
+          "center": [
+            5.540009764417206,
+            46.381673762593046
+          ],
+          "radius": 8.84878542072221,
+          "options": {
+            "irregularity": 0.35,
+            "normalize_area": true,
+            "axis_scale": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0.0,
+            "n_points": 5
+          }
+        },
+        {
+          "kind": "convex",
+          "center": [
+            48.56500637080435,
+            13.132527919328442
+          ],
+          "radius": 6.789578167961094,
+          "options": {
+            "irregularity": 0.35,
+            "normalize_area": true,
+            "axis_scale": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0.0,
+            "n_points": 4
+          }
+        },
+        {
+          "kind": "organic",
+          "center": [
+            43.73054217544998,
+            29.85291727587345
+          ],
+          "radius": 7.733712336162699,
+          "options": {
+            "roughness": 0.4,
+            "harmonics": 6,
+            "smoothness": 1.5,
+            "axis_scale": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "split": "validation",
+  "screening": {
+    "max_mach": 0.07297984455010888,
+    "max_density_deviation": 0.01162362652626392,
+    "accepted": true
+  }
+}

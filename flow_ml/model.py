@@ -10,10 +10,13 @@ def make_mlp(in_dim, out_dim, hidden=64):
     )
 
 class MessagePassing(nn.Module):
-    def __init__(self, hidden=64):
+    def __init__(self, hidden=64, global_context=True):
         super().__init__()
+        self.global_context = global_context
+
         self.message = make_mlp(2 * hidden + 2, hidden)
-        self.update = make_mlp(2 * hidden, hidden)
+        update_dim = (3 if global_context else 2) * hidden
+        self.update = make_mlp(update_dim, hidden)
 
     def forward(self, h, edge_index, edge_attr):
         src, dst = edge_index
@@ -23,15 +26,26 @@ class MessagePassing(nn.Module):
         aggregated = torch.zeros_like(h)
         aggregated.index_add_(0, dst, messages)
 
-        update = self.update(torch.concat((h, aggregated), dim=-1))
+        parts = [h, aggregated]
+
+        if self.global_context:
+            global_h = h.mean(dim=0, keepdim=True)
+            global_h = global_h.expand_as(h)
+            parts.append(global_h)
+
+        update = self.update(torch.concat(parts, dim=-1))
         return h + update
 
 class GNN(nn.Module):
-    def __init__(self, hidden=64, layers=4):
+    def __init__(self, hidden=64, layers=4, global_context=True):
         super().__init__()
+        self.global_context = global_context
 
         self.encoder = make_mlp(2, hidden, hidden)
-        self.processors = nn.ModuleList([MessagePassing(hidden) for _ in range(layers)])
+        self.processors = nn.ModuleList([
+            MessagePassing(hidden, global_context=global_context)
+            for _ in range(layers)
+        ])
         self.decoder = make_mlp(hidden, 3, hidden)
 
     def forward(self, x, edge_index, edge_attr):
@@ -44,7 +58,7 @@ class GNN(nn.Module):
 
 def load_model(path):
     memory = torch.load(path, weights_only=True)
-    model = GNN(memory["hidden"], memory["layers"])
+    model = GNN(memory["hidden"], memory["layers"], global_context=memory.get("global_context", False))
 
     model.load_state_dict(memory["model_state"])
     return model

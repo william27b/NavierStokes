@@ -1,0 +1,34 @@
+{
+  "resamples": 10000,
+  "seed": 711,
+  "metrics": {
+    "total_field_mse": {
+      "reduction": 0.7740702025058208,
+      "paired_bootstrap_95_percent_interval": [
+        0.7338784338052335,
+        0.8294025513043356
+      ]
+    },
+    "pressure_mse": {
+      "reduction": 0.7175342936162831,
+      "paired_bootstrap_95_percent_interval": [
+        0.6247844038030087,
+        0.8021681678393959
+      ]
+    },
+    "pressure_gradient_mse": {
+      "reduction": 0.5503013271969688,
+      "paired_bootstrap_95_percent_interval": [
+        0.5238094241350122,
+        0.5831544542168113
+      ]
+    },
+    "far_pressure_mse": {
+      "reduction": 0.7250275050343373,
+      "paired_bootstrap_95_percent_interval": [
+        0.5930048369165748,
+        0.8390623346720506
+      ]
+    }
+  }
+}

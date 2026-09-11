@@ -17,29 +17,13 @@ __device__ inline double equilibrium(
         (1.0 + 3.0 * cu + 4.5 * cu * cu - 1.5 * speed2);
 }
 
-extern "C" __global__
-void fused(
-    const double* f,
-    double* f_out,
-    double* rho,
-    double* u,
-    double* u_in,
-    const unsigned char* solid,
-    int nx,
-    int ny,
-    double tau)
+// Shared by time stepping and read-only state export, so boundary labels use
+// the same reconstruction as the next collision.
+__device__ inline void prepare_cell(
+    const double* f, const double* u_in, int cell, int x, int y,
+    int nx, int ny, double* local_f, double& total, double& ux, double& uy)
 {
-    int x = blockIdx.x * blockDim.x + threadIdx.x;
-    int y = blockIdx.y * blockDim.y + threadIdx.y;
-
-    if (x >= nx || y >= ny) return;
-
     int N = nx * ny;
-    int cell = y * nx + x;
-
-    if (solid[cell]) return;
-
-    double local_f[9];
     for (int q = 0; q < 9; q++) {
         local_f[q] = f[q*N + cell];
     }
@@ -90,7 +74,7 @@ void fused(
             - 0.5 * outlet_rho * outlet_uy;
     }
 
-    double total = 0.0;
+    total = 0.0;
     double mx = 0.0;
     double my = 0.0;
 
@@ -102,8 +86,42 @@ void fused(
         my += CY[q] * fq;
     }
 
-    double ux = mx / total;
-    double uy = my / total;
+    ux = mx / total;
+    uy = my / total;
+
+    if (x == 0 || x == nx - 1) {
+        // Retain the non-equilibrium second moment (viscous stress), removing
+        // higher kinetic moments at open boundaries. Bulk collision stays BGK.
+        // Latt & Chopard, arXiv:physics/0506157, Eq. (10), cs^2 = 1/3.
+        double pxx = 0.0, pxy = 0.0, pyy = 0.0;
+        for (int q = 0; q < 9; q++) {
+            double neq = local_f[q] - equilibrium(q, total, ux, uy);
+            pxx += CX[q] * CX[q] * neq;
+            pxy += CX[q] * CY[q] * neq;
+            pyy += CY[q] * CY[q] * neq;
+        }
+        for (int q = 0; q < 9; q++) {
+            double reg = 4.5 * W[q] * ((CX[q]*CX[q] - 1.0/3.0)*pxx
+                + 2.0*CX[q]*CY[q]*pxy + (CY[q]*CY[q] - 1.0/3.0)*pyy);
+            local_f[q] = equilibrium(q, total, ux, uy) + reg;
+        }
+    }
+}
+
+extern "C" __global__
+void fused(
+    const double* f, double* f_out, double* rho, double* u,
+    double* u_in, const unsigned char* solid, int nx, int ny, double tau)
+{
+    int x = blockIdx.x * blockDim.x + threadIdx.x;
+    int y = blockIdx.y * blockDim.y + threadIdx.y;
+    if (x >= nx || y >= ny) return;
+    int N = nx * ny;
+    int cell = y * nx + x;
+    if (solid[cell]) return;
+
+    double local_f[9], total, ux, uy;
+    prepare_cell(f, u_in, cell, x, y, nx, ny, local_f, total, ux, uy);
 
     rho[cell] = total;
     u[cell] = ux;
@@ -127,9 +145,36 @@ void fused(
 
         int dest_cell = dest_y * nx + dest_x;
 
-        if (solid[dest_cell])
+        if (dest_y < 0 || dest_y >= ny || solid[dest_cell])
             f_out[OPP[q]*N + cell] = post;
         else
             f_out[q*N + dest_cell] = post;
     }
+}
+
+// Reconstruct a separate snapshot. Reading fields must never advance the flow
+// or modify the populations used by the following time step.
+extern "C" __global__
+void reconstruct_state(
+    const double* f, double* corrected_f, double* rho, double* u,
+    const double* u_in, const unsigned char* solid, int nx, int ny)
+{
+    int x = blockIdx.x * blockDim.x + threadIdx.x;
+    int y = blockIdx.y * blockDim.y + threadIdx.y;
+    if (x >= nx || y >= ny) return;
+    int N = nx * ny;
+    int cell = y * nx + x;
+    if (solid[cell]) {
+        rho[cell] = 1.0;
+        u[cell] = 0.0;
+        u[N + cell] = 0.0;
+        for (int q = 0; q < 9; q++) corrected_f[q*N + cell] = W[q];
+        return;
+    }
+    double local_f[9], total, ux, uy;
+    prepare_cell(f, u_in, cell, x, y, nx, ny, local_f, total, ux, uy);
+    rho[cell] = total;
+    u[cell] = ux;
+    u[N + cell] = uy;
+    for (int q = 0; q < 9; q++) corrected_f[q*N + cell] = local_f[q];
 }

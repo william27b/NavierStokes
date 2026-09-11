@@ -1,0 +1,583 @@
+{
+  "split": "test",
+  "config": {
+    "nx": 64,
+    "ny": 64,
+    "ux_range": [
+      0.01,
+      0.01
+    ],
+    "tau_range": [
+      0.53,
+      0.53
+    ],
+    "uy": 0.0,
+    "convex_probability": 0.5,
+    "radius_range": [
+      4.0,
+      9.0
+    ],
+    "component_count_choices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "component_count_weights": [
+      45,
+      40,
+      12,
+      3
+    ],
+    "convex_point_choices": [
+      3,
+      4,
+      5
+    ],
+    "convex_point_weights": [
+      45,
+      45,
+      10
+    ],
+    "convex_options": {
+      "irregularity": 0.35,
+      "normalize_area": true
+    },
+    "organic_options": {
+      "roughness": 0.4,
+      "harmonics": 6,
+      "smoothness": 1.5
+    },
+    "boundary_clearance": 4,
+    "max_attempts": 100,
+    "x_mean": 32.0,
+    "y_mean": 32.0,
+    "x_std": 10.666666666666666,
+    "y_std": 10.666666666666666
+  },
+  "records": [
+    {
+      "seed": 3000,
+      "run_id": "20260911T014945.388405-0700_test_seed_3000",
+      "max_mach": 0.03006968602029957,
+      "max_density_deviation": 0.003439323614140344,
+      "accepted": true
+    },
+    {
+      "seed": 3001,
+      "run_id": "20260911T014948.617555-0700_test_seed_3001",
+      "max_mach": 0.045023935219608915,
+      "max_density_deviation": 0.00425308974753702,
+      "accepted": true
+    },
+    {
+      "seed": 3002,
+      "run_id": "20260911T014950.350108-0700_test_seed_3002",
+      "max_mach": 0.033962705405834515,
+      "max_density_deviation": 0.003548809735696379,
+      "accepted": true
+    },
+    {
+      "seed": 3003,
+      "run_id": "20260911T014951.867322-0700_test_seed_3003",
+      "max_mach": 0.03342437757260346,
+      "max_density_deviation": 0.0036452272931759566,
+      "accepted": true
+    },
+    {
+      "seed": 3004,
+      "run_id": "20260911T014955.755042-0700_test_seed_3004",
+      "max_mach": 0.04467390101093073,
+      "max_density_deviation": 0.004359683436839568,
+      "accepted": true
+    },
+    {
+      "seed": 3005,
+      "run_id": "20260911T014957.177353-0700_test_seed_3005",
+      "max_mach": 0.03284928069949473,
+      "max_density_deviation": 0.003563950458688403,
+      "accepted": true
+    },
+    {
+      "seed": 3006,
+      "run_id": "20260911T014958.504913-0700_test_seed_3006",
+      "max_mach": 0.03280902086647066,
+      "max_density_deviation": 0.0036309978842017365,
+      "accepted": true
+    },
+    {
+      "seed": 3007,
+      "run_id": "20260911T015001.299194-0700_test_seed_3007",
+      "max_mach": 0.03512750952077414,
+      "max_density_deviation": 0.0036801636853587283,
+      "accepted": true
+    },
+    {
+      "seed": 3008,
+      "run_id": "20260911T015006.080855-0700_test_seed_3008",
+      "max_mach": 0.04645423822211302,
+      "max_density_deviation": 0.00479272631007488,
+      "accepted": true
+    },
+    {
+      "seed": 3009,
+      "run_id": "20260911T015007.601951-0700_test_seed_3009",
+      "max_mach": 0.037168825398854785,
+      "max_density_deviation": 0.0038249444697855406,
+      "accepted": true
+    },
+    {
+      "seed": 3010,
+      "run_id": "20260911T015010.291234-0700_test_seed_3010",
+      "max_mach": 0.026239733678904927,
+      "max_density_deviation": 0.0033701195106115023,
+      "accepted": true
+    },
+    {
+      "seed": 3011,
+      "run_id": "20260911T015012.482432-0700_test_seed_3011",
+      "max_mach": 0.05738761398338456,
+      "max_density_deviation": 0.005032107729865176,
+      "accepted": true
+    },
+    {
+      "seed": 3012,
+      "run_id": "20260911T015014.265089-0700_test_seed_3012",
+      "max_mach": 0.029911106431431942,
+      "max_density_deviation": 0.003450000482480009,
+      "accepted": true
+    },
+    {
+      "seed": 3013,
+      "run_id": "20260911T015016.288815-0700_test_seed_3013",
+      "max_mach": 0.02949232329750472,
+      "max_density_deviation": 0.0034302646316533014,
+      "accepted": true
+    },
+    {
+      "seed": 3014,
+      "run_id": "20260911T015017.665044-0700_test_seed_3014",
+      "max_mach": 0.04425953619318019,
+      "max_density_deviation": 0.003976035009946699,
+      "accepted": true
+    },
+    {
+      "seed": 3015,
+      "run_id": "20260911T015019.638269-0700_test_seed_3015",
+      "max_mach": 0.029880697490352853,
+      "max_density_deviation": 0.0035322220116791314,
+      "accepted": true
+    },
+    {
+      "seed": 3016,
+      "run_id": "20260911T015021.601217-0700_test_seed_3016",
+      "max_mach": 0.039970020483088606,
+      "max_density_deviation": 0.003927494575466373,
+      "accepted": true
+    },
+    {
+      "seed": 3017,
+      "run_id": "20260911T015024.357678-0700_test_seed_3017",
+      "max_mach": 0.030647489248024254,
+      "max_density_deviation": 0.0035119525283402453,
+      "accepted": true
+    },
+    {
+      "seed": 3018,
+      "run_id": "20260911T015026.913478-0700_test_seed_3018",
+      "max_mach": 0.050996961020041386,
+      "max_density_deviation": 0.004547967002750175,
+      "accepted": true
+    },
+    {
+      "seed": 3019,
+      "run_id": "20260911T015028.452064-0700_test_seed_3019",
+      "max_mach": 0.03279584554527536,
+      "max_density_deviation": 0.003520298359303453,
+      "accepted": true
+    },
+    {
+      "seed": 3020,
+      "run_id": "20260911T015030.045864-0700_test_seed_3020",
+      "max_mach": 0.031447815617646625,
+      "max_density_deviation": 0.0035338394942570073,
+      "accepted": true
+    },
+    {
+      "seed": 3021,
+      "run_id": "20260911T015032.145816-0700_test_seed_3021",
+      "max_mach": 0.029174765336590174,
+      "max_density_deviation": 0.003494955759188345,
+      "accepted": true
+    },
+    {
+      "seed": 3022,
+      "run_id": "20260911T015033.918862-0700_test_seed_3022",
+      "max_mach": 0.029092399424666543,
+      "max_density_deviation": 0.0034293068937785165,
+      "accepted": true
+    },
+    {
+      "seed": 3023,
+      "run_id": "20260911T015035.576983-0700_test_seed_3023",
+      "max_mach": 0.033126474559843834,
+      "max_density_deviation": 0.003665041321380569,
+      "accepted": true
+    },
+    {
+      "seed": 3024,
+      "run_id": "20260911T015037.518821-0700_test_seed_3024",
+      "max_mach": 0.029394443119565013,
+      "max_density_deviation": 0.0034265885369648696,
+      "accepted": true
+    },
+    {
+      "seed": 3025,
+      "run_id": "20260911T015039.382895-0700_test_seed_3025",
+      "max_mach": 0.038681255716846906,
+      "max_density_deviation": 0.003918544509766919,
+      "accepted": true
+    },
+    {
+      "seed": 3026,
+      "run_id": "20260911T015041.828792-0700_test_seed_3026",
+      "max_mach": 0.05491583656636661,
+      "max_density_deviation": 0.004654146668312764,
+      "accepted": true
+    },
+    {
+      "seed": 3027,
+      "run_id": "20260911T015044.201629-0700_test_seed_3027",
+      "max_mach": 0.03209979863532839,
+      "max_density_deviation": 0.0035623110495166532,
+      "accepted": true
+    },
+    {
+      "seed": 3028,
+      "run_id": "20260911T015046.755033-0700_test_seed_3028",
+      "max_mach": 0.030558355912892,
+      "max_density_deviation": 0.0034306152212739693,
+      "accepted": true
+    },
+    {
+      "seed": 3029,
+      "run_id": "20260911T015048.516019-0700_test_seed_3029",
+      "max_mach": 0.047501789354950114,
+      "max_density_deviation": 0.004310606271049844,
+      "accepted": true
+    },
+    {
+      "seed": 3030,
+      "run_id": "20260911T015051.341057-0700_test_seed_3030",
+      "max_mach": 0.04245109538328793,
+      "max_density_deviation": 0.004975444530796347,
+      "accepted": true
+    },
+    {
+      "seed": 3031,
+      "run_id": "20260911T015053.516828-0700_test_seed_3031",
+      "max_mach": 0.032693630814010985,
+      "max_density_deviation": 0.003574819015388142,
+      "accepted": true
+    },
+    {
+      "seed": 3032,
+      "run_id": "20260911T015055.970759-0700_test_seed_3032",
+      "max_mach": 0.048007001881748106,
+      "max_density_deviation": 0.004361261186740073,
+      "accepted": true
+    },
+    {
+      "seed": 3033,
+      "run_id": "20260911T015058.651312-0700_test_seed_3033",
+      "max_mach": 0.03728646308380452,
+      "max_density_deviation": 0.0037998825973406536,
+      "accepted": true
+    },
+    {
+      "seed": 3034,
+      "run_id": "20260911T015100.250120-0700_test_seed_3034",
+      "max_mach": 0.03388992479828269,
+      "max_density_deviation": 0.003558347612256263,
+      "accepted": true
+    },
+    {
+      "seed": 3035,
+      "run_id": "20260911T015102.618770-0700_test_seed_3035",
+      "max_mach": 0.03254856410346367,
+      "max_density_deviation": 0.003591785556145366,
+      "accepted": true
+    },
+    {
+      "seed": 3036,
+      "run_id": "20260911T015104.067108-0700_test_seed_3036",
+      "max_mach": 0.035724238880540216,
+      "max_density_deviation": 0.0036288311760352965,
+      "accepted": true
+    },
+    {
+      "seed": 3037,
+      "run_id": "20260911T015106.457440-0700_test_seed_3037",
+      "max_mach": 0.029557915554382128,
+      "max_density_deviation": 0.003562462414935963,
+      "accepted": true
+    },
+    {
+      "seed": 3038,
+      "run_id": "20260911T015109.199560-0700_test_seed_3038",
+      "max_mach": 0.03920500534283979,
+      "max_density_deviation": 0.004099901952694607,
+      "accepted": true
+    },
+    {
+      "seed": 3039,
+      "run_id": "20260911T015111.501546-0700_test_seed_3039",
+      "max_mach": 0.028747196886456248,
+      "max_density_deviation": 0.003402393879495369,
+      "accepted": true
+    }
+  ],
+  "attempts_this_run": [
+    {
+      "seed": 3000,
+      "max_mach": 0.03006968602029957,
+      "max_density_deviation": 0.003439323614140344,
+      "accepted": true
+    },
+    {
+      "seed": 3001,
+      "max_mach": 0.045023935219608915,
+      "max_density_deviation": 0.00425308974753702,
+      "accepted": true
+    },
+    {
+      "seed": 3002,
+      "max_mach": 0.033962705405834515,
+      "max_density_deviation": 0.003548809735696379,
+      "accepted": true
+    },
+    {
+      "seed": 3003,
+      "max_mach": 0.03342437757260346,
+      "max_density_deviation": 0.0036452272931759566,
+      "accepted": true
+    },
+    {
+      "seed": 3004,
+      "max_mach": 0.04467390101093073,
+      "max_density_deviation": 0.004359683436839568,
+      "accepted": true
+    },
+    {
+      "seed": 3005,
+      "max_mach": 0.03284928069949473,
+      "max_density_deviation": 0.003563950458688403,
+      "accepted": true
+    },
+    {
+      "seed": 3006,
+      "max_mach": 0.03280902086647066,
+      "max_density_deviation": 0.0036309978842017365,
+      "accepted": true
+    },
+    {
+      "seed": 3007,
+      "max_mach": 0.03512750952077414,
+      "max_density_deviation": 0.0036801636853587283,
+      "accepted": true
+    },
+    {
+      "seed": 3008,
+      "max_mach": 0.04645423822211302,
+      "max_density_deviation": 0.00479272631007488,
+      "accepted": true
+    },
+    {
+      "seed": 3009,
+      "max_mach": 0.037168825398854785,
+      "max_density_deviation": 0.0038249444697855406,
+      "accepted": true
+    },
+    {
+      "seed": 3010,
+      "max_mach": 0.026239733678904927,
+      "max_density_deviation": 0.0033701195106115023,
+      "accepted": true
+    },
+    {
+      "seed": 3011,
+      "max_mach": 0.05738761398338456,
+      "max_density_deviation": 0.005032107729865176,
+      "accepted": true
+    },
+    {
+      "seed": 3012,
+      "max_mach": 0.029911106431431942,
+      "max_density_deviation": 0.003450000482480009,
+      "accepted": true
+    },
+    {
+      "seed": 3013,
+      "max_mach": 0.02949232329750472,
+      "max_density_deviation": 0.0034302646316533014,
+      "accepted": true
+    },
+    {
+      "seed": 3014,
+      "max_mach": 0.04425953619318019,
+      "max_density_deviation": 0.003976035009946699,
+      "accepted": true
+    },
+    {
+      "seed": 3015,
+      "max_mach": 0.029880697490352853,
+      "max_density_deviation": 0.0035322220116791314,
+      "accepted": true
+    },
+    {
+      "seed": 3016,
+      "max_mach": 0.039970020483088606,
+      "max_density_deviation": 0.003927494575466373,
+      "accepted": true
+    },
+    {
+      "seed": 3017,
+      "max_mach": 0.030647489248024254,
+      "max_density_deviation": 0.0035119525283402453,
+      "accepted": true
+    },
+    {
+      "seed": 3018,
+      "max_mach": 0.050996961020041386,
+      "max_density_deviation": 0.004547967002750175,
+      "accepted": true
+    },
+    {
+      "seed": 3019,
+      "max_mach": 0.03279584554527536,
+      "max_density_deviation": 0.003520298359303453,
+      "accepted": true
+    },
+    {
+      "seed": 3020,
+      "max_mach": 0.031447815617646625,
+      "max_density_deviation": 0.0035338394942570073,
+      "accepted": true
+    },
+    {
+      "seed": 3021,
+      "max_mach": 0.029174765336590174,
+      "max_density_deviation": 0.003494955759188345,
+      "accepted": true
+    },
+    {
+      "seed": 3022,
+      "max_mach": 0.029092399424666543,
+      "max_density_deviation": 0.0034293068937785165,
+      "accepted": true
+    },
+    {
+      "seed": 3023,
+      "max_mach": 0.033126474559843834,
+      "max_density_deviation": 0.003665041321380569,
+      "accepted": true
+    },
+    {
+      "seed": 3024,
+      "max_mach": 0.029394443119565013,
+      "max_density_deviation": 0.0034265885369648696,
+      "accepted": true
+    },
+    {
+      "seed": 3025,
+      "max_mach": 0.038681255716846906,
+      "max_density_deviation": 0.003918544509766919,
+      "accepted": true
+    },
+    {
+      "seed": 3026,
+      "max_mach": 0.05491583656636661,
+      "max_density_deviation": 0.004654146668312764,
+      "accepted": true
+    },
+    {
+      "seed": 3027,
+      "max_mach": 0.03209979863532839,
+      "max_density_deviation": 0.0035623110495166532,
+      "accepted": true
+    },
+    {
+      "seed": 3028,
+      "max_mach": 0.030558355912892,
+      "max_density_deviation": 0.0034306152212739693,
+      "accepted": true
+    },
+    {
+      "seed": 3029,
+      "max_mach": 0.047501789354950114,
+      "max_density_deviation": 0.004310606271049844,
+      "accepted": true
+    },
+    {
+      "seed": 3030,
+      "max_mach": 0.04245109538328793,
+      "max_density_deviation": 0.004975444530796347,
+      "accepted": true
+    },
+    {
+      "seed": 3031,
+      "max_mach": 0.032693630814010985,
+      "max_density_deviation": 0.003574819015388142,
+      "accepted": true
+    },
+    {
+      "seed": 3032,
+      "max_mach": 0.048007001881748106,
+      "max_density_deviation": 0.004361261186740073,
+      "accepted": true
+    },
+    {
+      "seed": 3033,
+      "max_mach": 0.03728646308380452,
+      "max_density_deviation": 0.0037998825973406536,
+      "accepted": true
+    },
+    {
+      "seed": 3034,
+      "max_mach": 0.03388992479828269,
+      "max_density_deviation": 0.003558347612256263,
+      "accepted": true
+    },
+    {
+      "seed": 3035,
+      "max_mach": 0.03254856410346367,
+      "max_density_deviation": 0.003591785556145366,
+      "accepted": true
+    },
+    {
+      "seed": 3036,
+      "max_mach": 0.035724238880540216,
+      "max_density_deviation": 0.0036288311760352965,
+      "accepted": true
+    },
+    {
+      "seed": 3037,
+      "max_mach": 0.029557915554382128,
+      "max_density_deviation": 0.003562462414935963,
+      "accepted": true
+    },
+    {
+      "seed": 3038,
+      "max_mach": 0.03920500534283979,
+      "max_density_deviation": 0.004099901952694607,
+      "accepted": true
+    },
+    {
+      "seed": 3039,
+      "max_mach": 0.028747196886456248,
+      "max_density_deviation": 0.003402393879495369,
+      "accepted": true
+    }
+  ],
+  "next_seed": 3040
+}

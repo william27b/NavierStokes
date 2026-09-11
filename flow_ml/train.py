@@ -13,33 +13,47 @@ from utils import plot
 import json
 import os
 
-def train(model, loader, device, epochs=1_000):
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+def train(model, loader, device, epochs=40, *, optimizer=None, start_epoch=0,
+          on_epoch_end=None):
+    if optimizer is None:
+        optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     
     for epoch in range(epochs):
+        model.train()
         total_loss = 0.0
+        case_count = 0
 
-        for inputs in loader:
-            inputs = {
-                key: value.to(device)
-                for key, value in inputs.items()
-            }
+        for batch in loader:
             optimizer.zero_grad(set_to_none=True)
 
-            prediction = model(
-                inputs["x"],
-                inputs["edge_index"],
-                inputs["edge_attr"],
-            )
+            for inputs in batch:
+                inputs = {
+                    key: value.to(device)
+                    for key, value in inputs.items()
+                }
 
-            loss = (prediction - inputs["y"]).square().mean()
-            loss.backward()
+                prediction = model(
+                    inputs["x"],
+                    inputs["edge_index"],
+                    inputs["edge_attr"],
+                )
+
+                loss = (prediction - inputs["y"]).square().mean()
+                (loss / len(batch)).backward()
+
+                total_loss += loss.item()
+                case_count += 1
+
 
             optimizer.step()
 
-            total_loss += loss.item()
+        epoch_number = start_epoch + epoch + 1
+        mean_loss = total_loss / case_count
+        print(f"Epoch {epoch_number}: {mean_loss:.6f}", flush=True)
+        if on_epoch_end is not None:
+            on_epoch_end(epoch_number, mean_loss)
 
-        print(f"Epoch {epoch + 1}: {total_loss / len(loader):.6f}")
+    return optimizer
 
 if __name__ == "__main__":
     dataset_dir = Path(__file__).resolve().parent.parent / "flow_ml/solver_runs"
@@ -58,20 +72,24 @@ if __name__ == "__main__":
     print(f"Training on {len(cases)} cases")
 
     dataset = FlowDataset(cases)
-    loader = DataLoader(dataset, batch_size=None, shuffle=True)
+    loader = DataLoader(dataset, batch_size=4, shuffle=True, collate_fn=list,)
 
     torch.manual_seed(0)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = GNN(hidden=64, layers=4).to(device)
+
+    hidden, layers = 64, 8
+    model = GNN(hidden=hidden, layers=layers, global_context=True).to(device)
     model.train()
 
-    train(model, loader, device, epochs=10)
+    optimizer = train(model, loader, device, epochs=40)
 
     torch.save(
         {
             "model_state": model.state_dict(),
-            "hidden": 64,
-            "layers": 4,
+            "optimizer_state": optimizer.state_dict(),
+            "hidden": hidden,
+            "layers": layers,
+            "global_context": model.global_context,
         },
-        Path(__file__).with_name("model_v2.pt"),
+        Path(__file__).with_name("model_v4.pt"),
     )

@@ -1,0 +1,15 @@
+{
+  "nx": 64,
+  "ny": 64,
+  "ux": 0.01,
+  "uy": 0,
+  "tau": 0.53,
+  "outlet_pressure": 0.3333333333333333,
+  "epoch": 150,
+  "levels": 5,
+  "checkpoint_sha256": "48c4ab29caacc424feefaac3f313fb4fde9628dcde99917b14ec37b6e6c02353",
+  "model_sha256": "f17a707aee97becab3ee65cf82bc5b527e77478de06a22e0bdc9616d68169f3b",
+  "model_bytes": 2827943,
+  "onnx_opset": 18,
+  "runtime_version": "1.29.0"
+}

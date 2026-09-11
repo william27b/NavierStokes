@@ -1,0 +1,27 @@
+{
+  "finite_model": true,
+  "finite_optimizer": true,
+  "optimizer_parameter_states": 280,
+  "optimizer_step_counts": [
+    11250
+  ],
+  "selected_epoch": 150,
+  "old_checkpoint_unchanged": true,
+  "test_inventory_unchanged": true,
+  "benchmark_device": "NVIDIA GeForce RTX 4090",
+  "benchmark_note": "Single cached graph, no concurrent training; includes Python model dispatch, excludes graph construction and disk IO.",
+  "inference": {
+    "old_gnn": {
+      "median_ms": 2.470749999702093,
+      "p90_ms": 6.037799099067343,
+      "parameters": 241155
+    },
+    "multiscale": {
+      "median_ms": 8.084649500233354,
+      "p90_ms": 8.756940001330804,
+      "parameters": 697731
+    }
+  },
+  "worst_total_seed": 3008,
+  "worst_pressure_seed": 3008
+}

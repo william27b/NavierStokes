@@ -1,0 +1,5016 @@
+{
+  "source_checkpoint": "/home/william/NavierStokes/flow_ml/model_v4.pt",
+  "source_checkpoint_sha256": "21b28ba50bbcdf6e38361c7089630d2ad97e0294ca2d1c3158309eba822c7069",
+  "source_optimizer_restored": false,
+  "starting_epoch": 40,
+  "requested_additional_epochs": 100,
+  "case_count": 300,
+  "device": "cuda",
+  "dataset_inventory_sha256": "597b1ddc108c300804539876dabf762f1880e62630df6d2eaa4198e0a0c9d35a",
+  "dataset_inventory": [
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005027.108699-0700_organic, organic",
+      "seed": 1000,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113027120978019
+        },
+        "fields.npz": {
+          "bytes": 335868,
+          "mtime_ns": 1789113027117723318
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005028.789260-0700_convex (3 points), convex (5 points)",
+      "seed": 1001,
+      "files": {
+        "metadata.json": {
+          "bytes": 3072,
+          "mtime_ns": 1789113028801157850
+        },
+        "fields.npz": {
+          "bytes": 338732,
+          "mtime_ns": 1789113028797723350
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005031.349858-0700_convex (4 points)",
+      "seed": 1002,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113031362969466
+        },
+        "fields.npz": {
+          "bytes": 346983,
+          "mtime_ns": 1789113031357723465
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005034.077272-0700_organic",
+      "seed": 1003,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113034089565426
+        },
+        "fields.npz": {
+          "bytes": 343511,
+          "mtime_ns": 1789113034085724125
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005036.008872-0700_organic",
+      "seed": 1004,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113036021869694
+        },
+        "fields.npz": {
+          "bytes": 347274,
+          "mtime_ns": 1789113036017724593
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005037.781747-0700_organic",
+      "seed": 1005,
+      "files": {
+        "metadata.json": {
+          "bytes": 2581,
+          "mtime_ns": 1789113037794385023
+        },
+        "fields.npz": {
+          "bytes": 344593,
+          "mtime_ns": 1789113037789725021
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005040.602453-0700_organic",
+      "seed": 1006,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113040615822143
+        },
+        "fields.npz": {
+          "bytes": 346718,
+          "mtime_ns": 1789113040609725143
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005043.201561-0700_organic",
+      "seed": 1007,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113043215190993
+        },
+        "fields.npz": {
+          "bytes": 349599,
+          "mtime_ns": 1789113043209725192
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005046.232506-0700_organic",
+      "seed": 1008,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113046243996650
+        },
+        "fields.npz": {
+          "bytes": 333672,
+          "mtime_ns": 1789113046237725250
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005048.732399-0700_organic",
+      "seed": 1009,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113048745673904
+        },
+        "fields.npz": {
+          "bytes": 348486,
+          "mtime_ns": 1789113048741725304
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005050.166248-0700_organic",
+      "seed": 1010,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113050178461636
+        },
+        "fields.npz": {
+          "bytes": 337275,
+          "mtime_ns": 1789113050173725336
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005053.093152-0700_convex (3 points)",
+      "seed": 1011,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113053106104102
+        },
+        "fields.npz": {
+          "bytes": 351049,
+          "mtime_ns": 1789113053101725402
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005055.910827-0700_convex (4 points)",
+      "seed": 1012,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113055922496069
+        },
+        "fields.npz": {
+          "bytes": 339017,
+          "mtime_ns": 1789113055917725468
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005057.718021-0700_organic, organic",
+      "seed": 1013,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113057729884915
+        },
+        "fields.npz": {
+          "bytes": 335475,
+          "mtime_ns": 1789113057725725515
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005059.810570-0700_organic",
+      "seed": 1014,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113059822609469
+        },
+        "fields.npz": {
+          "bytes": 338027,
+          "mtime_ns": 1789113059817725569
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005102.098433-0700_convex (3 points)",
+      "seed": 1015,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113062112102127
+        },
+        "fields.npz": {
+          "bytes": 351083,
+          "mtime_ns": 1789113062105725627
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005104.594193-0700_convex (4 points)",
+      "seed": 1016,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113064606774189
+        },
+        "fields.npz": {
+          "bytes": 346217,
+          "mtime_ns": 1789113064601725689
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005106.316939-0700_convex (3 points), organic, convex (3 points)",
+      "seed": 1017,
+      "files": {
+        "metadata.json": {
+          "bytes": 3507,
+          "mtime_ns": 1789113066328363231
+        },
+        "fields.npz": {
+          "bytes": 328040,
+          "mtime_ns": 1789113066325725731
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005109.020598-0700_organic, organic",
+      "seed": 1018,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113069032891696
+        },
+        "fields.npz": {
+          "bytes": 336705,
+          "mtime_ns": 1789113069029725796
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005111.239636-0700_convex (4 points)",
+      "seed": 1019,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113071251808549
+        },
+        "fields.npz": {
+          "bytes": 342120,
+          "mtime_ns": 1789113071245725849
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005113.364307-0700_convex (3 points), organic",
+      "seed": 1020,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113073376018897
+        },
+        "fields.npz": {
+          "bytes": 340225,
+          "mtime_ns": 1789113073369725897
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005115.902539-0700_convex (5 points)",
+      "seed": 1021,
+      "files": {
+        "metadata.json": {
+          "bytes": 2606,
+          "mtime_ns": 1789113075915711555
+        },
+        "fields.npz": {
+          "bytes": 347961,
+          "mtime_ns": 1789113075909725955
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005118.241544-0700_organic",
+      "seed": 1022,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113078253600008
+        },
+        "fields.npz": {
+          "bytes": 341519,
+          "mtime_ns": 1789113078249726008
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005119.740814-0700_organic",
+      "seed": 1023,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113079753108823
+        },
+        "fields.npz": {
+          "bytes": 342460,
+          "mtime_ns": 1789113079749726023
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005122.594826-0700_organic",
+      "seed": 1024,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113082607250901
+        },
+        "fields.npz": {
+          "bytes": 336466,
+          "mtime_ns": 1789113082601726001
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005124.363745-0700_convex (4 points), organic",
+      "seed": 1025,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113084375387287
+        },
+        "fields.npz": {
+          "bytes": 338069,
+          "mtime_ns": 1789113084369725987
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005126.348810-0700_organic",
+      "seed": 1026,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113086362460572
+        },
+        "fields.npz": {
+          "bytes": 349958,
+          "mtime_ns": 1789113086357725972
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005128.498119-0700_organic",
+      "seed": 1027,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113088511637560
+        },
+        "fields.npz": {
+          "bytes": 350953,
+          "mtime_ns": 1789113088505725960
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005130.880611-0700_organic, organic",
+      "seed": 1028,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113090893572148
+        },
+        "fields.npz": {
+          "bytes": 346030,
+          "mtime_ns": 1789113090889725948
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005132.474549-0700_convex (4 points), convex (5 points)",
+      "seed": 1029,
+      "files": {
+        "metadata.json": {
+          "bytes": 3070,
+          "mtime_ns": 1789113092486692341
+        },
+        "fields.npz": {
+          "bytes": 338829,
+          "mtime_ns": 1789113092481725941
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005135.278320-0700_organic",
+      "seed": 1030,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113095290800019
+        },
+        "fields.npz": {
+          "bytes": 344709,
+          "mtime_ns": 1789113095285725919
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005136.833298-0700_convex (4 points), convex (3 points)",
+      "seed": 1031,
+      "files": {
+        "metadata.json": {
+          "bytes": 3073,
+          "mtime_ns": 1789113096846395726
+        },
+        "fields.npz": {
+          "bytes": 343497,
+          "mtime_ns": 1789113096841725826
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005139.157980-0700_organic, convex (5 points), convex (3 points)",
+      "seed": 1032,
+      "files": {
+        "metadata.json": {
+          "bytes": 3508,
+          "mtime_ns": 1789113099168972387
+        },
+        "fields.npz": {
+          "bytes": 321772,
+          "mtime_ns": 1789113099165725688
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005140.904519-0700_organic, convex (3 points)",
+      "seed": 1033,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113100916349583
+        },
+        "fields.npz": {
+          "bytes": 336400,
+          "mtime_ns": 1789113100913725583
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005148.866050-0700_organic, organic, organic, convex (3 points)",
+      "seed": 1034,
+      "files": {
+        "metadata.json": {
+          "bytes": 3918,
+          "mtime_ns": 1789113108876460531
+        },
+        "fields.npz": {
+          "bytes": 312032,
+          "mtime_ns": 1789113108873725531
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005150.518673-0700_organic",
+      "seed": 1035,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113110530876754
+        },
+        "fields.npz": {
+          "bytes": 339736,
+          "mtime_ns": 1789113110525725554
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005152.515703-0700_convex (3 points)",
+      "seed": 1036,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113112529230067
+        },
+        "fields.npz": {
+          "bytes": 351472,
+          "mtime_ns": 1789113112525725567
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005154.927622-0700_organic",
+      "seed": 1037,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113114940622274
+        },
+        "fields.npz": {
+          "bytes": 345912,
+          "mtime_ns": 1789113114937725574
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005157.630657-0700_organic",
+      "seed": 1038,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113117643891182
+        },
+        "fields.npz": {
+          "bytes": 346986,
+          "mtime_ns": 1789113117637725582
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005159.649926-0700_organic, convex (3 points), convex (3 points)",
+      "seed": 1039,
+      "files": {
+        "metadata.json": {
+          "bytes": 3511,
+          "mtime_ns": 1789113119661109298
+        },
+        "fields.npz": {
+          "bytes": 326166,
+          "mtime_ns": 1789113119657725598
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005201.613555-0700_convex (4 points), convex (4 points)",
+      "seed": 1040,
+      "files": {
+        "metadata.json": {
+          "bytes": 3070,
+          "mtime_ns": 1789113121625185746
+        },
+        "fields.npz": {
+          "bytes": 341432,
+          "mtime_ns": 1789113121621725646
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005204.013888-0700_organic, convex (3 points), convex (4 points)",
+      "seed": 1041,
+      "files": {
+        "metadata.json": {
+          "bytes": 3507,
+          "mtime_ns": 1789113124024656805
+        },
+        "fields.npz": {
+          "bytes": 321637,
+          "mtime_ns": 1789113124021725705
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005206.885621-0700_convex (4 points)",
+      "seed": 1042,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113126898192776
+        },
+        "fields.npz": {
+          "bytes": 351312,
+          "mtime_ns": 1789113126893725776
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005208.352343-0700_convex (4 points)",
+      "seed": 1043,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113128364955440
+        },
+        "fields.npz": {
+          "bytes": 341869,
+          "mtime_ns": 1789113128361725741
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005211.052441-0700_organic",
+      "seed": 1044,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113131064576344
+        },
+        "fields.npz": {
+          "bytes": 338626,
+          "mtime_ns": 1789113131061725644
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005212.094083-0700_organic, convex (4 points)",
+      "seed": 1045,
+      "files": {
+        "metadata.json": {
+          "bytes": 3048,
+          "mtime_ns": 1789113132105637307
+        },
+        "fields.npz": {
+          "bytes": 330912,
+          "mtime_ns": 1789113132101725607
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005214.075039-0700_convex (3 points)",
+      "seed": 1046,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113134088146736
+        },
+        "fields.npz": {
+          "bytes": 348023,
+          "mtime_ns": 1789113134081725536
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005217.111774-0700_organic, convex (3 points)",
+      "seed": 1047,
+      "files": {
+        "metadata.json": {
+          "bytes": 3048,
+          "mtime_ns": 1789113137124107322
+        },
+        "fields.npz": {
+          "bytes": 338853,
+          "mtime_ns": 1789113137117725522
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005218.655653-0700_organic, convex (3 points)",
+      "seed": 1048,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113138668124243
+        },
+        "fields.npz": {
+          "bytes": 346650,
+          "mtime_ns": 1789113138661725542
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005220.550137-0700_convex (4 points)",
+      "seed": 1049,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113140562653268
+        },
+        "fields.npz": {
+          "bytes": 345163,
+          "mtime_ns": 1789113140557725568
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005223.638939-0700_organic, organic",
+      "seed": 1050,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113143651753309
+        },
+        "fields.npz": {
+          "bytes": 344336,
+          "mtime_ns": 1789113143645725609
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005226.254477-0700_organic, convex (3 points)",
+      "seed": 1051,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113146267446647
+        },
+        "fields.npz": {
+          "bytes": 346940,
+          "mtime_ns": 1789113146261725647
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005228.241567-0700_organic",
+      "seed": 1052,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113148253683576
+        },
+        "fields.npz": {
+          "bytes": 339199,
+          "mtime_ns": 1789113148249725676
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005230.749371-0700_organic, organic",
+      "seed": 1053,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113150761349412
+        },
+        "fields.npz": {
+          "bytes": 342555,
+          "mtime_ns": 1789113150757725712
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005233.536066-0700_convex (3 points)",
+      "seed": 1054,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113153548493243
+        },
+        "fields.npz": {
+          "bytes": 340054,
+          "mtime_ns": 1789113153545725743
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005235.067272-0700_convex (3 points), organic",
+      "seed": 1055,
+      "files": {
+        "metadata.json": {
+          "bytes": 3049,
+          "mtime_ns": 1789113155079053259
+        },
+        "fields.npz": {
+          "bytes": 331838,
+          "mtime_ns": 1789113155073725759
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005237.648607-0700_organic, organic, convex (3 points)",
+      "seed": 1056,
+      "files": {
+        "metadata.json": {
+          "bytes": 3483,
+          "mtime_ns": 1789113157660016086
+        },
+        "fields.npz": {
+          "bytes": 329495,
+          "mtime_ns": 1789113157653725786
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005240.372566-0700_convex (4 points)",
+      "seed": 1057,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113160386119118
+        },
+        "fields.npz": {
+          "bytes": 348248,
+          "mtime_ns": 1789113160381725818
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005243.055546-0700_convex (4 points)",
+      "seed": 1058,
+      "files": {
+        "metadata.json": {
+          "bytes": 2607,
+          "mtime_ns": 1789113163068039852
+        },
+        "fields.npz": {
+          "bytes": 341097,
+          "mtime_ns": 1789113163061725852
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005245.688320-0700_organic, convex (4 points)",
+      "seed": 1059,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113165701076486
+        },
+        "fields.npz": {
+          "bytes": 345140,
+          "mtime_ns": 1789113165697725886
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005246.952154-0700_convex (3 points), convex (4 points), convex (4 points), convex (3 points)",
+      "seed": 1060,
+      "files": {
+        "metadata.json": {
+          "bytes": 4001,
+          "mtime_ns": 1789113166962750702
+        },
+        "fields.npz": {
+          "bytes": 315286,
+          "mtime_ns": 1789113166957725902
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005248.886489-0700_convex (4 points), convex (3 points)",
+      "seed": 1061,
+      "files": {
+        "metadata.json": {
+          "bytes": 3072,
+          "mtime_ns": 1789113168898960319
+        },
+        "fields.npz": {
+          "bytes": 343795,
+          "mtime_ns": 1789113168893725919
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005250.106070-0700_organic, convex (3 points)",
+      "seed": 1062,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113170118508329
+        },
+        "fields.npz": {
+          "bytes": 340972,
+          "mtime_ns": 1789113170113725929
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005251.636457-0700_convex (4 points), organic, organic",
+      "seed": 1063,
+      "files": {
+        "metadata.json": {
+          "bytes": 3478,
+          "mtime_ns": 1789113171647622241
+        },
+        "fields.npz": {
+          "bytes": 329177,
+          "mtime_ns": 1789113171641725941
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005253.257074-0700_convex (3 points)",
+      "seed": 1064,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113173270452355
+        },
+        "fields.npz": {
+          "bytes": 351160,
+          "mtime_ns": 1789113173265725955
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005255.786995-0700_convex (3 points), convex (4 points), convex (3 points), organic",
+      "seed": 1065,
+      "files": {
+        "metadata.json": {
+          "bytes": 3970,
+          "mtime_ns": 1789113175802161555
+        },
+        "fields.npz": {
+          "bytes": 316531,
+          "mtime_ns": 1789113175797725955
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005257.462044-0700_organic",
+      "seed": 1066,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113177475160108
+        },
+        "fields.npz": {
+          "bytes": 348180,
+          "mtime_ns": 1789113177469725908
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005259.172654-0700_organic, organic, organic",
+      "seed": 1067,
+      "files": {
+        "metadata.json": {
+          "bytes": 3455,
+          "mtime_ns": 1789113179184078760
+        },
+        "fields.npz": {
+          "bytes": 326405,
+          "mtime_ns": 1789113179177725860
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005300.800110-0700_convex (3 points), organic",
+      "seed": 1068,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113180812009414
+        },
+        "fields.npz": {
+          "bytes": 336127,
+          "mtime_ns": 1789113180805725814
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005302.006015-0700_organic, organic, organic, organic",
+      "seed": 1069,
+      "files": {
+        "metadata.json": {
+          "bytes": 3891,
+          "mtime_ns": 1789113182017844380
+        },
+        "fields.npz": {
+          "bytes": 330034,
+          "mtime_ns": 1789113182013725780
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005304.212012-0700_organic",
+      "seed": 1070,
+      "files": {
+        "metadata.json": {
+          "bytes": 2581,
+          "mtime_ns": 1789113184224726142
+        },
+        "fields.npz": {
+          "bytes": 343379,
+          "mtime_ns": 1789113184221725742
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005308.619182-0700_convex (4 points)",
+      "seed": 1071,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113188631701825
+        },
+        "fields.npz": {
+          "bytes": 339410,
+          "mtime_ns": 1789113188625725725
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005310.216773-0700_organic, organic",
+      "seed": 1072,
+      "files": {
+        "metadata.json": {
+          "bytes": 3020,
+          "mtime_ns": 1789113190229417519
+        },
+        "fields.npz": {
+          "bytes": 345422,
+          "mtime_ns": 1789113190225725719
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005312.722628-0700_convex (4 points)",
+      "seed": 1073,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113192735287216
+        },
+        "fields.npz": {
+          "bytes": 347017,
+          "mtime_ns": 1789113192729725716
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005314.544186-0700_organic, organic, convex (4 points), organic",
+      "seed": 1074,
+      "files": {
+        "metadata.json": {
+          "bytes": 3916,
+          "mtime_ns": 1789113194553946817
+        },
+        "fields.npz": {
+          "bytes": 296956,
+          "mtime_ns": 1789113194549725717
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005316.814642-0700_convex (3 points), organic",
+      "seed": 1075,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113196826904219
+        },
+        "fields.npz": {
+          "bytes": 344451,
+          "mtime_ns": 1789113196821725719
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005319.647232-0700_organic",
+      "seed": 1076,
+      "files": {
+        "metadata.json": {
+          "bytes": 2586,
+          "mtime_ns": 1789113199660019021
+        },
+        "fields.npz": {
+          "bytes": 346707,
+          "mtime_ns": 1789113199653725721
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005321.473340-0700_organic, convex (4 points), convex (4 points)",
+      "seed": 1077,
+      "files": {
+        "metadata.json": {
+          "bytes": 3512,
+          "mtime_ns": 1789113201484701326
+        },
+        "fields.npz": {
+          "bytes": 324279,
+          "mtime_ns": 1789113201481725726
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005324.078337-0700_convex (3 points), convex (4 points), convex (3 points)",
+      "seed": 1078,
+      "files": {
+        "metadata.json": {
+          "bytes": 3535,
+          "mtime_ns": 1789113204092653334
+        },
+        "fields.npz": {
+          "bytes": 330162,
+          "mtime_ns": 1789113204089725734
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005325.318866-0700_organic, organic, convex (3 points)",
+      "seed": 1079,
+      "files": {
+        "metadata.json": {
+          "bytes": 3483,
+          "mtime_ns": 1789113205330417037
+        },
+        "fields.npz": {
+          "bytes": 335156,
+          "mtime_ns": 1789113205325725737
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005326.948849-0700_organic, convex (4 points), convex (3 points)",
+      "seed": 1080,
+      "files": {
+        "metadata.json": {
+          "bytes": 3512,
+          "mtime_ns": 1789113206960828042
+        },
+        "fields.npz": {
+          "bytes": 337604,
+          "mtime_ns": 1789113206957725742
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005329.365287-0700_organic",
+      "seed": 1081,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113209378688550
+        },
+        "fields.npz": {
+          "bytes": 348521,
+          "mtime_ns": 1789113209373725750
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005331.029807-0700_convex (3 points), convex (4 points)",
+      "seed": 1082,
+      "files": {
+        "metadata.json": {
+          "bytes": 3074,
+          "mtime_ns": 1789113211041610956
+        },
+        "fields.npz": {
+          "bytes": 338271,
+          "mtime_ns": 1789113211037725756
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005333.351696-0700_organic",
+      "seed": 1083,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113213365056965
+        },
+        "fields.npz": {
+          "bytes": 349406,
+          "mtime_ns": 1789113213361725765
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005334.877614-0700_organic, convex (3 points)",
+      "seed": 1084,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113214890673470
+        },
+        "fields.npz": {
+          "bytes": 350042,
+          "mtime_ns": 1789113214885725770
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005338.401113-0700_organic, organic, organic",
+      "seed": 1085,
+      "files": {
+        "metadata.json": {
+          "bytes": 3451,
+          "mtime_ns": 1789113218412690674
+        },
+        "fields.npz": {
+          "bytes": 329645,
+          "mtime_ns": 1789113218409725774
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005340.015604-0700_organic, convex (4 points)",
+      "seed": 1086,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113220027129676
+        },
+        "fields.npz": {
+          "bytes": 336615,
+          "mtime_ns": 1789113220021725776
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005341.601649-0700_organic, convex (4 points)",
+      "seed": 1087,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113221613933077
+        },
+        "fields.npz": {
+          "bytes": 346009,
+          "mtime_ns": 1789113221609725777
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005343.079787-0700_organic, convex (4 points)",
+      "seed": 1088,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113223092306078
+        },
+        "fields.npz": {
+          "bytes": 345879,
+          "mtime_ns": 1789113223085725778
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005345.335881-0700_organic",
+      "seed": 1089,
+      "files": {
+        "metadata.json": {
+          "bytes": 2580,
+          "mtime_ns": 1789113225349132980
+        },
+        "fields.npz": {
+          "bytes": 349000,
+          "mtime_ns": 1789113225345725780
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005347.643686-0700_convex (5 points), convex (3 points)",
+      "seed": 1090,
+      "files": {
+        "metadata.json": {
+          "bytes": 3076,
+          "mtime_ns": 1789113227654934182
+        },
+        "fields.npz": {
+          "bytes": 333445,
+          "mtime_ns": 1789113227649725782
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005349.393373-0700_organic",
+      "seed": 1091,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113229405366783
+        },
+        "fields.npz": {
+          "bytes": 341775,
+          "mtime_ns": 1789113229401725783
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005350.922476-0700_organic",
+      "seed": 1092,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113230934767684
+        },
+        "fields.npz": {
+          "bytes": 338539,
+          "mtime_ns": 1789113230929725784
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005352.483098-0700_convex (4 points), convex (3 points)",
+      "seed": 1093,
+      "files": {
+        "metadata.json": {
+          "bytes": 3072,
+          "mtime_ns": 1789113232495169586
+        },
+        "fields.npz": {
+          "bytes": 340468,
+          "mtime_ns": 1789113232489725786
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005353.904233-0700_convex (3 points), convex (4 points)",
+      "seed": 1094,
+      "files": {
+        "metadata.json": {
+          "bytes": 3073,
+          "mtime_ns": 1789113233915914387
+        },
+        "fields.npz": {
+          "bytes": 338724,
+          "mtime_ns": 1789113233909725787
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005356.224168-0700_organic, convex (4 points)",
+      "seed": 1095,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113236236280389
+        },
+        "fields.npz": {
+          "bytes": 348744,
+          "mtime_ns": 1789113236229725789
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005357.418195-0700_organic, convex (4 points), organic",
+      "seed": 1096,
+      "files": {
+        "metadata.json": {
+          "bytes": 3478,
+          "mtime_ns": 1789113237429598891
+        },
+        "fields.npz": {
+          "bytes": 331865,
+          "mtime_ns": 1789113237425725790
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005359.006968-0700_organic, convex (4 points)",
+      "seed": 1097,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113239019440092
+        },
+        "fields.npz": {
+          "bytes": 342875,
+          "mtime_ns": 1789113239013725792
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005403.373856-0700_organic, convex (3 points)",
+      "seed": 1098,
+      "files": {
+        "metadata.json": {
+          "bytes": 3049,
+          "mtime_ns": 1789113243385908698
+        },
+        "fields.npz": {
+          "bytes": 335895,
+          "mtime_ns": 1789113243381725798
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005405.487108-0700_organic",
+      "seed": 1099,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113245499204000
+        },
+        "fields.npz": {
+          "bytes": 343507,
+          "mtime_ns": 1789113245493725800
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005408.025321-0700_convex (4 points)",
+      "seed": 1100,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113248038606728
+        },
+        "fields.npz": {
+          "bytes": 351488,
+          "mtime_ns": 1789113248033725828
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005409.468869-0700_convex (4 points), organic, convex (3 points)",
+      "seed": 1101,
+      "files": {
+        "metadata.json": {
+          "bytes": 3510,
+          "mtime_ns": 1789113249479919380
+        },
+        "fields.npz": {
+          "bytes": 329607,
+          "mtime_ns": 1789113249473725880
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005411.979338-0700_convex (3 points), convex (4 points)",
+      "seed": 1102,
+      "files": {
+        "metadata.json": {
+          "bytes": 3072,
+          "mtime_ns": 1789113251991094671
+        },
+        "fields.npz": {
+          "bytes": 335277,
+          "mtime_ns": 1789113251985725970
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005414.327689-0700_organic",
+      "seed": 1103,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113254340885455
+        },
+        "fields.npz": {
+          "bytes": 348814,
+          "mtime_ns": 1789113254337726055
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005415.711645-0700_convex (3 points)",
+      "seed": 1104,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113255723741438
+        },
+        "fields.npz": {
+          "bytes": 344961,
+          "mtime_ns": 1789113255717726039
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005417.602075-0700_organic, convex (4 points)",
+      "seed": 1105,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113257614463268
+        },
+        "fields.npz": {
+          "bytes": 344104,
+          "mtime_ns": 1789113257609725769
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005419.207637-0700_organic, organic",
+      "seed": 1106,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113259220083239
+        },
+        "fields.npz": {
+          "bytes": 343188,
+          "mtime_ns": 1789113259213725540
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005420.878774-0700_organic, convex (5 points)",
+      "seed": 1107,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113260890925100
+        },
+        "fields.npz": {
+          "bytes": 340140,
+          "mtime_ns": 1789113260885725301
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005423.587110-0700_organic",
+      "seed": 1108,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113263599817062
+        },
+        "fields.npz": {
+          "bytes": 342100,
+          "mtime_ns": 1789113263593724865
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005425.111578-0700_convex (4 points)",
+      "seed": 1109,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113265123930320
+        },
+        "fields.npz": {
+          "bytes": 342853,
+          "mtime_ns": 1789113265117724323
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005427.627550-0700_organic, organic",
+      "seed": 1110,
+      "files": {
+        "metadata.json": {
+          "bytes": 3022,
+          "mtime_ns": 1789113267639711726
+        },
+        "fields.npz": {
+          "bytes": 345350,
+          "mtime_ns": 1789113267633723428
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005429.552399-0700_organic, convex (3 points), organic",
+      "seed": 1111,
+      "files": {
+        "metadata.json": {
+          "bytes": 3482,
+          "mtime_ns": 1789113269563533741
+        },
+        "fields.npz": {
+          "bytes": 331469,
+          "mtime_ns": 1789113269557722743
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005430.510739-0700_convex (4 points), convex (4 points)",
+      "seed": 1112,
+      "files": {
+        "metadata.json": {
+          "bytes": 3073,
+          "mtime_ns": 1789113270522567570
+        },
+        "fields.npz": {
+          "bytes": 338138,
+          "mtime_ns": 1789113270517722670
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005434.222029-0700_convex (4 points), convex (3 points), convex (4 points), convex (4 points)",
+      "seed": 1113,
+      "files": {
+        "metadata.json": {
+          "bytes": 4001,
+          "mtime_ns": 1789113274232856194
+        },
+        "fields.npz": {
+          "bytes": 324627,
+          "mtime_ns": 1789113274229722594
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005435.945307-0700_organic",
+      "seed": 1114,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113275957605956
+        },
+        "fields.npz": {
+          "bytes": 342258,
+          "mtime_ns": 1789113275953722556
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005437.648332-0700_organic",
+      "seed": 1115,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113277661595118
+        },
+        "fields.npz": {
+          "bytes": 348817,
+          "mtime_ns": 1789113277657722518
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005439.162511-0700_organic, convex (3 points), organic",
+      "seed": 1116,
+      "files": {
+        "metadata.json": {
+          "bytes": 3481,
+          "mtime_ns": 1789113279173916485
+        },
+        "fields.npz": {
+          "bytes": 328276,
+          "mtime_ns": 1789113279169722485
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005440.893475-0700_organic, organic",
+      "seed": 1117,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113280905647951
+        },
+        "fields.npz": {
+          "bytes": 339817,
+          "mtime_ns": 1789113280901722451
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005442.767001-0700_convex (4 points)",
+      "seed": 1118,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113282780368716
+        },
+        "fields.npz": {
+          "bytes": 350791,
+          "mtime_ns": 1789113282777722416
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005444.689412-0700_organic, organic",
+      "seed": 1119,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113284703000980
+        },
+        "fields.npz": {
+          "bytes": 344753,
+          "mtime_ns": 1789113284697722380
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005447.493356-0700_convex (4 points)",
+      "seed": 1120,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113287505799854
+        },
+        "fields.npz": {
+          "bytes": 344104,
+          "mtime_ns": 1789113287501722353
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005449.378860-0700_convex (4 points)",
+      "seed": 1121,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113289392136573
+        },
+        "fields.npz": {
+          "bytes": 347512,
+          "mtime_ns": 1789113289385722772
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005450.546158-0700_organic, convex (3 points), organic, organic",
+      "seed": 1122,
+      "files": {
+        "metadata.json": {
+          "bytes": 3919,
+          "mtime_ns": 1789113290557179832
+        },
+        "fields.npz": {
+          "bytes": 318907,
+          "mtime_ns": 1789113290553723032
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005452.501578-0700_convex (3 points)",
+      "seed": 1123,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113292514102667
+        },
+        "fields.npz": {
+          "bytes": 348500,
+          "mtime_ns": 1789113292509723467
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005454.101207-0700_convex (4 points)",
+      "seed": 1124,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113294114102674
+        },
+        "fields.npz": {
+          "bytes": 346401,
+          "mtime_ns": 1789113294109723674
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005455.346072-0700_convex (3 points), convex (3 points), organic, convex (5 points)",
+      "seed": 1125,
+      "files": {
+        "metadata.json": {
+          "bytes": 3971,
+          "mtime_ns": 1789113295356878559
+        },
+        "fields.npz": {
+          "bytes": 321982,
+          "mtime_ns": 1789113295353723659
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005458.044778-0700_convex (3 points)",
+      "seed": 1126,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113298061205751
+        },
+        "fields.npz": {
+          "bytes": 344430,
+          "mtime_ns": 1789113298057724251
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005500.048943-0700_organic, convex (3 points)",
+      "seed": 1127,
+      "files": {
+        "metadata.json": {
+          "bytes": 3048,
+          "mtime_ns": 1789113300061347897
+        },
+        "fields.npz": {
+          "bytes": 340616,
+          "mtime_ns": 1789113300057724696
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005501.610542-0700_organic, convex (5 points), convex (3 points)",
+      "seed": 1128,
+      "files": {
+        "metadata.json": {
+          "bytes": 3510,
+          "mtime_ns": 1789113301622601234
+        },
+        "fields.npz": {
+          "bytes": 334093,
+          "mtime_ns": 1789113301617724834
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005503.980756-0700_organic, convex (4 points)",
+      "seed": 1129,
+      "files": {
+        "metadata.json": {
+          "bytes": 3049,
+          "mtime_ns": 1789113303992505455
+        },
+        "fields.npz": {
+          "bytes": 336162,
+          "mtime_ns": 1789113303989724756
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005507.041491-0700_convex (4 points)",
+      "seed": 1130,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113307053644796
+        },
+        "fields.npz": {
+          "bytes": 341411,
+          "mtime_ns": 1789113307049724396
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005509.399764-0700_organic, organic",
+      "seed": 1131,
+      "files": {
+        "metadata.json": {
+          "bytes": 3022,
+          "mtime_ns": 1789113309412326218
+        },
+        "fields.npz": {
+          "bytes": 349060,
+          "mtime_ns": 1789113309405724119
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005511.538379-0700_convex (3 points)",
+      "seed": 1132,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113311550084775
+        },
+        "fields.npz": {
+          "bytes": 337572,
+          "mtime_ns": 1789113311545723875
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005514.678306-0700_convex (3 points)",
+      "seed": 1133,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113314691061992
+        },
+        "fields.npz": {
+          "bytes": 346688,
+          "mtime_ns": 1789113314685723692
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005516.685603-0700_organic, convex (3 points)",
+      "seed": 1134,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113316697231476
+        },
+        "fields.npz": {
+          "bytes": 332437,
+          "mtime_ns": 1789113316693723576
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005518.271251-0700_organic, organic",
+      "seed": 1135,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113318283512283
+        },
+        "fields.npz": {
+          "bytes": 338882,
+          "mtime_ns": 1789113318277723484
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005522.368768-0700_convex (3 points), organic, organic, organic",
+      "seed": 1136,
+      "files": {
+        "metadata.json": {
+          "bytes": 3922,
+          "mtime_ns": 1789113322379438797
+        },
+        "fields.npz": {
+          "bytes": 319678,
+          "mtime_ns": 1789113322373723297
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005524.585331-0700_convex (4 points)",
+      "seed": 1137,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113324598178106
+        },
+        "fields.npz": {
+          "bytes": 344432,
+          "mtime_ns": 1789113324593723207
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005526.554309-0700_convex (4 points), organic",
+      "seed": 1138,
+      "files": {
+        "metadata.json": {
+          "bytes": 3043,
+          "mtime_ns": 1789113326566331426
+        },
+        "fields.npz": {
+          "bytes": 336156,
+          "mtime_ns": 1789113326561723127
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005528.457809-0700_organic, convex (3 points)",
+      "seed": 1139,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113328469389291
+        },
+        "fields.npz": {
+          "bytes": 334142,
+          "mtime_ns": 1789113328465723091
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005531.377405-0700_convex (3 points)",
+      "seed": 1140,
+      "files": {
+        "metadata.json": {
+          "bytes": 2614,
+          "mtime_ns": 1789113331390346590
+        },
+        "fields.npz": {
+          "bytes": 345453,
+          "mtime_ns": 1789113331385723090
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005533.980611-0700_convex (3 points)",
+      "seed": 1141,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113333992560989
+        },
+        "fields.npz": {
+          "bytes": 343652,
+          "mtime_ns": 1789113333989723089
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005535.577727-0700_organic",
+      "seed": 1142,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113335590613452
+        },
+        "fields.npz": {
+          "bytes": 344872,
+          "mtime_ns": 1789113335585723053
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005536.892469-0700_convex (3 points), convex (3 points)",
+      "seed": 1143,
+      "files": {
+        "metadata.json": {
+          "bytes": 3071,
+          "mtime_ns": 1789113336904917993
+        },
+        "fields.npz": {
+          "bytes": 349794,
+          "mtime_ns": 1789113336901722694
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005539.529522-0700_convex (4 points), organic",
+      "seed": 1144,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113339540837774
+        },
+        "fields.npz": {
+          "bytes": 333151,
+          "mtime_ns": 1789113339537721975
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005541.514230-0700_organic",
+      "seed": 1145,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113341527508132
+        },
+        "fields.npz": {
+          "bytes": 347855,
+          "mtime_ns": 1789113341521721434
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005543.283680-0700_organic",
+      "seed": 1146,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113343296892949
+        },
+        "fields.npz": {
+          "bytes": 350100,
+          "mtime_ns": 1789113343293720950
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005544.811029-0700_organic, organic",
+      "seed": 1147,
+      "files": {
+        "metadata.json": {
+          "bytes": 3020,
+          "mtime_ns": 1789113344823340365
+        },
+        "fields.npz": {
+          "bytes": 338927,
+          "mtime_ns": 1789113344817719770
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005546.641322-0700_convex (5 points), organic, organic",
+      "seed": 1148,
+      "files": {
+        "metadata.json": {
+          "bytes": 3479,
+          "mtime_ns": 1789113346652904833
+        },
+        "fields.npz": {
+          "bytes": 327449,
+          "mtime_ns": 1789113346649718236
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005548.505073-0700_convex (4 points), convex (4 points)",
+      "seed": 1149,
+      "files": {
+        "metadata.json": {
+          "bytes": 3073,
+          "mtime_ns": 1789113348518209871
+        },
+        "fields.npz": {
+          "bytes": 348633,
+          "mtime_ns": 1789113348513716675
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005551.411774-0700_convex (3 points), organic",
+      "seed": 1150,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113351424094848
+        },
+        "fields.npz": {
+          "bytes": 342784,
+          "mtime_ns": 1789113351417715249
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005553.277634-0700_organic, organic",
+      "seed": 1151,
+      "files": {
+        "metadata.json": {
+          "bytes": 3020,
+          "mtime_ns": 1789113353289591398
+        },
+        "fields.npz": {
+          "bytes": 337746,
+          "mtime_ns": 1789113353285715498
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005555.904468-0700_organic",
+      "seed": 1152,
+      "files": {
+        "metadata.json": {
+          "bytes": 2586,
+          "mtime_ns": 1789113355917449863
+        },
+        "fields.npz": {
+          "bytes": 349603,
+          "mtime_ns": 1789113355913715862
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005558.154245-0700_convex (4 points)",
+      "seed": 1153,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113358166814574
+        },
+        "fields.npz": {
+          "bytes": 345459,
+          "mtime_ns": 1789113358161716174
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005559.416003-0700_organic, convex (4 points)",
+      "seed": 1154,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113359428039149
+        },
+        "fields.npz": {
+          "bytes": 340501,
+          "mtime_ns": 1789113359421716348
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005601.254845-0700_convex (4 points)",
+      "seed": 1155,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113361267492611
+        },
+        "fields.npz": {
+          "bytes": 338354,
+          "mtime_ns": 1789113361261717507
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005604.279931-0700_organic, convex (4 points)",
+      "seed": 1156,
+      "files": {
+        "metadata.json": {
+          "bytes": 3048,
+          "mtime_ns": 1789113364291446966
+        },
+        "fields.npz": {
+          "bytes": 335859,
+          "mtime_ns": 1789113364285719463
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005607.667321-0700_organic, convex (3 points)",
+      "seed": 1157,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113367680322259
+        },
+        "fields.npz": {
+          "bytes": 347010,
+          "mtime_ns": 1789113367673721558
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005610.645069-0700_convex (4 points)",
+      "seed": 1158,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113370658230998
+        },
+        "fields.npz": {
+          "bytes": 351384,
+          "mtime_ns": 1789113370653721898
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005612.345036-0700_organic, organic, convex (3 points)",
+      "seed": 1159,
+      "files": {
+        "metadata.json": {
+          "bytes": 3480,
+          "mtime_ns": 1789113372356238092
+        },
+        "fields.npz": {
+          "bytes": 329491,
+          "mtime_ns": 1789113372349722091
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005614.476091-0700_convex (4 points)",
+      "seed": 1160,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113374488410834
+        },
+        "fields.npz": {
+          "bytes": 344561,
+          "mtime_ns": 1789113374485722334
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005615.983326-0700_organic, organic",
+      "seed": 1161,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113375993723193
+        },
+        "fields.npz": {
+          "bytes": 340618,
+          "mtime_ns": 1789113375989723187
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005617.884007-0700_organic",
+      "seed": 1162,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113377897276088
+        },
+        "fields.npz": {
+          "bytes": 349222,
+          "mtime_ns": 1789113377893726082
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005619.847502-0700_organic",
+      "seed": 1163,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113379860521596
+        },
+        "fields.npz": {
+          "bytes": 346159,
+          "mtime_ns": 1789113379857728695
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005622.536463-0700_convex (4 points), convex (3 points)",
+      "seed": 1164,
+      "files": {
+        "metadata.json": {
+          "bytes": 3075,
+          "mtime_ns": 1789113382549361092
+        },
+        "fields.npz": {
+          "bytes": 351624,
+          "mtime_ns": 1789113382545729291
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005624.322357-0700_convex (3 points), organic",
+      "seed": 1165,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113384334540824
+        },
+        "fields.npz": {
+          "bytes": 340758,
+          "mtime_ns": 1789113384329729425
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005626.820905-0700_organic, organic, organic",
+      "seed": 1166,
+      "files": {
+        "metadata.json": {
+          "bytes": 3454,
+          "mtime_ns": 1789113386831982076
+        },
+        "fields.npz": {
+          "bytes": 328483,
+          "mtime_ns": 1789113386825729177
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005628.365018-0700_convex (4 points), organic",
+      "seed": 1167,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113388376993422
+        },
+        "fields.npz": {
+          "bytes": 338950,
+          "mtime_ns": 1789113388373729023
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005630.388422-0700_convex (4 points)",
+      "seed": 1168,
+      "files": {
+        "metadata.json": {
+          "bytes": 2612,
+          "mtime_ns": 1789113390401054721
+        },
+        "fields.npz": {
+          "bytes": 347149,
+          "mtime_ns": 1789113390397728821
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005633.081703-0700_organic",
+      "seed": 1169,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113393094686748
+        },
+        "fields.npz": {
+          "bytes": 345674,
+          "mtime_ns": 1789113393089728748
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005634.982405-0700_organic",
+      "seed": 1170,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113394995462596
+        },
+        "fields.npz": {
+          "bytes": 348452,
+          "mtime_ns": 1789113394989728795
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005636.916520-0700_organic, convex (5 points)",
+      "seed": 1171,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113396928841244
+        },
+        "fields.npz": {
+          "bytes": 343515,
+          "mtime_ns": 1789113396925728844
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005638.645188-0700_convex (3 points), convex (4 points), organic",
+      "seed": 1172,
+      "files": {
+        "metadata.json": {
+          "bytes": 3506,
+          "mtime_ns": 1789113398656980787
+        },
+        "fields.npz": {
+          "bytes": 337749,
+          "mtime_ns": 1789113398653728887
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005639.856090-0700_convex (5 points), convex (4 points)",
+      "seed": 1173,
+      "files": {
+        "metadata.json": {
+          "bytes": 3072,
+          "mtime_ns": 1789113399867821350
+        },
+        "fields.npz": {
+          "bytes": 336269,
+          "mtime_ns": 1789113399861728753
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005641.371578-0700_convex (3 points), convex (4 points)",
+      "seed": 1174,
+      "files": {
+        "metadata.json": {
+          "bytes": 3075,
+          "mtime_ns": 1789113401383494519
+        },
+        "fields.npz": {
+          "bytes": 343818,
+          "mtime_ns": 1789113401377728022
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005643.861885-0700_organic, organic",
+      "seed": 1175,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113403874064718
+        },
+        "fields.npz": {
+          "bytes": 343585,
+          "mtime_ns": 1789113403869726820
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005646.694182-0700_convex (4 points), convex (4 points)",
+      "seed": 1176,
+      "files": {
+        "metadata.json": {
+          "bytes": 3074,
+          "mtime_ns": 1789113406706981785
+        },
+        "fields.npz": {
+          "bytes": 348305,
+          "mtime_ns": 1789113406701726085
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005648.837171-0700_convex (4 points)",
+      "seed": 1177,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113408850789464
+        },
+        "fields.npz": {
+          "bytes": 350483,
+          "mtime_ns": 1789113408845726263
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005651.264178-0700_organic",
+      "seed": 1178,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113411277624550
+        },
+        "fields.npz": {
+          "bytes": 347254,
+          "mtime_ns": 1789113411273726449
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005653.429252-0700_convex (3 points)",
+      "seed": 1179,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113413442079215
+        },
+        "fields.npz": {
+          "bytes": 348573,
+          "mtime_ns": 1789113413437726615
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005655.150451-0700_convex (4 points), convex (5 points)",
+      "seed": 1180,
+      "files": {
+        "metadata.json": {
+          "bytes": 3075,
+          "mtime_ns": 1789113415162233847
+        },
+        "fields.npz": {
+          "bytes": 334188,
+          "mtime_ns": 1789113415157726747
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005657.576332-0700_convex (4 points)",
+      "seed": 1181,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113417589428908
+        },
+        "fields.npz": {
+          "bytes": 347075,
+          "mtime_ns": 1789113417585726708
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005659.431509-0700_convex (4 points), organic",
+      "seed": 1182,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113419443740345
+        },
+        "fields.npz": {
+          "bytes": 342230,
+          "mtime_ns": 1789113419437726645
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005701.923929-0700_organic",
+      "seed": 1183,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113421937494659
+        },
+        "fields.npz": {
+          "bytes": 347444,
+          "mtime_ns": 1789113421933726559
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005703.440772-0700_organic, convex (3 points)",
+      "seed": 1184,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113423452695007
+        },
+        "fields.npz": {
+          "bytes": 334288,
+          "mtime_ns": 1789113423449726508
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005705.778593-0700_convex (3 points), organic",
+      "seed": 1185,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113425790614503
+        },
+        "fields.npz": {
+          "bytes": 340891,
+          "mtime_ns": 1789113425785726104
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005707.521020-0700_organic, convex (4 points), convex (3 points)",
+      "seed": 1186,
+      "files": {
+        "metadata.json": {
+          "bytes": 3510,
+          "mtime_ns": 1789113427533690789
+        },
+        "fields.npz": {
+          "bytes": 345025,
+          "mtime_ns": 1789113427529725790
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005709.502476-0700_organic, convex (3 points)",
+      "seed": 1187,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113429514140832
+        },
+        "fields.npz": {
+          "bytes": 337410,
+          "mtime_ns": 1789113429509725433
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005712.494990-0700_convex (4 points)",
+      "seed": 1188,
+      "files": {
+        "metadata.json": {
+          "bytes": 2613,
+          "mtime_ns": 1789113432507096367
+        },
+        "fields.npz": {
+          "bytes": 339063,
+          "mtime_ns": 1789113432501724967
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005714.447588-0700_organic, organic",
+      "seed": 1189,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113434459784572
+        },
+        "fields.npz": {
+          "bytes": 341002,
+          "mtime_ns": 1789113434453724773
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005716.003412-0700_organic, convex (4 points)",
+      "seed": 1190,
+      "files": {
+        "metadata.json": {
+          "bytes": 3043,
+          "mtime_ns": 1789113436015413917
+        },
+        "fields.npz": {
+          "bytes": 337431,
+          "mtime_ns": 1789113436009724618
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005717.989697-0700_organic",
+      "seed": 1191,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113438002698519
+        },
+        "fields.npz": {
+          "bytes": 347368,
+          "mtime_ns": 1789113437997724420
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005719.063279-0700_convex (5 points), convex (3 points), organic",
+      "seed": 1192,
+      "files": {
+        "metadata.json": {
+          "bytes": 3507,
+          "mtime_ns": 1789113439074478212
+        },
+        "fields.npz": {
+          "bytes": 325269,
+          "mtime_ns": 1789113439069724313
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005720.899727-0700_organic",
+      "seed": 1193,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113440912951289
+        },
+        "fields.npz": {
+          "bytes": 349611,
+          "mtime_ns": 1789113440909724289
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005722.900489-0700_organic, convex (3 points)",
+      "seed": 1194,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113442912878932
+        },
+        "fields.npz": {
+          "bytes": 344134,
+          "mtime_ns": 1789113442909724332
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005724.085093-0700_convex (3 points), convex (4 points), convex (4 points)",
+      "seed": 1195,
+      "files": {
+        "metadata.json": {
+          "bytes": 3531,
+          "mtime_ns": 1789113444098783158
+        },
+        "fields.npz": {
+          "bytes": 325894,
+          "mtime_ns": 1789113444093724358
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005725.597962-0700_convex (4 points)",
+      "seed": 1196,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113445610539191
+        },
+        "fields.npz": {
+          "bytes": 343474,
+          "mtime_ns": 1789113445605724391
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005727.627278-0700_organic, organic",
+      "seed": 1197,
+      "files": {
+        "metadata.json": {
+          "bytes": 3016,
+          "mtime_ns": 1789113447638611935
+        },
+        "fields.npz": {
+          "bytes": 330738,
+          "mtime_ns": 1789113447633724435
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005730.370449-0700_organic",
+      "seed": 1198,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113450383682974
+        },
+        "fields.npz": {
+          "bytes": 343142,
+          "mtime_ns": 1789113450377724574
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005732.608600-0700_convex (4 points), organic, convex (4 points), organic",
+      "seed": 1199,
+      "files": {
+        "metadata.json": {
+          "bytes": 3945,
+          "mtime_ns": 1789113452619614387
+        },
+        "fields.npz": {
+          "bytes": 318861,
+          "mtime_ns": 1789113452613724687
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005733.785031-0700_convex (3 points), organic",
+      "seed": 1200,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113453797104347
+        },
+        "fields.npz": {
+          "bytes": 339251,
+          "mtime_ns": 1789113453793724747
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005735.946011-0700_organic",
+      "seed": 1201,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113455959098648
+        },
+        "fields.npz": {
+          "bytes": 347044,
+          "mtime_ns": 1789113455953724848
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005738.287019-0700_organic",
+      "seed": 1202,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113458300355512
+        },
+        "fields.npz": {
+          "bytes": 348495,
+          "mtime_ns": 1789113458297724912
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005740.320119-0700_organic",
+      "seed": 1203,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113460332509768
+        },
+        "fields.npz": {
+          "bytes": 338891,
+          "mtime_ns": 1789113460329724968
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005743.050516-0700_organic, convex (4 points)",
+      "seed": 1204,
+      "files": {
+        "metadata.json": {
+          "bytes": 3047,
+          "mtime_ns": 1789113463062771843
+        },
+        "fields.npz": {
+          "bytes": 344359,
+          "mtime_ns": 1789113463057725043
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005745.482906-0700_organic, organic",
+      "seed": 1205,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113465494787491
+        },
+        "fields.npz": {
+          "bytes": 342463,
+          "mtime_ns": 1789113465489725091
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005747.103364-0700_convex (4 points)",
+      "seed": 1206,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113467115431519
+        },
+        "fields.npz": {
+          "bytes": 338773,
+          "mtime_ns": 1789113467109725119
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005749.583628-0700_convex (4 points)",
+      "seed": 1207,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113469597137362
+        },
+        "fields.npz": {
+          "bytes": 351076,
+          "mtime_ns": 1789113469593725162
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005751.078347-0700_organic, organic",
+      "seed": 1208,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113471089624288
+        },
+        "fields.npz": {
+          "bytes": 323176,
+          "mtime_ns": 1789113471085725187
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005753.506367-0700_convex (4 points)",
+      "seed": 1209,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113473519768029
+        },
+        "fields.npz": {
+          "bytes": 349530,
+          "mtime_ns": 1789113473513725229
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005755.677840-0700_convex (4 points)",
+      "seed": 1210,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113475689895466
+        },
+        "fields.npz": {
+          "bytes": 340502,
+          "mtime_ns": 1789113475685725266
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005757.603475-0700_organic, convex (3 points)",
+      "seed": 1211,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113477615134698
+        },
+        "fields.npz": {
+          "bytes": 338331,
+          "mtime_ns": 1789113477609725298
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005759.495489-0700_organic",
+      "seed": 1212,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113479508818130
+        },
+        "fields.npz": {
+          "bytes": 348736,
+          "mtime_ns": 1789113479505725330
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005800.708665-0700_organic, organic",
+      "seed": 1213,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113480720908656
+        },
+        "fields.npz": {
+          "bytes": 341264,
+          "mtime_ns": 1789113480717725256
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005802.267142-0700_organic, convex (3 points), organic",
+      "seed": 1214,
+      "files": {
+        "metadata.json": {
+          "bytes": 3485,
+          "mtime_ns": 1789113482279559745
+        },
+        "fields.npz": {
+          "bytes": 336337,
+          "mtime_ns": 1789113482273725145
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005804.271378-0700_convex (3 points)",
+      "seed": 1215,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113484284708102
+        },
+        "fields.npz": {
+          "bytes": 351801,
+          "mtime_ns": 1789113484281725002
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005806.841618-0700_organic",
+      "seed": 1216,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113486854757319
+        },
+        "fields.npz": {
+          "bytes": 344535,
+          "mtime_ns": 1789113486849724819
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005809.392699-0700_organic, organic",
+      "seed": 1217,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113489403803873
+        },
+        "fields.npz": {
+          "bytes": 323790,
+          "mtime_ns": 1789113489397724773
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005810.664655-0700_convex (4 points), organic",
+      "seed": 1218,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113490676917481
+        },
+        "fields.npz": {
+          "bytes": 342052,
+          "mtime_ns": 1789113490673724781
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005812.218353-0700_convex (3 points), organic",
+      "seed": 1219,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113492230195791
+        },
+        "fields.npz": {
+          "bytes": 339915,
+          "mtime_ns": 1789113492225724791
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005814.061724-0700_convex (5 points), convex (3 points)",
+      "seed": 1220,
+      "files": {
+        "metadata.json": {
+          "bytes": 3073,
+          "mtime_ns": 1789113494074132702
+        },
+        "fields.npz": {
+          "bytes": 341444,
+          "mtime_ns": 1789113494069724802
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005817.808702-0700_convex (3 points), convex (4 points)",
+      "seed": 1221,
+      "files": {
+        "metadata.json": {
+          "bytes": 3078,
+          "mtime_ns": 1789113497819831137
+        },
+        "fields.npz": {
+          "bytes": 324966,
+          "mtime_ns": 1789113497813724837
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005819.356246-0700_convex (3 points)",
+      "seed": 1222,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113499367913154
+        },
+        "fields.npz": {
+          "bytes": 340974,
+          "mtime_ns": 1789113499361724854
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005820.884807-0700_organic",
+      "seed": 1223,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113500896978072
+        },
+        "fields.npz": {
+          "bytes": 339377,
+          "mtime_ns": 1789113500893724872
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005822.357229-0700_convex (3 points)",
+      "seed": 1224,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113502369748289
+        },
+        "fields.npz": {
+          "bytes": 347270,
+          "mtime_ns": 1789113502365724889
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005824.109526-0700_organic, convex (3 points)",
+      "seed": 1225,
+      "files": {
+        "metadata.json": {
+          "bytes": 3041,
+          "mtime_ns": 1789113504121932007
+        },
+        "fields.npz": {
+          "bytes": 337955,
+          "mtime_ns": 1789113504117724907
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005825.981491-0700_convex (4 points)",
+      "seed": 1226,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113505994888521
+        },
+        "fields.npz": {
+          "bytes": 351804,
+          "mtime_ns": 1789113505989724921
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005827.591412-0700_convex (3 points)",
+      "seed": 1227,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113507604498434
+        },
+        "fields.npz": {
+          "bytes": 347629,
+          "mtime_ns": 1789113507601724934
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005829.587105-0700_organic, organic",
+      "seed": 1228,
+      "files": {
+        "metadata.json": {
+          "bytes": 3016,
+          "mtime_ns": 1789113509598480249
+        },
+        "fields.npz": {
+          "bytes": 332501,
+          "mtime_ns": 1789113509593724949
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005832.312433-0700_convex (3 points)",
+      "seed": 1229,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113512325079369
+        },
+        "fields.npz": {
+          "bytes": 348739,
+          "mtime_ns": 1789113512321724969
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005834.364435-0700_convex (3 points)",
+      "seed": 1230,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113514378070783
+        },
+        "fields.npz": {
+          "bytes": 351832,
+          "mtime_ns": 1789113514373724983
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005836.740083-0700_convex (4 points), convex (4 points), organic, organic",
+      "seed": 1231,
+      "files": {
+        "metadata.json": {
+          "bytes": 3946,
+          "mtime_ns": 1789113516751801598
+        },
+        "fields.npz": {
+          "bytes": 331272,
+          "mtime_ns": 1789113516745724998
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005838.356161-0700_convex (4 points), convex (3 points), organic, convex (3 points)",
+      "seed": 1232,
+      "files": {
+        "metadata.json": {
+          "bytes": 3971,
+          "mtime_ns": 1789113518366852109
+        },
+        "fields.npz": {
+          "bytes": 317181,
+          "mtime_ns": 1789113518361725009
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005840.796452-0700_organic, convex (3 points)",
+      "seed": 1233,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113520808724317
+        },
+        "fields.npz": {
+          "bytes": 343044,
+          "mtime_ns": 1789113520805725017
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005845.229958-0700_convex (3 points), organic, organic, convex (3 points)",
+      "seed": 1234,
+      "files": {
+        "metadata.json": {
+          "bytes": 3948,
+          "mtime_ns": 1789113525240807614
+        },
+        "fields.npz": {
+          "bytes": 324141,
+          "mtime_ns": 1789113525237725014
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005847.367442-0700_organic",
+      "seed": 1235,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113527379325012
+        },
+        "fields.npz": {
+          "bytes": 340707,
+          "mtime_ns": 1789113527373725012
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005850.080873-0700_organic, organic",
+      "seed": 1236,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113530092890718
+        },
+        "fields.npz": {
+          "bytes": 340628,
+          "mtime_ns": 1789113530089725018
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005851.446283-0700_convex (4 points), organic",
+      "seed": 1237,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113531459469422
+        },
+        "fields.npz": {
+          "bytes": 350475,
+          "mtime_ns": 1789113531453725022
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005852.848268-0700_convex (3 points), organic, organic",
+      "seed": 1238,
+      "files": {
+        "metadata.json": {
+          "bytes": 3484,
+          "mtime_ns": 1789113532859345026
+        },
+        "fields.npz": {
+          "bytes": 327259,
+          "mtime_ns": 1789113532853725026
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005854.648351-0700_organic, organic",
+      "seed": 1239,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113534661308231
+        },
+        "fields.npz": {
+          "bytes": 343262,
+          "mtime_ns": 1789113534657725031
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005856.979097-0700_convex (4 points)",
+      "seed": 1240,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113536992500841
+        },
+        "fields.npz": {
+          "bytes": 349876,
+          "mtime_ns": 1789113536989725041
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005858.631826-0700_organic, convex (4 points)",
+      "seed": 1241,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113538643220952
+        },
+        "fields.npz": {
+          "bytes": 330553,
+          "mtime_ns": 1789113538637725052
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005900.778846-0700_convex (4 points)",
+      "seed": 1242,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113540790940266
+        },
+        "fields.npz": {
+          "bytes": 340362,
+          "mtime_ns": 1789113540785725066
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005902.345926-0700_convex (4 points)",
+      "seed": 1243,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113542358949875
+        },
+        "fields.npz": {
+          "bytes": 349323,
+          "mtime_ns": 1789113542353725075
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005903.870063-0700_organic, convex (4 points), organic",
+      "seed": 1244,
+      "files": {
+        "metadata.json": {
+          "bytes": 3483,
+          "mtime_ns": 1789113543881398983
+        },
+        "fields.npz": {
+          "bytes": 331600,
+          "mtime_ns": 1789113543877725083
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005906.214660-0700_convex (4 points), organic",
+      "seed": 1245,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113546226397169
+        },
+        "fields.npz": {
+          "bytes": 338031,
+          "mtime_ns": 1789113546221725069
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005907.966806-0700_organic, organic",
+      "seed": 1246,
+      "files": {
+        "metadata.json": {
+          "bytes": 3020,
+          "mtime_ns": 1789113547978721659
+        },
+        "fields.npz": {
+          "bytes": 338923,
+          "mtime_ns": 1789113547973725059
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005910.253049-0700_organic",
+      "seed": 1247,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113550265861645
+        },
+        "fields.npz": {
+          "bytes": 345550,
+          "mtime_ns": 1789113550261725045
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005911.680581-0700_organic",
+      "seed": 1248,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113551692774836
+        },
+        "fields.npz": {
+          "bytes": 339859,
+          "mtime_ns": 1789113551689725036
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005913.489534-0700_convex (4 points)",
+      "seed": 1249,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113553501308017
+        },
+        "fields.npz": {
+          "bytes": 339961,
+          "mtime_ns": 1789113553497725017
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005914.728292-0700_organic, organic",
+      "seed": 1250,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113554740505404
+        },
+        "fields.npz": {
+          "bytes": 338544,
+          "mtime_ns": 1789113554737725004
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005916.964575-0700_organic",
+      "seed": 1251,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113556977540980
+        },
+        "fields.npz": {
+          "bytes": 347411,
+          "mtime_ns": 1789113556973724980
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005918.361775-0700_organic",
+      "seed": 1252,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113558375065365
+        },
+        "fields.npz": {
+          "bytes": 349458,
+          "mtime_ns": 1789113558369724965
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005920.597758-0700_organic, organic",
+      "seed": 1253,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113560610045252
+        },
+        "fields.npz": {
+          "bytes": 341396,
+          "mtime_ns": 1789113560605724952
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005922.633304-0700_convex (4 points)",
+      "seed": 1254,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113562646272456
+        },
+        "fields.npz": {
+          "bytes": 349585,
+          "mtime_ns": 1789113562641724956
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005924.921299-0700_organic",
+      "seed": 1255,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113564934746260
+        },
+        "fields.npz": {
+          "bytes": 350262,
+          "mtime_ns": 1789113564929724960
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005927.235017-0700_organic",
+      "seed": 1256,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113567248563064
+        },
+        "fields.npz": {
+          "bytes": 350480,
+          "mtime_ns": 1789113567245724964
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005928.979852-0700_organic",
+      "seed": 1257,
+      "files": {
+        "metadata.json": {
+          "bytes": 2581,
+          "mtime_ns": 1789113568992546770
+        },
+        "fields.npz": {
+          "bytes": 343576,
+          "mtime_ns": 1789113568989724970
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005930.620642-0700_organic, organic",
+      "seed": 1258,
+      "files": {
+        "metadata.json": {
+          "bytes": 3017,
+          "mtime_ns": 1789113570632857777
+        },
+        "fields.npz": {
+          "bytes": 339222,
+          "mtime_ns": 1789113570629724977
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005933.096799-0700_convex (3 points)",
+      "seed": 1259,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113573109063988
+        },
+        "fields.npz": {
+          "bytes": 346270,
+          "mtime_ns": 1789113573105724988
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005935.666841-0700_organic, organic",
+      "seed": 1260,
+      "files": {
+        "metadata.json": {
+          "bytes": 3020,
+          "mtime_ns": 1789113575678938499
+        },
+        "fields.npz": {
+          "bytes": 335006,
+          "mtime_ns": 1789113575673724999
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005938.238212-0700_convex (3 points)",
+      "seed": 1261,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113578251378819
+        },
+        "fields.npz": {
+          "bytes": 347763,
+          "mtime_ns": 1789113578245725019
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005939.942003-0700_organic, organic, convex (3 points)",
+      "seed": 1262,
+      "files": {
+        "metadata.json": {
+          "bytes": 3480,
+          "mtime_ns": 1789113579953014333
+        },
+        "fields.npz": {
+          "bytes": 321639,
+          "mtime_ns": 1789113579949725033
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005941.668339-0700_convex (3 points)",
+      "seed": 1263,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113581680150147
+        },
+        "fields.npz": {
+          "bytes": 339016,
+          "mtime_ns": 1789113581673725047
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005943.579622-0700_convex (5 points), organic, convex (4 points)",
+      "seed": 1264,
+      "files": {
+        "metadata.json": {
+          "bytes": 3508,
+          "mtime_ns": 1789113583591630362
+        },
+        "fields.npz": {
+          "bytes": 338276,
+          "mtime_ns": 1789113583585725062
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005945.604754-0700_organic, convex (4 points)",
+      "seed": 1265,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113585616151479
+        },
+        "fields.npz": {
+          "bytes": 334491,
+          "mtime_ns": 1789113585609725079
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005947.173966-0700_convex (3 points), organic",
+      "seed": 1266,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113587186432093
+        },
+        "fields.npz": {
+          "bytes": 341774,
+          "mtime_ns": 1789113587181725093
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005949.647503-0700_organic",
+      "seed": 1267,
+      "files": {
+        "metadata.json": {
+          "bytes": 2581,
+          "mtime_ns": 1789113589659780914
+        },
+        "fields.npz": {
+          "bytes": 343222,
+          "mtime_ns": 1789113589653725114
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005951.276508-0700_convex (3 points), organic, organic",
+      "seed": 1268,
+      "files": {
+        "metadata.json": {
+          "bytes": 3482,
+          "mtime_ns": 1789113591289122628
+        },
+        "fields.npz": {
+          "bytes": 344626,
+          "mtime_ns": 1789113591285725128
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005953.973155-0700_convex (3 points)",
+      "seed": 1269,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113593985859550
+        },
+        "fields.npz": {
+          "bytes": 350580,
+          "mtime_ns": 1789113593981725050
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005955.788294-0700_convex (3 points), organic, convex (4 points)",
+      "seed": 1270,
+      "files": {
+        "metadata.json": {
+          "bytes": 3509,
+          "mtime_ns": 1789113595798702182
+        },
+        "fields.npz": {
+          "bytes": 312203,
+          "mtime_ns": 1789113595793724982
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T005958.315056-0700_organic, convex (4 points), convex (3 points)",
+      "seed": 1271,
+      "files": {
+        "metadata.json": {
+          "bytes": 3509,
+          "mtime_ns": 1789113598326597787
+        },
+        "fields.npz": {
+          "bytes": 337231,
+          "mtime_ns": 1789113598321724887
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010000.808079-0700_convex (4 points), organic",
+      "seed": 1272,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113600819589025
+        },
+        "fields.npz": {
+          "bytes": 336358,
+          "mtime_ns": 1789113600813724825
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010002.872161-0700_organic, organic",
+      "seed": 1273,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113602884706611
+        },
+        "fields.npz": {
+          "bytes": 348778,
+          "mtime_ns": 1789113602881724811
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010005.341447-0700_convex (3 points)",
+      "seed": 1274,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113605354630095
+        },
+        "fields.npz": {
+          "bytes": 349040,
+          "mtime_ns": 1789113605349724795
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010007.818847-0700_organic",
+      "seed": 1275,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113607830841678
+        },
+        "fields.npz": {
+          "bytes": 338076,
+          "mtime_ns": 1789113607825724778
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010009.569540-0700_convex (4 points)",
+      "seed": 1276,
+      "files": {
+        "metadata.json": {
+          "bytes": 2610,
+          "mtime_ns": 1789113609582542185
+        },
+        "fields.npz": {
+          "bytes": 348687,
+          "mtime_ns": 1789113609577724785
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010011.984502-0700_organic",
+      "seed": 1277,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113611996686095
+        },
+        "fields.npz": {
+          "bytes": 338650,
+          "mtime_ns": 1789113611993724795
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010014.279382-0700_convex (4 points), organic",
+      "seed": 1278,
+      "files": {
+        "metadata.json": {
+          "bytes": 3045,
+          "mtime_ns": 1789113614290307204
+        },
+        "fields.npz": {
+          "bytes": 323690,
+          "mtime_ns": 1789113614285724804
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010020.955388-0700_organic, convex (4 points)",
+      "seed": 1279,
+      "files": {
+        "metadata.json": {
+          "bytes": 3048,
+          "mtime_ns": 1789113620968037740
+        },
+        "fields.npz": {
+          "bytes": 345639,
+          "mtime_ns": 1789113620961724840
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010023.007431-0700_convex (4 points), organic, organic",
+      "seed": 1280,
+      "files": {
+        "metadata.json": {
+          "bytes": 3480,
+          "mtime_ns": 1789113623018582452
+        },
+        "fields.npz": {
+          "bytes": 327246,
+          "mtime_ns": 1789113623013724852
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010025.080395-0700_organic, organic",
+      "seed": 1281,
+      "files": {
+        "metadata.json": {
+          "bytes": 3019,
+          "mtime_ns": 1789113625092636269
+        },
+        "fields.npz": {
+          "bytes": 344021,
+          "mtime_ns": 1789113625089724869
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010027.762688-0700_organic, organic",
+      "seed": 1282,
+      "files": {
+        "metadata.json": {
+          "bytes": 3021,
+          "mtime_ns": 1789113627774713795
+        },
+        "fields.npz": {
+          "bytes": 339150,
+          "mtime_ns": 1789113627769724895
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010029.338817-0700_organic, convex (3 points)",
+      "seed": 1283,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113629351730610
+        },
+        "fields.npz": {
+          "bytes": 346407,
+          "mtime_ns": 1789113629345724910
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010031.155986-0700_convex (4 points)",
+      "seed": 1284,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113631169356027
+        },
+        "fields.npz": {
+          "bytes": 350767,
+          "mtime_ns": 1789113631165724927
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010033.148667-0700_organic",
+      "seed": 1285,
+      "files": {
+        "metadata.json": {
+          "bytes": 2581,
+          "mtime_ns": 1789113633162257654
+        },
+        "fields.npz": {
+          "bytes": 350158,
+          "mtime_ns": 1789113633157724954
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010034.634656-0700_organic",
+      "seed": 1286,
+      "files": {
+        "metadata.json": {
+          "bytes": 2582,
+          "mtime_ns": 1789113634646907677
+        },
+        "fields.npz": {
+          "bytes": 340217,
+          "mtime_ns": 1789113634641724977
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010036.079863-0700_convex (3 points), organic",
+      "seed": 1287,
+      "files": {
+        "metadata.json": {
+          "bytes": 3044,
+          "mtime_ns": 1789113636091940600
+        },
+        "fields.npz": {
+          "bytes": 344335,
+          "mtime_ns": 1789113636085725000
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010038.919172-0700_convex (4 points)",
+      "seed": 1288,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113638932115844
+        },
+        "fields.npz": {
+          "bytes": 347329,
+          "mtime_ns": 1789113638925725044
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010040.692942-0700_convex (5 points)",
+      "seed": 1289,
+      "files": {
+        "metadata.json": {
+          "bytes": 2611,
+          "mtime_ns": 1789113640706130674
+        },
+        "fields.npz": {
+          "bytes": 346086,
+          "mtime_ns": 1789113640701725074
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010042.759683-0700_organic, organic",
+      "seed": 1290,
+      "files": {
+        "metadata.json": {
+          "bytes": 3018,
+          "mtime_ns": 1789113642772288111
+        },
+        "fields.npz": {
+          "bytes": 341207,
+          "mtime_ns": 1789113642765725111
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010044.440816-0700_organic",
+      "seed": 1291,
+      "files": {
+        "metadata.json": {
+          "bytes": 2584,
+          "mtime_ns": 1789113644453620641
+        },
+        "fields.npz": {
+          "bytes": 347699,
+          "mtime_ns": 1789113644449725141
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010045.963264-0700_convex (5 points), convex (4 points)",
+      "seed": 1292,
+      "files": {
+        "metadata.json": {
+          "bytes": 3074,
+          "mtime_ns": 1789113645975869969
+        },
+        "fields.npz": {
+          "bytes": 347418,
+          "mtime_ns": 1789113645969725169
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010049.362961-0700_convex (3 points), convex (3 points), convex (3 points), convex (3 points)",
+      "seed": 1293,
+      "files": {
+        "metadata.json": {
+          "bytes": 4000,
+          "mtime_ns": 1789113649374581468
+        },
+        "fields.npz": {
+          "bytes": 335741,
+          "mtime_ns": 1789113649369725168
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010050.637464-0700_convex (3 points)",
+      "seed": 1294,
+      "files": {
+        "metadata.json": {
+          "bytes": 2609,
+          "mtime_ns": 1789113650649670438
+        },
+        "fields.npz": {
+          "bytes": 340476,
+          "mtime_ns": 1789113650645725138
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010053.417056-0700_organic",
+      "seed": 1295,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113653429977174
+        },
+        "fields.npz": {
+          "bytes": 348917,
+          "mtime_ns": 1789113653425725074
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010055.796949-0700_convex (3 points)",
+      "seed": 1296,
+      "files": {
+        "metadata.json": {
+          "bytes": 2608,
+          "mtime_ns": 1789113655809101019
+        },
+        "fields.npz": {
+          "bytes": 347899,
+          "mtime_ns": 1789113655805725019
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010100.935403-0700_organic, convex (4 points)",
+      "seed": 1297,
+      "files": {
+        "metadata.json": {
+          "bytes": 3046,
+          "mtime_ns": 1789113660947625820
+        },
+        "fields.npz": {
+          "bytes": 337978,
+          "mtime_ns": 1789113660941725020
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010103.476064-0700_organic",
+      "seed": 1298,
+      "files": {
+        "metadata.json": {
+          "bytes": 2583,
+          "mtime_ns": 1789113663489974821
+        },
+        "fields.npz": {
+          "bytes": 349767,
+          "mtime_ns": 1789113663485725021
+        }
+      }
+    },
+    {
+      "run_dir": "/home/william/NavierStokes/flow_ml/solver_runs/20260911T010105.549229-0700_organic",
+      "seed": 1299,
+      "files": {
+        "metadata.json": {
+          "bytes": 2585,
+          "mtime_ns": 1789113665562116215
+        },
+        "fields.npz": {
+          "bytes": 346358,
+          "mtime_ns": 1789113665557725015
+        }
+      }
+    }
+  ],
+  "model_config": {
+    "hidden": 64,
+    "layers": 8,
+    "global_context": true
+  },
+  "learning_rate": 0.001,
+  "batch_size": 4,
+  "online_epochs": [
+    {
+      "epoch": 41,
+      "loss": 0.004087493446422741
+    },
+    {
+      "epoch": 42,
+      "loss": 0.003915626098945116
+    },
+    {
+      "epoch": 43,
+      "loss": 0.0038776225476370506
+    },
+    {
+      "epoch": 44,
+      "loss": 0.003860981910062643
+    },
+    {
+      "epoch": 45,
+      "loss": 0.0038553076427585136
+    },
+    {
+      "epoch": 46,
+      "loss": 0.00374804071286538
+    },
+    {
+      "epoch": 47,
+      "loss": 0.003662283422308974
+    },
+    {
+      "epoch": 48,
+      "loss": 0.003755360742410024
+    },
+    {
+      "epoch": 49,
+      "loss": 0.003877979113991993
+    },
+    {
+      "epoch": 50,
+      "loss": 0.0037869703265217443
+    },
+    {
+      "epoch": 51,
+      "loss": 0.0037094619835261254
+    },
+    {
+      "epoch": 52,
+      "loss": 0.003593041923207541
+    },
+    {
+      "epoch": 53,
+      "loss": 0.0036087188501066217
+    },
+    {
+      "epoch": 54,
+      "loss": 0.003462772232402737
+    },
+    {
+      "epoch": 55,
+      "loss": 0.0035081016221859803
+    },
+    {
+      "epoch": 56,
+      "loss": 0.003456296791167309
+    },
+    {
+      "epoch": 57,
+      "loss": 0.0035037799285297902
+    },
+    {
+      "epoch": 58,
+      "loss": 0.0033952162484638393
+    },
+    {
+      "epoch": 59,
+      "loss": 0.003330043732421473
+    },
+    {
+      "epoch": 60,
+      "loss": 0.003312493225967046
+    },
+    {
+      "epoch": 61,
+      "loss": 0.0031737273968368146
+    },
+    {
+      "epoch": 62,
+      "loss": 0.0032601703115506097
+    },
+    {
+      "epoch": 63,
+      "loss": 0.003180722391407471
+    },
+    {
+      "epoch": 64,
+      "loss": 0.003200438969458143
+    },
+    {
+      "epoch": 65,
+      "loss": 0.0031497640975673372
+    },
+    {
+      "epoch": 66,
+      "loss": 0.0033184454396056632
+    },
+    {
+      "epoch": 67,
+      "loss": 0.003038997104158625
+    },
+    {
+      "epoch": 68,
+      "loss": 0.003128104740171693
+    },
+    {
+      "epoch": 69,
+      "loss": 0.0029823712308037404
+    },
+    {
+      "epoch": 70,
+      "loss": 0.0029300438258602905
+    },
+    {
+      "epoch": 71,
+      "loss": 0.0029378757055383174
+    },
+    {
+      "epoch": 72,
+      "loss": 0.002982479992691272
+    },
+    {
+      "epoch": 73,
+      "loss": 0.002941404762774861
+    },
+    {
+      "epoch": 74,
+      "loss": 0.002787737377026739
+    },
+    {
+      "epoch": 75,
+      "loss": 0.0028886772268257727
+    },
+    {
+      "epoch": 76,
+      "loss": 0.00282647511465863
+    },
+    {
+      "epoch": 77,
+      "loss": 0.002778650493225238
+    },
+    {
+      "epoch": 78,
+      "loss": 0.002868272830285908
+    },
+    {
+      "epoch": 79,
+      "loss": 0.002689478152994222
+    },
+    {
+      "epoch": 80,
+      "loss": 0.002854111948205779
+    },
+    {
+      "epoch": 81,
+      "loss": 0.002794746493649048
+    },
+    {
+      "epoch": 82,
+      "loss": 0.002629313501432383
+    },
+    {
+      "epoch": 83,
+      "loss": 0.0026915202006542434
+    },
+    {
+      "epoch": 84,
+      "loss": 0.0026970056458958426
+    },
+    {
+      "epoch": 85,
+      "loss": 0.0025324105857483423
+    },
+    {
+      "epoch": 86,
+      "loss": 0.0024974070280829133
+    },
+    {
+      "epoch": 87,
+      "loss": 0.0024399657347627603
+    },
+    {
+      "epoch": 88,
+      "loss": 0.0022798939685647686
+    },
+    {
+      "epoch": 89,
+      "loss": 0.0023017553549531536
+    },
+    {
+      "epoch": 90,
+      "loss": 0.002560661248086641
+    },
+    {
+      "epoch": 91,
+      "loss": 0.0022001702180326297
+    },
+    {
+      "epoch": 92,
+      "loss": 0.0022284380218479784
+    },
+    {
+      "epoch": 93,
+      "loss": 0.0021517812222009523
+    },
+    {
+      "epoch": 94,
+      "loss": 0.0022145294205013974
+    },
+    {
+      "epoch": 95,
+      "loss": 0.002065618601288103
+    },
+    {
+      "epoch": 96,
+      "loss": 0.002039264755245919
+    },
+    {
+      "epoch": 97,
+      "loss": 0.0020795198254442465
+    },
+    {
+      "epoch": 98,
+      "loss": 0.001991443814331433
+    },
+    {
+      "epoch": 99,
+      "loss": 0.0018114423896865143
+    },
+    {
+      "epoch": 100,
+      "loss": 0.0021215767394945338
+    },
+    {
+      "epoch": 101,
+      "loss": 0.001836957523288826
+    },
+    {
+      "epoch": 102,
+      "loss": 0.0019091897240529458
+    },
+    {
+      "epoch": 103,
+      "loss": 0.0017150938223736982
+    },
+    {
+      "epoch": 104,
+      "loss": 0.001833634185992802
+    },
+    {
+      "epoch": 105,
+      "loss": 0.0018071002650928373
+    },
+    {
+      "epoch": 106,
+      "loss": 0.0018687846295263929
+    },
+    {
+      "epoch": 107,
+      "loss": 0.0016891947721402781
+    },
+    {
+      "epoch": 108,
+      "loss": 0.0017388731676328461
+    },
+    {
+      "epoch": 109,
+      "loss": 0.0015625093976753609
+    },
+    {
+      "epoch": 110,
+      "loss": 0.001714720028830925
+    },
+    {
+      "epoch": 111,
+      "loss": 0.0019676870205633653
+    },
+    {
+      "epoch": 112,
+      "loss": 0.0017586882330457834
+    },
+    {
+      "epoch": 113,
+      "loss": 0.001600881367873323
+    },
+    {
+      "epoch": 114,
+      "loss": 0.0015797944838899032
+    },
+    {
+      "epoch": 115,
+      "loss": 0.001526683004097625
+    },
+    {
+      "epoch": 116,
+      "loss": 0.0014722979152187083
+    },
+    {
+      "epoch": 117,
+      "loss": 0.0017402862615320677
+    },
+    {
+      "epoch": 118,
+      "loss": 0.0015128973647855067
+    },
+    {
+      "epoch": 119,
+      "loss": 0.0015744344759635472
+    },
+    {
+      "epoch": 120,
+      "loss": 0.0012958934584942957
+    },
+    {
+      "epoch": 121,
+      "loss": 0.0013936509138632875
+    },
+    {
+      "epoch": 122,
+      "loss": 0.0012582338339416311
+    },
+    {
+      "epoch": 123,
+      "loss": 0.0013293730320098499
+    },
+    {
+      "epoch": 124,
+      "loss": 0.0013952088332249938
+    },
+    {
+      "epoch": 125,
+      "loss": 0.0016461417027555097
+    },
+    {
+      "epoch": 126,
+      "loss": 0.0017253231446860203
+    },
+    {
+      "epoch": 127,
+      "loss": 0.001456133978596578
+    },
+    {
+      "epoch": 128,
+      "loss": 0.0013220009316379825
+    },
+    {
+      "epoch": 129,
+      "loss": 0.0013068499804163973
+    },
+    {
+      "epoch": 130,
+      "loss": 0.0012963829711467648
+    },
+    {
+      "epoch": 131,
+      "loss": 0.0011764057421290394
+    },
+    {
+      "epoch": 132,
+      "loss": 0.0012596574373795496
+    },
+    {
+      "epoch": 133,
+      "loss": 0.0012689570770695962
+    },
+    {
+      "epoch": 134,
+      "loss": 0.0013592042957316153
+    },
+    {
+      "epoch": 135,
+      "loss": 0.0012969379374408163
+    },
+    {
+      "epoch": 136,
+      "loss": 0.0013953056151998074
+    },
+    {
+      "epoch": 137,
+      "loss": 0.0011423635590957321
+    },
+    {
+      "epoch": 138,
+      "loss": 0.0011847553623859615
+    },
+    {
+      "epoch": 139,
+      "loss": 0.001180623514179994
+    },
+    {
+      "epoch": 140,
+      "loss": 0.0011282232449351189
+    }
+  ],
+  "evaluations": [
+    {
+      "epoch": 40,
+      "checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/source_checkpoint.pt",
+      "checkpoint_sha256": "21b28ba50bbcdf6e38361c7089630d2ad97e0294ca2d1c3158309eba822c7069",
+      "metrics": {
+        "model": {
+          "normalized_mse": [
+            0.007005199170118623,
+            0.002845808329024328,
+            0.0021159692054803013
+          ],
+          "normalized_rmse": [
+            0.08369706787049726,
+            0.05334611821889507,
+            0.045999665275741966
+          ],
+          "lattice_rmse": [
+            0.004184853393524863,
+            0.0026673059109447537,
+            0.00011499916318935492
+          ],
+          "loss": 0.003988992234874418
+        },
+        "inlet_constant": {
+          "normalized_mse": [
+            0.013989981278483877,
+            0.0030346290775129098,
+            0.007068409899623412
+          ],
+          "normalized_rmse": [
+            0.11827925125939831,
+            0.05508746751769326,
+            0.08407383599921804
+          ],
+          "lattice_rmse": [
+            0.0059139625629699155,
+            0.002754373375884663,
+            0.0002101845899980451
+          ],
+          "loss": 0.008031006751873399
+        },
+        "label_fitted_constant": {
+          "normalized_mse": [
+            0.013836964684879233,
+            0.0030341846626296583,
+            0.005236297693550121
+          ],
+          "normalized_rmse": [
+            0.11763062817514507,
+            0.05508343364959794,
+            0.07236226705645782
+          ],
+          "lattice_rmse": [
+            0.0058815314087572535,
+            0.002754171682479897,
+            0.00018090566764114455
+          ],
+          "loss": 0.007369149013686338
+        }
+      },
+      "case_wins": {
+        "inlet_constant": 300,
+        "label_fitted_constant": 300
+      }
+    },
+    {
+      "epoch": 60,
+      "checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/checkpoint_epoch_060.pt",
+      "checkpoint_sha256": "a6719af6a126fd5c1c3df59c12ff8f34a71fb84ab6d9d1998b4adc282313999f",
+      "metrics": {
+        "model": {
+          "normalized_mse": [
+            0.006056063339694389,
+            0.0022476685854572803,
+            0.002298807335993455
+          ],
+          "normalized_rmse": [
+            0.07782071279353839,
+            0.04740958326601575,
+            0.047945879238923704
+          ],
+          "lattice_rmse": [
+            0.0038910356396769197,
+            0.002370479163300788,
+            0.00011986469809730926
+          ],
+          "loss": 0.0035341797537150415
+        },
+        "inlet_constant": {
+          "normalized_mse": [
+            0.013989981278483877,
+            0.0030346290775129098,
+            0.007068409899623412
+          ],
+          "normalized_rmse": [
+            0.11827925125939831,
+            0.05508746751769326,
+            0.08407383599921804
+          ],
+          "lattice_rmse": [
+            0.0059139625629699155,
+            0.002754373375884663,
+            0.0002101845899980451
+          ],
+          "loss": 0.008031006751873399
+        },
+        "label_fitted_constant": {
+          "normalized_mse": [
+            0.013836964684879233,
+            0.0030341846626296583,
+            0.005236297693550121
+          ],
+          "normalized_rmse": [
+            0.11763062817514507,
+            0.05508343364959794,
+            0.07236226705645782
+          ],
+          "lattice_rmse": [
+            0.0058815314087572535,
+            0.002754171682479897,
+            0.00018090566764114455
+          ],
+          "loss": 0.007369149013686338
+        }
+      },
+      "case_wins": {
+        "inlet_constant": 300,
+        "label_fitted_constant": 298
+      }
+    },
+    {
+      "epoch": 80,
+      "checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/checkpoint_epoch_080.pt",
+      "checkpoint_sha256": "5e9dbc04a6e5fef5730231dae0bd363167f0bdfc834c30a79a83302e0578b958",
+      "metrics": {
+        "model": {
+          "normalized_mse": [
+            0.005143222849907359,
+            0.0018968651319171094,
+            0.001101310798360894
+          ],
+          "normalized_rmse": [
+            0.07171626628532302,
+            0.0435530151874369,
+            0.03318600304888936
+          ],
+          "lattice_rmse": [
+            0.003585813314266151,
+            0.002177650759371845,
+            8.296500762222341e-05
+          ],
+          "loss": 0.0027137995933951206
+        },
+        "inlet_constant": {
+          "normalized_mse": [
+            0.013989981278483877,
+            0.0030346290775129098,
+            0.007068409899623412
+          ],
+          "normalized_rmse": [
+            0.11827925125939831,
+            0.05508746751769326,
+            0.08407383599921804
+          ],
+          "lattice_rmse": [
+            0.0059139625629699155,
+            0.002754373375884663,
+            0.0002101845899980451
+          ],
+          "loss": 0.008031006751873399
+        },
+        "label_fitted_constant": {
+          "normalized_mse": [
+            0.013836964684879233,
+            0.0030341846626296583,
+            0.005236297693550121
+          ],
+          "normalized_rmse": [
+            0.11763062817514507,
+            0.05508343364959794,
+            0.07236226705645782
+          ],
+          "lattice_rmse": [
+            0.0058815314087572535,
+            0.002754171682479897,
+            0.00018090566764114455
+          ],
+          "loss": 0.007369149013686338
+        }
+      },
+      "case_wins": {
+        "inlet_constant": 300,
+        "label_fitted_constant": 300
+      }
+    },
+    {
+      "epoch": 100,
+      "checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/checkpoint_epoch_100.pt",
+      "checkpoint_sha256": "dd6ba964e34defda94fb09fac44189635eeda386c16d0d84fea7e30071b35321",
+      "metrics": {
+        "model": {
+          "normalized_mse": [
+            0.0035605859035885653,
+            0.0013328218088194765,
+            0.0014833166778677716
+          ],
+          "normalized_rmse": [
+            0.05967064524193253,
+            0.0365078321572163,
+            0.03851385046795207
+          ],
+          "lattice_rmse": [
+            0.0029835322620966266,
+            0.001825391607860815,
+            9.628462616988018e-05
+          ],
+          "loss": 0.0021255747967586047
+        },
+        "inlet_constant": {
+          "normalized_mse": [
+            0.013989981278483877,
+            0.0030346290775129098,
+            0.007068409899623412
+          ],
+          "normalized_rmse": [
+            0.11827925125939831,
+            0.05508746751769326,
+            0.08407383599921804
+          ],
+          "lattice_rmse": [
+            0.0059139625629699155,
+            0.002754373375884663,
+            0.0002101845899980451
+          ],
+          "loss": 0.008031006751873399
+        },
+        "label_fitted_constant": {
+          "normalized_mse": [
+            0.013836964684879233,
+            0.0030341846626296583,
+            0.005236297693550121
+          ],
+          "normalized_rmse": [
+            0.11763062817514507,
+            0.05508343364959794,
+            0.07236226705645782
+          ],
+          "lattice_rmse": [
+            0.0058815314087572535,
+            0.002754171682479897,
+            0.00018090566764114455
+          ],
+          "loss": 0.007369149013686338
+        }
+      },
+      "case_wins": {
+        "inlet_constant": 300,
+        "label_fitted_constant": 300
+      }
+    },
+    {
+      "epoch": 120,
+      "checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/checkpoint_epoch_120.pt",
+      "checkpoint_sha256": "17fff0946ec7077acabdcdc4fd8760a9d4c246a408426792319f08ceb94189c5",
+      "metrics": {
+        "model": {
+          "normalized_mse": [
+            0.0019560213212979046,
+            0.0008544247238632483,
+            0.0008111142927833567
+          ],
+          "normalized_rmse": [
+            0.04422692981994007,
+            0.029230544364812098,
+            0.02848006834232244
+          ],
+          "lattice_rmse": [
+            0.002211346490997004,
+            0.001461527218240605,
+            7.12001708558061e-05
+          ],
+          "loss": 0.0012071867793148365
+        },
+        "inlet_constant": {
+          "normalized_mse": [
+            0.013989981278483877,
+            0.0030346290775129098,
+            0.007068409899623412
+          ],
+          "normalized_rmse": [
+            0.11827925125939831,
+            0.05508746751769326,
+            0.08407383599921804
+          ],
+          "lattice_rmse": [
+            0.0059139625629699155,
+            0.002754373375884663,
+            0.0002101845899980451
+          ],
+          "loss": 0.008031006751873399
+        },
+        "label_fitted_constant": {
+          "normalized_mse": [
+            0.013836964684879233,
+            0.0030341846626296583,
+            0.005236297693550121
+          ],
+          "normalized_rmse": [
+            0.11763062817514507,
+            0.05508343364959794,
+            0.07236226705645782
+          ],
+          "lattice_rmse": [
+            0.0058815314087572535,
+            0.002754171682479897,
+            0.00018090566764114455
+          ],
+          "loss": 0.007369149013686338
+        }
+      },
+      "case_wins": {
+        "inlet_constant": 300,
+        "label_fitted_constant": 300
+      }
+    },
+    {
+      "epoch": 140,
+      "checkpoint": "/home/william/NavierStokes/flow_ml/training_runs/20260911T082502281765Z_continue_100/checkpoint_epoch_140.pt",
+      "checkpoint_sha256": "8669fee3101242f61d11313b819eddac673a8f4c46e2bc9c43166a5b04d9fd7b",
+      "metrics": {
+        "model": {
+          "normalized_mse": [
+            0.001954817790303844,
+            0.0008546612224411488,
+            0.0006897039299836615
+          ],
+          "normalized_rmse": [
+            0.0442133214122604,
+            0.02923458948644822,
+            0.02626221487201073
+          ],
+          "lattice_rmse": [
+            0.0022106660706130202,
+            0.0014617294743224111,
+            6.565553718002683e-05
+          ],
+          "loss": 0.0011663943142428848
+        },
+        "inlet_constant": {
+          "normalized_mse": [
+            0.013989981278483877,
+            0.0030346290775129098,
+            0.007068409899623412
+          ],
+          "normalized_rmse": [
+            0.11827925125939831,
+            0.05508746751769326,
+            0.08407383599921804
+          ],
+          "lattice_rmse": [
+            0.0059139625629699155,
+            0.002754373375884663,
+            0.0002101845899980451
+          ],
+          "loss": 0.008031006751873399
+        },
+        "label_fitted_constant": {
+          "normalized_mse": [
+            0.013836964684879233,
+            0.0030341846626296583,
+            0.005236297693550121
+          ],
+          "normalized_rmse": [
+            0.11763062817514507,
+            0.05508343364959794,
+            0.07236226705645782
+          ],
+          "lattice_rmse": [
+            0.0058815314087572535,
+            0.002754171682479897,
+            0.00018090566764114455
+          ],
+          "loss": 0.007369149013686338
+        }
+      },
+      "case_wins": {
+        "inlet_constant": 300,
+        "label_fitted_constant": 300
+      }
+    }
+  ],
+  "completed_epochs": 140,
+  "source_checkpoint_unchanged": true,
+  "finished_at": "2026-09-11T08:34:24.023551+00:00"
+}

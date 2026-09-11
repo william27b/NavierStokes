@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Flow Prediction</title>
+<style>
+:root{color-scheme:dark;--bg:#0d0d0d;--panel:#111111;--border:#303030;--text:#ededed;--muted:#a3a3a3;--accent:#eeeeee;--danger:#eeeeee}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 'Segoe UI',system-ui,sans-serif}
+button,input,select{font:inherit}button,select{background:#191919;color:var(--text);border:1px solid #444444;border-radius:0;padding:8px 11px;cursor:pointer}
+button:hover,select:hover{border-color:#b0b0b0}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+button.active{background:var(--accent);border-color:var(--accent);color:#111111}button:disabled{opacity:.35;cursor:default}a{color:var(--accent)}
+.shell{max-width:1500px;margin:auto;padding:24px 30px 18px}header{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;margin-bottom:24px}
+h1{max-width:860px;font-size:26px;line-height:1.3;letter-spacing:-.025em;margin:0;font-weight:500}h2{font-size:15px;margin:0 0 12px;font-weight:650}
+p{margin:0;color:var(--muted)}.status{display:flex;gap:9px;align-items:center;max-width:258px;min-width:180px;padding-top:5px;font-size:12px;color:var(--muted)}.dot{width:6px;height:6px;background:#777777;border-radius:0;flex:none}
+.status[data-state="ready"] .dot{background:var(--accent)}.status[data-state="busy"] .dot{background:#888888}.status[data-state="error"]{color:var(--danger)}.status[data-state="error"] .dot{background:var(--danger)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 258px;gap:22px;align-items:start}.plot-card{min-width:0;border:1px solid var(--border);border-radius:0;background:var(--panel);overflow:hidden}
+.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 15px;border-bottom:1px solid var(--border)}.separator{height:23px;width:1px;background:var(--border);margin:0 3px}
+.brush-control{display:flex;gap:9px;align-items:center;color:var(--muted);margin-left:6px}.brush-control input{width:92px}output{font-variant-numeric:tabular-nums;color:var(--text)}
+.plot-wrap{position:relative}canvas{display:block;width:100%;aspect-ratio:1.12;touch-action:none;cursor:crosshair;outline:none}
+.plot-footer{min-height:42px;border-top:1px solid var(--border);padding:10px 15px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font:12px/1.4 'Cascadia Code',Consolas,monospace}
+aside{display:grid;gap:20px}.section{padding:16px;background:var(--panel);border:1px solid var(--border);border-radius:0}.params{display:grid;grid-template-columns:1fr 1fr;gap:13px 12px}.param{font-size:12px;color:var(--muted)}.param strong{display:block;color:var(--text);font:18px/1.5 'Cascadia Code',Consolas,monospace;font-weight:400}.params-note{margin-top:14px;font-size:12px}
+.control{display:block;color:var(--muted);margin:12px 0 0}.control select{width:100%;margin-top:6px}.control input[type="range"]{display:block;width:100%;margin:10px 0 3px;accent-color:var(--accent)}.check{display:flex;align-items:center;gap:9px;margin-top:13px;color:var(--text);cursor:pointer}.check input{accent-color:var(--accent)}
+.button-stack{display:grid;gap:8px}.button-stack button{text-align:left}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.hint{font-size:12px;color:var(--muted)}.key{font:11px Consolas,monospace;border:1px solid #444444;padding:1px 4px;border-radius:0;color:var(--text)}
+.message{display:none;margin-top:12px;background:#181818;border:1px solid #777777;border-radius:0;padding:10px 13px;color:var(--danger);font-size:13px}.message.visible{display:block}
+.bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:14px;font-size:12px;color:var(--muted)}#loadFile{display:none}#retry{display:none;margin-left:8px;padding:4px 8px}#retry.visible{display:inline-block}
+input[type="range"]{appearance:none;background:transparent;height:16px;cursor:pointer}
+input[type="range"]::-webkit-slider-runnable-track{height:2px;background:#555555}
+input[type="range"]::-webkit-slider-thumb{appearance:none;width:8px;height:14px;margin-top:-6px;background:#eeeeee;border:0;border-radius:0}
+input[type="range"]::-moz-range-track{height:2px;background:#555555}
+input[type="range"]::-moz-range-thumb{width:8px;height:14px;background:#eeeeee;border:0;border-radius:0}
+@media(max-width:1000px){.shell{padding:18px}.layout{grid-template-columns:minmax(0,1fr) 220px;gap:14px}.section{padding:13px}.toolbar{gap:6px}.brush-control{margin-left:0}h1{font-size:23px}}
+@media(max-width:740px){header{align-items:flex-start;flex-direction:column;margin-bottom:16px}.layout{grid-template-columns:1fr}aside{grid-template-columns:1fr 1fr;gap:12px}.section:last-child{grid-column:1/-1}.shell{padding:12px}.separator{display:none}.status{max-width:100%;min-width:0;padding-top:0}h1{font-size:22px}.brush-control input{width:80px}.params{grid-template-columns:1fr}.param strong{white-space:nowrap}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header><div><h1>Flow Prediction Using a Multi-Scale GNN</h1></div>
+<div class="status" id="status" data-state="busy" role="status"><span class="dot"></span><span id="statusText">Loading browser model…</span><button id="retry">Retry</button></div></header>
+<div class="layout">
+<main>
+<div class="plot-card">
+<div class="toolbar" aria-label="Drawing tools">
+<button id="drawTool" class="active" aria-pressed="true">Draw solid</button><button id="eraseTool" aria-pressed="false">Erase</button>
+<span class="separator"></span><button id="undo" disabled aria-label="Undo drawing">Undo</button><button id="redo" disabled aria-label="Redo drawing">Redo</button>
+<label class="brush-control">Brush <input id="brush" type="range" min="1" max="13" step="2" value="5" aria-label="Brush diameter"><output id="brushValue">5 cells</output></label>
+</div>
+<div class="plot-wrap"><canvas id="flowCanvas" tabindex="0" role="img" aria-label="Editable solid mask with predicted pressure colors and velocity arrows. Use the mouse or touch to draw; top and bottom walls are fixed.">An interactive flow field. Use drawing controls and save the mask for later.</canvas></div>
+<div class="plot-footer"><span id="probe">Move over a fluid cell to inspect its values.</span><span id="timing">Waiting for model</span></div>
+</div>
+<div class="message" id="message" role="alert"></div>
+<div class="bottom"><span><span class="key">B</span> draw · <span class="key">E</span> erase · <span class="key">Shift</span> drag rectangle · <span class="key">Ctrl Z</span> undo</span><span>Dark cells = solid</span></div>
+</main>
+<aside>
+<section class="section"><h2>Channel</h2><div class="params"><div class="param">nx × ny<strong id="dimensions">64 × 64</strong></div><div class="param">Inlet uₓ<strong id="inlet">0.010</strong></div><div class="param">Relaxation τ<strong id="tau">0.53</strong></div><div class="param">Outlet pressure<strong id="outlet">1/3</strong></div></div></section>
+<section class="section"><h2>Field display</h2>
+<label class="control">Pressure colors<select id="colorMode"><option value="full">Full range</option><option value="interior">Interior contrast · 1–99%</option></select></label>
+<label class="check"><input id="lockScale" type="checkbox"> Lock pressure color scale</label>
+<label class="check"><input id="showArrows" type="checkbox" checked> Velocity arrows</label>
+<label class="control">Arrow spacing <output id="spacingValue">3 cells</output><input id="spacing" type="range" min="2" max="8" step="1" value="3" aria-label="Arrow spacing"></label>
+<label class="control">Arrow size <output id="arrowValue">1.0×</output><input id="arrowScale" type="range" min=".3" max="2" step=".1" value="1" aria-label="Arrow size"></label>
+<label class="check"><input id="showGrid" type="checkbox"> Cell grid</label>
+</section>
+<section class="section"><h2>Drawing</h2><div class="button-stack"><button id="circle">Circle</button><button id="two">Two obstacles</button><button id="clear">Clear obstacles</button></div>
+<div class="pair" style="margin-top:12px"><button id="save">Save mask</button><button id="load">Load mask</button></div><button id="export" style="width:100%;margin-top:8px" disabled>Save field PNG</button><input id="loadFile" type="file" accept=".json,application/json">
+<p class="hint" style="margin-top:14px">The trained GNN runs on your device. Your drawing stays in this browser. Drawings beyond its training shapes can be less accurate. Works best with one fluid region.</p></section>
+</aside>
+</div>
+</div>
+<script>
+'use strict';
+let worker=null, readyResolve=null, readyReject=null, predictionResolve=null, predictionReject=null;
+function browserPredict(payload){return new Promise((resolve,reject)=>{predictionResolve=resolve;predictionReject=reject;worker.postMessage({type:'predict',...payload});});}
+const el = id => document.getElementById(id);
+const canvas = el('flowCanvas'), ctx = canvas.getContext('2d');
+const raster = document.createElement('canvas'), rctx = raster.getContext('2d');
+let nx=64, ny=64, config=null, solid=new Uint8Array(nx*ny), revision=0;
+let prediction=null, lastError='', connected=false, busy=false, timer=null, lastSent=-1;
+let tool='draw', brush=5, pointer=null, stroke=null, undoStack=[], redoStack=[];
+let lockedLimits=null, currentLimits=[0,.0003], layout=null, frame=null;
+// Compact samples of the perceptually ordered viridis colormap.
+const palette=[[68,1,84],[72,26,108],[71,47,125],[65,68,135],[57,86,140],[49,104,142],[42,120,142],[35,136,142],[31,152,139],[34,168,132],[53,183,121],[84,197,104],[122,209,81],[165,219,54],[210,226,27],[253,231,37]];
+function color(t){t=Math.max(0,Math.min(1,t));const a=t*(palette.length-1),i=Math.min(palette.length-2,Math.floor(a)),f=a-i;return palette[i].map((v,k)=>Math.round(v+(palette[i+1][k]-v)*f));}
+function walls(mask){for(let x=0;x<nx;x++){mask[x]=1;mask[(ny-1)*nx+x]=1;}for(let y=1;y<ny-1;y++){mask[y*nx]=0;mask[y*nx+nx-1]=0;}return mask;}
+function blank(){return walls(new Uint8Array(nx*ny));}
+function status(kind,text){el('status').dataset.state=kind;el('statusText').textContent=text;}
+function message(text){el('message').textContent=text;el('message').classList.toggle('visible',!!text);}
+function historyButtons(){el('undo').disabled=!undoStack.length;el('redo').disabled=!redoStack.length;}
+function pushUndo(mask){undoStack.push(mask.slice());if(undoStack.length>50)undoStack.shift();redoStack=[];historyButtons();}
+function changed(){revision++;document.body.dataset.revision=revision;lastError='';message('');el('export').disabled=true;scheduleDraw();schedulePrediction();}
+function setMask(mask,remember=true){if(remember)pushUndo(solid);solid=walls(mask.slice());changed();}
+function selectTool(next){tool=next;for(const [id,name] of [['drawTool','draw'],['eraseTool','erase']]){el(id).classList.toggle('active',tool===name);el(id).setAttribute('aria-pressed',tool===name);}scheduleDraw();}
+function circleMask(two=false){const m=blank();const circles=two?[[22,22,6],[42,42,8]]:[[27,32,8]];for(const [cx,cy,r]of circles){for(let y=1;y<ny-1;y++)for(let x=1;x<nx-1;x++)if((x-cx)**2+(y-cy)**2<=r*r)m[y*nx+x]=1;}return m;}
+function quantile(sorted,q){const p=(sorted.length-1)*q,a=Math.floor(p);return sorted[a]+(sorted[Math.min(a+1,sorted.length-1)]-sorted[a])*(p-a);}
+function limitsFor(data){if(el('lockScale').checked&&lockedLimits)return lockedLimits;let values=data.pressure.filter(v=>v!==null).map(v=>v-config.outlet_pressure).sort((a,b)=>a-b);if(!values.length)return[0,.0003];const interior=el('colorMode').value==='interior';let lo=interior?quantile(values,.01):values[0],hi=interior?quantile(values,.99):values[values.length-1];if(hi-lo<1e-10){lo-=1e-8;hi+=1e-8;}return[lo,hi];}
+function number(v){return Math.abs(v)<.001?v.toExponential(2):v.toFixed(4);}
+function scheduleDraw(){if(frame===null)frame=requestAnimationFrame(()=>{frame=null;draw();});}
+function arrow(c,x,y,dx,dy,width=1){const length=Math.hypot(dx,dy);if(length<.35)return;const angle=Math.atan2(dy,dx),head=Math.min(5,Math.max(2,length*.3));const a=x-dx/2,b=y-dy/2,endx=x+dx/2,endy=y+dy/2;c.beginPath();c.moveTo(a,b);c.lineTo(endx,endy);c.moveTo(endx-head*Math.cos(angle-.5),endy-head*Math.sin(angle-.5));c.lineTo(endx,endy);c.lineTo(endx-head*Math.cos(angle+.5),endy-head*Math.sin(angle+.5));c.strokeStyle='#111111';c.lineWidth=width+1.5;c.stroke();c.strokeStyle='#f5f5f5';c.lineWidth=width;c.stroke();}
+function draw(){
+  const rect=canvas.getBoundingClientRect(),w=rect.width,h=rect.height;if(w<1)return;
+  const dpr=Math.min(window.devicePixelRatio||1,2);if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle='#111111';ctx.fillRect(0,0,w,h);
+  const left=w<520?33:45,top=33,right=w<520?83:107,bottom=45,size=Math.min(w-left-right,h-top-bottom),cell=size/nx;
+  layout={left,top,size,cell};
+  ctx.font='12px "Segoe UI",sans-serif';ctx.fillStyle='#bbbbbb';ctx.textAlign='left';ctx.fillText('INLET →',left,19);ctx.textAlign='right';ctx.fillText('→ OUTLET',left+size,19);
+  const hasFields=prediction&&!lastError,stale=hasFields&&prediction.revision!==revision;
+  if(hasFields)currentLimits=limitsFor(prediction);const[lo,hi]=currentLimits;
+  raster.width=nx;raster.height=ny;const pixels=rctx.createImageData(nx,ny);
+  for(let y=0;y<ny;y++)for(let x=0;x<nx;x++){
+    const i=y*nx+x,j=((ny-1-y)*nx+x)*4;let rgb;
+    if(solid[i])rgb=[8,8,8];else if(hasFields&&prediction.pressure[i]!==null)rgb=color((prediction.pressure[i]-config.outlet_pressure-lo)/(hi-lo));else rgb=[36,36,36];
+    if(stale&&!solid[i])rgb=rgb.map((v,k)=>Math.round(v*.58+[36,36,36][k]*.42));
+    pixels.data[j]=rgb[0];pixels.data[j+1]=rgb[1];pixels.data[j+2]=rgb[2];pixels.data[j+3]=255;
+  }
+  rctx.putImageData(pixels,0,0);ctx.imageSmoothingEnabled=false;ctx.drawImage(raster,left,top,size,size);
+  ctx.save();ctx.beginPath();ctx.rect(left,top,size,size);ctx.clip();
+  if(hasFields&&el('showArrows').checked){const spacing=+el('spacing').value,factor=2.4*cell/.01*(+el('arrowScale').value);ctx.globalAlpha=stale?.45:1;for(let y=1;y<ny-1;y+=spacing)for(let x=0;x<nx;x+=spacing){const i=y*nx+x;if(solid[i]||prediction.ux[i]===null)continue;arrow(ctx,left+(x+.5)*cell,top+(ny-y-.5)*cell,prediction.ux[i]*factor,-prediction.uy[i]*factor,.85);}ctx.globalAlpha=1;}
+  // Solids cover arrow segments that extend across a wall.
+  ctx.fillStyle='#080808';for(let y=0;y<ny;y++)for(let x=0;x<nx;x++)if(solid[y*nx+x])ctx.fillRect(left+x*cell,top+(ny-1-y)*cell,cell+.15,cell+.15);
+  if(el('showGrid').checked){ctx.beginPath();for(let i=0;i<=nx;i++){ctx.moveTo(left+i*cell,top);ctx.lineTo(left+i*cell,top+size);}for(let i=0;i<=ny;i++){ctx.moveTo(left,top+i*cell);ctx.lineTo(left+size,top+i*cell);}ctx.strokeStyle='rgba(255,255,255,.13)';ctx.lineWidth=.5;ctx.stroke();}
+  if(pointer){const{x,y}=pointer;ctx.beginPath();ctx.arc(left+(x+.5)*cell,top+(ny-y-.5)*cell,Math.max(cell/2,brush*cell/2),0,2*Math.PI);ctx.strokeStyle='#ffffff';ctx.setLineDash(tool==='erase'?[3,3]:[]);ctx.lineWidth=1.5;ctx.stroke();}
+  ctx.restore();ctx.strokeStyle='#555555';ctx.lineWidth=1;ctx.strokeRect(left-.5,top-.5,size+1,size+1);
+  ctx.font='11px Consolas,monospace';ctx.fillStyle='#a3a3a3';for(const t of[0,16,32,48,63]){ctx.textAlign='center';ctx.fillText(t,left+(t+.5)*cell,top+size+17);ctx.textAlign='right';ctx.fillText(t,left-8,top+(ny-t-.5)*cell+4);}
+  ctx.font='12px "Segoe UI",sans-serif';ctx.textAlign='center';ctx.fillText('x (cells)',left+size/2,top+size+36);ctx.save();ctx.translate(12,top+size/2);ctx.rotate(-Math.PI/2);ctx.fillText('y (cells)',0,0);ctx.restore();
+  const bx=left+size+16,bw=13,btop=top+19,bh=Math.max(90,size*.66);
+  for(let j=0;j<bh;j++){const rgb=color(1-j/(bh-1));ctx.fillStyle=`rgb(${rgb})`;ctx.fillRect(bx,btop+j,bw,1.3);}
+  ctx.fillStyle='#bbbbbb';ctx.textAlign='left';ctx.font='11px Consolas,monospace';for(let j=0;j<=4;j++){const t=j/4;ctx.fillText(number(hi-t*(hi-lo)),bx+bw+5,btop+t*bh+4);}
+  ctx.font='12px "Segoe UI",sans-serif';ctx.fillText('p − pₒᵤₜ',bx-1,top+6);ctx.font='10px "Segoe UI",sans-serif';ctx.fillText('lattice units',bx-1,btop+bh+20);
+  if(el('colorMode').value==='interior'){ctx.fillStyle='#bbbbbb';ctx.fillText('1–99% clipped',bx-1,btop+bh+36);}
+  if(el('lockScale').checked){ctx.fillStyle='#eeeeee';ctx.fillText('scale locked',bx-1,btop+bh+51);}
+  const legendY=top+size-28,legendLength=2.4*cell*(+el('arrowScale').value);arrow(ctx,bx+legendLength/2,legendY,legendLength,0,1);ctx.fillStyle='#bbbbbb';ctx.font='10px "Segoe UI",sans-serif';ctx.fillText('u = 0.01',bx-1,legendY+19);
+  canvas.dataset.renderedRevision=hasFields?prediction.revision:'';canvas.dataset.current=String(hasFields&&!stale);updateProbe();
+}
+function updateProbe(){if(!pointer)return;const i=pointer.y*nx+pointer.x,at=`(${pointer.x}, ${pointer.y})`;if(solid[i]){el('probe').textContent=`${at} solid`;return;}if(!prediction||prediction.revision!==revision||lastError||prediction.pressure[i]===null){el('probe').textContent=`${at} fluid · awaiting current prediction`;return;}el('probe').textContent=`${at} p=${prediction.pressure[i].toFixed(7)} · ux=${prediction.ux[i].toFixed(5)} · uy=${prediction.uy[i].toFixed(5)}`;}
+function position(e){if(!layout)return null;const r=canvas.getBoundingClientRect(),x=Math.floor((e.clientX-r.left-layout.left)/layout.cell),y=ny-1-Math.floor((e.clientY-r.top-layout.top)/layout.cell);return x>=0&&x<nx&&y>=0&&y<ny?{x,y}:null;}
+function stamp(x,y,erase){let changedCell=false;const radius=(brush-1)/2;for(let dy=-radius;dy<=radius;dy++)for(let dx=-radius;dx<=radius;dx++){const xx=x+dx,yy=y+dy;if(dx*dx+dy*dy>radius*radius||xx<=0||xx>=nx-1||yy<=0||yy>=ny-1)continue;const i=yy*nx+xx,v=erase?0:1;if(solid[i]!==v){solid[i]=v;changedCell=true;}}return changedCell;}
+function paint(point){if(!stroke||!point)return;let edited=false;if(stroke.rectangle){const next=stroke.before.slice();for(let y=Math.max(1,Math.min(stroke.start.y,point.y));y<=Math.min(ny-2,Math.max(stroke.start.y,point.y));y++)for(let x=Math.max(1,Math.min(stroke.start.x,point.x));x<=Math.min(nx-2,Math.max(stroke.start.x,point.x));x++)next[y*nx+x]=stroke.erase?0:1;edited=next.some((v,i)=>v!==solid[i]);if(edited)solid=next;}else{const a=stroke.last||point,n=Math.max(Math.abs(a.x-point.x),Math.abs(a.y-point.y),1);for(let i=0;i<=n;i++)edited=stamp(Math.round(a.x+(point.x-a.x)*i/n),Math.round(a.y+(point.y-a.y)*i/n),stroke.erase)||edited;}stroke.last=point;if(edited){if(!stroke.saved){pushUndo(stroke.before);stroke.saved=true;}changed();}}
+canvas.addEventListener('pointerdown',e=>{if(e.button!==0&&e.button!==2)return;const p=position(e);if(!p)return;e.preventDefault();canvas.focus();canvas.setPointerCapture(e.pointerId);pointer=p;stroke={start:p,last:p,before:solid.slice(),erase:tool==='erase'||e.button===2,rectangle:e.shiftKey,saved:false};paint(p);});
+canvas.addEventListener('pointermove',e=>{pointer=position(e);if(stroke)paint(pointer);scheduleDraw();});
+function endStroke(e){stroke=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);schedulePrediction(true);}
+canvas.addEventListener('pointerup',endStroke);canvas.addEventListener('pointercancel',endStroke);canvas.addEventListener('pointerleave',()=>{if(!stroke)pointer=null;scheduleDraw();});canvas.addEventListener('contextmenu',e=>e.preventDefault());
+function schedulePrediction(immediate=false){if(!connected||lastSent===revision)return;status('busy','Updating flow…');if(timer!==null&&immediate){clearTimeout(timer);timer=null;}if(timer===null)timer=setTimeout(()=>{timer=null;requestPrediction();},immediate?0:100);}
+async function requestPrediction(){
+  if(busy||!connected||lastSent===revision)return;
+  busy=true;const sent=revision;lastSent=sent;status('busy','Updating flow…');const start=performance.now();
+  try{
+    const data=await browserPredict({nx,ny,revision:sent,solid:Array.from(solid)});if(sent!==revision)return;
+    if(data.error&&!data.drawing)throw new Error(data.error);
+    if(data.error){lastError=data.error||'Unable to predict this drawing.';message(lastError);status('error','Drawing needs a connected fluid region');el('timing').textContent='Prediction unavailable';prediction=null;return;}
+    if(data.revision!==sent||data.pressure.length!==nx*ny||data.ux.length!==nx*ny||data.uy.length!==nx*ny)throw new Error('Unexpected prediction response');
+    prediction=data;lastError='';message('');if(el('lockScale').checked&&!lockedLimits)lockedLimits=limitsFor(data);const elapsed=performance.now()-start;
+    status('ready',`Live prediction · ${config.device==='webgpu'?'WebGPU':'CPU · WebAssembly'}`);el('timing').textContent=`${Math.round(elapsed)} ms update · ${data.fluid_cells} fluid cells`;el('export').disabled=false;
+    document.body.dataset.predictionRevision=data.revision;
+  }catch(error){if(sent===revision){connected=false;lastError='Browser inference stopped. Click Retry to reload the model.';message(lastError);status('error','Model needs reloading');el('retry').classList.add('visible');prediction=null;}}
+  finally{busy=false;scheduleDraw();if(connected&&revision!==sent)schedulePrediction(true);}
+}
+async function connect(forceCPU=new URLSearchParams(location.search).get('backend')==='wasm'){
+  status('busy','Loading browser model…');el('retry').classList.remove('visible');
+  if(worker)worker.terminate();
+  try{
+    if(location.protocol==='file:')throw new Error('Serve this folder over HTTP, or upload it to GitHub Pages. Browsers cannot load the model from a double-clicked file.');
+    worker=new Worker('./inference-worker.js');
+    const ready=new Promise((resolve,reject)=>{readyResolve=resolve;readyReject=reject;});
+    worker.onmessage=event=>{const data=event.data;if(data.type==='progress'){status('busy',data.text);}else if(data.type==='ready'){readyResolve(data.config);}else if(data.type==='backend'){if(config)config.device=data.device;document.body.dataset.backend=data.device;}else if(data.type==='prediction'||(data.type==='error'&&!data.initialization)){if(predictionResolve){predictionResolve(data);predictionResolve=null;predictionReject=null;}}else if(data.type==='error'&&data.initialization){readyReject(new Error(data.error));}};
+    worker.onerror=event=>{const error=new Error(event.message||'Browser worker could not load.');if(readyReject)readyReject(error);if(predictionReject)predictionReject(error);};
+    worker.postMessage({type:'init',forceCPU});
+    config=await ready;connected=true;busy=false;lastSent=-1;lastError='';message('');document.body.dataset.modelEpoch=config.epoch;document.body.dataset.backend=config.device;
+    el('dimensions').textContent=`${config.nx} × ${config.ny}`;el('inlet').textContent=config.ux.toFixed(3);el('tau').textContent=config.tau.toFixed(2);schedulePrediction(true);
+  }catch(error){if(!forceCPU&&location.protocol!=='file:'){await connect(true);return;}connected=false;status('error','Browser model could not load');message(error.message);el('retry').classList.add('visible');}
+  scheduleDraw();
+}
+function undo(){if(!undoStack.length)return;redoStack.push(solid.slice());solid=undoStack.pop();historyButtons();changed();}
+function redo(){if(!redoStack.length)return;undoStack.push(solid.slice());solid=redoStack.pop();historyButtons();changed();}
+el('drawTool').onclick=()=>selectTool('draw');el('eraseTool').onclick=()=>selectTool('erase');el('undo').onclick=undo;el('redo').onclick=redo;el('retry').onclick=()=>connect();
+el('brush').oninput=()=>{brush=+el('brush').value;el('brushValue').textContent=`${brush} cells`;scheduleDraw();};
+el('circle').onclick=()=>setMask(circleMask());el('two').onclick=()=>setMask(circleMask(true));el('clear').onclick=()=>setMask(blank());
+el('colorMode').onchange=()=>{if(!el('lockScale').checked)lockedLimits=null;scheduleDraw();};el('lockScale').onchange=()=>{lockedLimits=el('lockScale').checked?currentLimits.slice():null;scheduleDraw();};
+for(const id of['showArrows','showGrid','spacing','arrowScale'])el(id).oninput=()=>{el('spacingValue').textContent=`${el('spacing').value} cells`;el('arrowValue').textContent=`${(+el('arrowScale').value).toFixed(1)}×`;scheduleDraw();};
+function download(name,blob){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+el('save').onclick=()=>download('flow-solid-mask.json',new Blob([JSON.stringify({format:'flow-solid-mask-v1',nx,ny,ux:.01,uy:0,tau:.53,origin:'lower-left; solid[y][x]',solid:Array.from({length:ny},(_,y)=>Array.from(solid.slice(y*nx,(y+1)*nx),Boolean))},null,2)],{type:'application/json'}));
+el('load').onclick=()=>el('loadFile').click();el('loadFile').onchange=async()=>{const file=el('loadFile').files[0];if(!file)return;try{if(file.size>131072)throw new Error('Mask file is too large.');const data=JSON.parse(await file.text());if(data.nx!==nx||data.ny!==ny)throw new Error('Load a 64 × 64 mask.');if((data.ux!==undefined&&data.ux!==.01)||(data.uy!==undefined&&data.uy!==0)||(data.tau!==undefined&&data.tau!==.53))throw new Error('The saved flow settings differ from this trained model.');if(!Array.isArray(data.solid))throw new Error('Missing solid mask.');const values=data.solid.flat();if(values.length!==nx*ny||!values.every(v=>typeof v==='boolean'||v===0||v===1))throw new Error('The mask must contain 4096 boolean cells.');setMask(Uint8Array.from(values,Number));}catch(error){message(error.message);}el('loadFile').value='';};
+el('export').onclick=()=>{if(!prediction||prediction.revision!==revision||lastError)return;const previous=pointer;pointer=null;draw();canvas.toBlob(blob=>{if(blob)download('flow-prediction.png',blob);});pointer=previous;scheduleDraw();};
+document.addEventListener('keydown',e=>{if(['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName))return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo();}else if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='y'){e.preventDefault();redo();}else if(e.key.toLowerCase()==='b')selectTool('draw');else if(e.key.toLowerCase()==='e')selectTool('erase');});
+new ResizeObserver(scheduleDraw).observe(canvas);solid=blank();walls(solid);scheduleDraw();connect();
+</script>
+</body>
+</html>

@@ -1,0 +1,583 @@
+{
+  "split": "validation",
+  "config": {
+    "nx": 64,
+    "ny": 64,
+    "ux_range": [
+      0.01,
+      0.01
+    ],
+    "tau_range": [
+      0.53,
+      0.53
+    ],
+    "uy": 0.0,
+    "convex_probability": 0.5,
+    "radius_range": [
+      4.0,
+      9.0
+    ],
+    "component_count_choices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "component_count_weights": [
+      45,
+      40,
+      12,
+      3
+    ],
+    "convex_point_choices": [
+      3,
+      4,
+      5
+    ],
+    "convex_point_weights": [
+      45,
+      45,
+      10
+    ],
+    "convex_options": {
+      "irregularity": 0.35,
+      "normalize_area": true
+    },
+    "organic_options": {
+      "roughness": 0.4,
+      "harmonics": 6,
+      "smoothness": 1.5
+    },
+    "boundary_clearance": 4,
+    "max_attempts": 100,
+    "x_mean": 32.0,
+    "y_mean": 32.0,
+    "x_std": 10.666666666666666,
+    "y_std": 10.666666666666666
+  },
+  "records": [
+    {
+      "seed": 2000,
+      "run_id": "20260911T014816.164604-0700_validation_seed_2000",
+      "max_mach": 0.05969390380978636,
+      "max_density_deviation": 0.00528379873952578,
+      "accepted": true
+    },
+    {
+      "seed": 2001,
+      "run_id": "20260911T014818.822926-0700_validation_seed_2001",
+      "max_mach": 0.0579812601384966,
+      "max_density_deviation": 0.005669649162201251,
+      "accepted": true
+    },
+    {
+      "seed": 2002,
+      "run_id": "20260911T014820.437129-0700_validation_seed_2002",
+      "max_mach": 0.03145910219529259,
+      "max_density_deviation": 0.0034782294470787622,
+      "accepted": true
+    },
+    {
+      "seed": 2003,
+      "run_id": "20260911T014821.994075-0700_validation_seed_2003",
+      "max_mach": 0.03540283117550632,
+      "max_density_deviation": 0.0036692932203916673,
+      "accepted": true
+    },
+    {
+      "seed": 2004,
+      "run_id": "20260911T014824.203150-0700_validation_seed_2004",
+      "max_mach": 0.03592606566431262,
+      "max_density_deviation": 0.0037347010930943725,
+      "accepted": true
+    },
+    {
+      "seed": 2005,
+      "run_id": "20260911T014825.523462-0700_validation_seed_2005",
+      "max_mach": 0.0381115271083507,
+      "max_density_deviation": 0.003985640773383148,
+      "accepted": true
+    },
+    {
+      "seed": 2006,
+      "run_id": "20260911T014832.901523-0700_validation_seed_2006",
+      "max_mach": 0.03796765564399598,
+      "max_density_deviation": 0.004130789578250749,
+      "accepted": true
+    },
+    {
+      "seed": 2007,
+      "run_id": "20260911T014834.678510-0700_validation_seed_2007",
+      "max_mach": 0.04142645024594554,
+      "max_density_deviation": 0.004026143448742081,
+      "accepted": true
+    },
+    {
+      "seed": 2008,
+      "run_id": "20260911T014836.400616-0700_validation_seed_2008",
+      "max_mach": 0.05569915725142144,
+      "max_density_deviation": 0.004531676103494142,
+      "accepted": true
+    },
+    {
+      "seed": 2009,
+      "run_id": "20260911T014838.851492-0700_validation_seed_2009",
+      "max_mach": 0.044935799868327075,
+      "max_density_deviation": 0.003968402416477224,
+      "accepted": true
+    },
+    {
+      "seed": 2010,
+      "run_id": "20260911T014840.937756-0700_validation_seed_2010",
+      "max_mach": 0.029453912132203348,
+      "max_density_deviation": 0.003418788745447543,
+      "accepted": true
+    },
+    {
+      "seed": 2011,
+      "run_id": "20260911T014843.297473-0700_validation_seed_2011",
+      "max_mach": 0.03370124252611121,
+      "max_density_deviation": 0.0037171623941356646,
+      "accepted": true
+    },
+    {
+      "seed": 2012,
+      "run_id": "20260911T014845.052031-0700_validation_seed_2012",
+      "max_mach": 0.030275184744475294,
+      "max_density_deviation": 0.003511147027716044,
+      "accepted": true
+    },
+    {
+      "seed": 2013,
+      "run_id": "20260911T014846.582259-0700_validation_seed_2013",
+      "max_mach": 0.0350510224796849,
+      "max_density_deviation": 0.0036309896867325886,
+      "accepted": true
+    },
+    {
+      "seed": 2014,
+      "run_id": "20260911T014848.105095-0700_validation_seed_2014",
+      "max_mach": 0.05362399332652365,
+      "max_density_deviation": 0.004756117982724906,
+      "accepted": true
+    },
+    {
+      "seed": 2015,
+      "run_id": "20260911T014850.992109-0700_validation_seed_2015",
+      "max_mach": 0.07463438457661038,
+      "max_density_deviation": 0.006400575942002273,
+      "accepted": true
+    },
+    {
+      "seed": 2016,
+      "run_id": "20260911T014852.548602-0700_validation_seed_2016",
+      "max_mach": 0.03981952568386828,
+      "max_density_deviation": 0.003611647248045413,
+      "accepted": true
+    },
+    {
+      "seed": 2017,
+      "run_id": "20260911T014854.578414-0700_validation_seed_2017",
+      "max_mach": 0.03996842514078074,
+      "max_density_deviation": 0.004246394983861146,
+      "accepted": true
+    },
+    {
+      "seed": 2018,
+      "run_id": "20260911T014856.099414-0700_validation_seed_2018",
+      "max_mach": 0.03543020517795618,
+      "max_density_deviation": 0.00382601357373602,
+      "accepted": true
+    },
+    {
+      "seed": 2019,
+      "run_id": "20260911T014858.806439-0700_validation_seed_2019",
+      "max_mach": 0.0399228694034148,
+      "max_density_deviation": 0.0039804161457259735,
+      "accepted": true
+    },
+    {
+      "seed": 2020,
+      "run_id": "20260911T014901.648986-0700_validation_seed_2020",
+      "max_mach": 0.053870441530884494,
+      "max_density_deviation": 0.004578495617800327,
+      "accepted": true
+    },
+    {
+      "seed": 2021,
+      "run_id": "20260911T014905.019414-0700_validation_seed_2021",
+      "max_mach": 0.03682803413368609,
+      "max_density_deviation": 0.0037536319217554848,
+      "accepted": true
+    },
+    {
+      "seed": 2022,
+      "run_id": "20260911T014907.126684-0700_validation_seed_2022",
+      "max_mach": 0.03246681825951568,
+      "max_density_deviation": 0.0036868779608032476,
+      "accepted": true
+    },
+    {
+      "seed": 2023,
+      "run_id": "20260911T014909.818057-0700_validation_seed_2023",
+      "max_mach": 0.032351744236087984,
+      "max_density_deviation": 0.003585960770424279,
+      "accepted": true
+    },
+    {
+      "seed": 2024,
+      "run_id": "20260911T014912.306719-0700_validation_seed_2024",
+      "max_mach": 0.04393483385047702,
+      "max_density_deviation": 0.004109242902966992,
+      "accepted": true
+    },
+    {
+      "seed": 2025,
+      "run_id": "20260911T014914.695847-0700_validation_seed_2025",
+      "max_mach": 0.07297984455010888,
+      "max_density_deviation": 0.01162362652626392,
+      "accepted": true
+    },
+    {
+      "seed": 2026,
+      "run_id": "20260911T014917.562566-0700_validation_seed_2026",
+      "max_mach": 0.032909100579505565,
+      "max_density_deviation": 0.003685651374484067,
+      "accepted": true
+    },
+    {
+      "seed": 2027,
+      "run_id": "20260911T014919.357792-0700_validation_seed_2027",
+      "max_mach": 0.030609582946709298,
+      "max_density_deviation": 0.003516318294699783,
+      "accepted": true
+    },
+    {
+      "seed": 2028,
+      "run_id": "20260911T014922.286601-0700_validation_seed_2028",
+      "max_mach": 0.03644914478596518,
+      "max_density_deviation": 0.003785357465730277,
+      "accepted": true
+    },
+    {
+      "seed": 2029,
+      "run_id": "20260911T014924.440243-0700_validation_seed_2029",
+      "max_mach": 0.046390603008331734,
+      "max_density_deviation": 0.004418974992479674,
+      "accepted": true
+    },
+    {
+      "seed": 2030,
+      "run_id": "20260911T014926.920385-0700_validation_seed_2030",
+      "max_mach": 0.036086439439577844,
+      "max_density_deviation": 0.003727864907199674,
+      "accepted": true
+    },
+    {
+      "seed": 2031,
+      "run_id": "20260911T014928.906899-0700_validation_seed_2031",
+      "max_mach": 0.032474509183623025,
+      "max_density_deviation": 0.003626989952661974,
+      "accepted": true
+    },
+    {
+      "seed": 2032,
+      "run_id": "20260911T014930.307682-0700_validation_seed_2032",
+      "max_mach": 0.05260124181845925,
+      "max_density_deviation": 0.004277406048980081,
+      "accepted": true
+    },
+    {
+      "seed": 2033,
+      "run_id": "20260911T014931.812906-0700_validation_seed_2033",
+      "max_mach": 0.03136349234876005,
+      "max_density_deviation": 0.003510278957617574,
+      "accepted": true
+    },
+    {
+      "seed": 2034,
+      "run_id": "20260911T014933.647592-0700_validation_seed_2034",
+      "max_mach": 0.028783999754176535,
+      "max_density_deviation": 0.0034156399840521434,
+      "accepted": true
+    },
+    {
+      "seed": 2035,
+      "run_id": "20260911T014935.916212-0700_validation_seed_2035",
+      "max_mach": 0.027979447081941396,
+      "max_density_deviation": 0.0034222443761833254,
+      "accepted": true
+    },
+    {
+      "seed": 2036,
+      "run_id": "20260911T014937.349057-0700_validation_seed_2036",
+      "max_mach": 0.04168856371750601,
+      "max_density_deviation": 0.0039265935895591575,
+      "accepted": true
+    },
+    {
+      "seed": 2037,
+      "run_id": "20260911T014939.108108-0700_validation_seed_2037",
+      "max_mach": 0.05128753951850562,
+      "max_density_deviation": 0.006216702742131153,
+      "accepted": true
+    },
+    {
+      "seed": 2038,
+      "run_id": "20260911T014941.101029-0700_validation_seed_2038",
+      "max_mach": 0.044990247229078226,
+      "max_density_deviation": 0.005219843659742596,
+      "accepted": true
+    },
+    {
+      "seed": 2039,
+      "run_id": "20260911T014943.355395-0700_validation_seed_2039",
+      "max_mach": 0.0367989664805334,
+      "max_density_deviation": 0.003856076350813531,
+      "accepted": true
+    }
+  ],
+  "attempts_this_run": [
+    {
+      "seed": 2000,
+      "max_mach": 0.05969390380978636,
+      "max_density_deviation": 0.00528379873952578,
+      "accepted": true
+    },
+    {
+      "seed": 2001,
+      "max_mach": 0.0579812601384966,
+      "max_density_deviation": 0.005669649162201251,
+      "accepted": true
+    },
+    {
+      "seed": 2002,
+      "max_mach": 0.03145910219529259,
+      "max_density_deviation": 0.0034782294470787622,
+      "accepted": true
+    },
+    {
+      "seed": 2003,
+      "max_mach": 0.03540283117550632,
+      "max_density_deviation": 0.0036692932203916673,
+      "accepted": true
+    },
+    {
+      "seed": 2004,
+      "max_mach": 0.03592606566431262,
+      "max_density_deviation": 0.0037347010930943725,
+      "accepted": true
+    },
+    {
+      "seed": 2005,
+      "max_mach": 0.0381115271083507,
+      "max_density_deviation": 0.003985640773383148,
+      "accepted": true
+    },
+    {
+      "seed": 2006,
+      "max_mach": 0.03796765564399598,
+      "max_density_deviation": 0.004130789578250749,
+      "accepted": true
+    },
+    {
+      "seed": 2007,
+      "max_mach": 0.04142645024594554,
+      "max_density_deviation": 0.004026143448742081,
+      "accepted": true
+    },
+    {
+      "seed": 2008,
+      "max_mach": 0.05569915725142144,
+      "max_density_deviation": 0.004531676103494142,
+      "accepted": true
+    },
+    {
+      "seed": 2009,
+      "max_mach": 0.044935799868327075,
+      "max_density_deviation": 0.003968402416477224,
+      "accepted": true
+    },
+    {
+      "seed": 2010,
+      "max_mach": 0.029453912132203348,
+      "max_density_deviation": 0.003418788745447543,
+      "accepted": true
+    },
+    {
+      "seed": 2011,
+      "max_mach": 0.03370124252611121,
+      "max_density_deviation": 0.0037171623941356646,
+      "accepted": true
+    },
+    {
+      "seed": 2012,
+      "max_mach": 0.030275184744475294,
+      "max_density_deviation": 0.003511147027716044,
+      "accepted": true
+    },
+    {
+      "seed": 2013,
+      "max_mach": 0.0350510224796849,
+      "max_density_deviation": 0.0036309896867325886,
+      "accepted": true
+    },
+    {
+      "seed": 2014,
+      "max_mach": 0.05362399332652365,
+      "max_density_deviation": 0.004756117982724906,
+      "accepted": true
+    },
+    {
+      "seed": 2015,
+      "max_mach": 0.07463438457661038,
+      "max_density_deviation": 0.006400575942002273,
+      "accepted": true
+    },
+    {
+      "seed": 2016,
+      "max_mach": 0.03981952568386828,
+      "max_density_deviation": 0.003611647248045413,
+      "accepted": true
+    },
+    {
+      "seed": 2017,
+      "max_mach": 0.03996842514078074,
+      "max_density_deviation": 0.004246394983861146,
+      "accepted": true
+    },
+    {
+      "seed": 2018,
+      "max_mach": 0.03543020517795618,
+      "max_density_deviation": 0.00382601357373602,
+      "accepted": true
+    },
+    {
+      "seed": 2019,
+      "max_mach": 0.0399228694034148,
+      "max_density_deviation": 0.0039804161457259735,
+      "accepted": true
+    },
+    {
+      "seed": 2020,
+      "max_mach": 0.053870441530884494,
+      "max_density_deviation": 0.004578495617800327,
+      "accepted": true
+    },
+    {
+      "seed": 2021,
+      "max_mach": 0.03682803413368609,
+      "max_density_deviation": 0.0037536319217554848,
+      "accepted": true
+    },
+    {
+      "seed": 2022,
+      "max_mach": 0.03246681825951568,
+      "max_density_deviation": 0.0036868779608032476,
+      "accepted": true
+    },
+    {
+      "seed": 2023,
+      "max_mach": 0.032351744236087984,
+      "max_density_deviation": 0.003585960770424279,
+      "accepted": true
+    },
+    {
+      "seed": 2024,
+      "max_mach": 0.04393483385047702,
+      "max_density_deviation": 0.004109242902966992,
+      "accepted": true
+    },
+    {
+      "seed": 2025,
+      "max_mach": 0.07297984455010888,
+      "max_density_deviation": 0.01162362652626392,
+      "accepted": true
+    },
+    {
+      "seed": 2026,
+      "max_mach": 0.032909100579505565,
+      "max_density_deviation": 0.003685651374484067,
+      "accepted": true
+    },
+    {
+      "seed": 2027,
+      "max_mach": 0.030609582946709298,
+      "max_density_deviation": 0.003516318294699783,
+      "accepted": true
+    },
+    {
+      "seed": 2028,
+      "max_mach": 0.03644914478596518,
+      "max_density_deviation": 0.003785357465730277,
+      "accepted": true
+    },
+    {
+      "seed": 2029,
+      "max_mach": 0.046390603008331734,
+      "max_density_deviation": 0.004418974992479674,
+      "accepted": true
+    },
+    {
+      "seed": 2030,
+      "max_mach": 0.036086439439577844,
+      "max_density_deviation": 0.003727864907199674,
+      "accepted": true
+    },
+    {
+      "seed": 2031,
+      "max_mach": 0.032474509183623025,
+      "max_density_deviation": 0.003626989952661974,
+      "accepted": true
+    },
+    {
+      "seed": 2032,
+      "max_mach": 0.05260124181845925,
+      "max_density_deviation": 0.004277406048980081,
+      "accepted": true
+    },
+    {
+      "seed": 2033,
+      "max_mach": 0.03136349234876005,
+      "max_density_deviation": 0.003510278957617574,
+      "accepted": true
+    },
+    {
+      "seed": 2034,
+      "max_mach": 0.028783999754176535,
+      "max_density_deviation": 0.0034156399840521434,
+      "accepted": true
+    },
+    {
+      "seed": 2035,
+      "max_mach": 0.027979447081941396,
+      "max_density_deviation": 0.0034222443761833254,
+      "accepted": true
+    },
+    {
+      "seed": 2036,
+      "max_mach": 0.04168856371750601,
+      "max_density_deviation": 0.0039265935895591575,
+      "accepted": true
+    },
+    {
+      "seed": 2037,
+      "max_mach": 0.05128753951850562,
+      "max_density_deviation": 0.006216702742131153,
+      "accepted": true
+    },
+    {
+      "seed": 2038,
+      "max_mach": 0.044990247229078226,
+      "max_density_deviation": 0.005219843659742596,
+      "accepted": true
+    },
+    {
+      "seed": 2039,
+      "max_mach": 0.0367989664805334,
+      "max_density_deviation": 0.003856076350813531,
+      "accepted": true
+    }
+  ],
+  "next_seed": 2040
+}

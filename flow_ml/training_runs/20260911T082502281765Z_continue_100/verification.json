@@ -1,0 +1,46 @@
+{
+  "additional_epochs_completed": 100,
+  "checkpoint_checks": [
+    {
+      "epoch": 60,
+      "adam_steps": 1500,
+      "sha256": "a6719af6a126fd5c1c3df59c12ff8f34a71fb84ab6d9d1998b4adc282313999f"
+    },
+    {
+      "epoch": 80,
+      "adam_steps": 3000,
+      "sha256": "5e9dbc04a6e5fef5730231dae0bd363167f0bdfc834c30a79a83302e0578b958"
+    },
+    {
+      "epoch": 100,
+      "adam_steps": 4500,
+      "sha256": "dd6ba964e34defda94fb09fac44189635eeda386c16d0d84fea7e30071b35321"
+    },
+    {
+      "epoch": 120,
+      "adam_steps": 6000,
+      "sha256": "17fff0946ec7077acabdcdc4fd8760a9d4c246a408426792319f08ceb94189c5"
+    },
+    {
+      "epoch": 140,
+      "adam_steps": 7500,
+      "sha256": "8669fee3101242f61d11313b819eddac673a8f4c46e2bc9c43166a5b04d9fd7b"
+    }
+  ],
+  "source_checkpoint_unchanged": true,
+  "optimizer_states_finite": true,
+  "cases_improved_over_epoch_40": 299,
+  "channel_mse_reduction_percent": [
+    72.09475786723789,
+    69.96771659832181,
+    67.4048219512199
+  ],
+  "total_mse_reduction_percent": 70.75967448506188,
+  "baseline_channel_mse_reduction_percent": [
+    86.02701639558097,
+    71.83638591041237,
+    90.24244575826867
+  ],
+  "final_case_1195_loss": 0.0018049418174183492,
+  "old_case_1195_loss": 0.00538616364474689
+}

@@ -1,0 +1,1881 @@
+{
+  "started_at": "2026-09-11T07:50:25.279764+00:00",
+  "manifest_path": "/home/william/NavierStokes/flow_ml/dataset_20260911T075025279764Z.json",
+  "run_root": "solver_runs",
+  "config": {
+    "nx": 64,
+    "ny": 64,
+    "ux_range": [
+      0.01,
+      0.01
+    ],
+    "tau_range": [
+      0.53,
+      0.53
+    ],
+    "uy": 0.0,
+    "convex_probability": 0.5,
+    "radius_range": [
+      4.0,
+      9.0
+    ],
+    "component_count_choices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "component_count_weights": [
+      45,
+      40,
+      12,
+      3
+    ],
+    "convex_point_choices": [
+      3,
+      4,
+      5
+    ],
+    "convex_point_weights": [
+      45,
+      45,
+      10
+    ],
+    "convex_options": {
+      "irregularity": 0.35,
+      "normalize_area": true
+    },
+    "organic_options": {
+      "roughness": 0.4,
+      "harmonics": 6,
+      "smoothness": 1.5
+    },
+    "boundary_clearance": 4,
+    "max_attempts": 100,
+    "x_mean": 32.0,
+    "y_mean": 32.0,
+    "x_std": 10.666666666666666,
+    "y_std": 10.666666666666666
+  },
+  "num_cases": 300,
+  "attempted": 300,
+  "start_seed": 1000,
+  "next_seed": 1300,
+  "split_weights": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "requested_counts": {
+    "train": 300,
+    "validation": 0,
+    "test": 0
+  },
+  "splits": {
+    "train": [
+      {
+        "seed": 1000,
+        "run_id": "20260911T005027.108699-0700_organic, organic",
+        "steps": 61400,
+        "status": "converged"
+      },
+      {
+        "seed": 1001,
+        "run_id": "20260911T005028.789260-0700_convex (3 points), convex (5 points)",
+        "steps": 58900,
+        "status": "converged"
+      },
+      {
+        "seed": 1002,
+        "run_id": "20260911T005031.349858-0700_convex (4 points)",
+        "steps": 89900,
+        "status": "converged"
+      },
+      {
+        "seed": 1003,
+        "run_id": "20260911T005034.077272-0700_organic",
+        "steps": 95400,
+        "status": "converged"
+      },
+      {
+        "seed": 1004,
+        "run_id": "20260911T005036.008872-0700_organic",
+        "steps": 66500,
+        "status": "converged"
+      },
+      {
+        "seed": 1005,
+        "run_id": "20260911T005037.781747-0700_organic",
+        "steps": 61900,
+        "status": "converged"
+      },
+      {
+        "seed": 1006,
+        "run_id": "20260911T005040.602453-0700_organic",
+        "steps": 99900,
+        "status": "converged"
+      },
+      {
+        "seed": 1007,
+        "run_id": "20260911T005043.201561-0700_organic",
+        "steps": 92300,
+        "status": "converged"
+      },
+      {
+        "seed": 1008,
+        "run_id": "20260911T005046.232506-0700_organic",
+        "steps": 107600,
+        "status": "converged"
+      },
+      {
+        "seed": 1009,
+        "run_id": "20260911T005048.732399-0700_organic",
+        "steps": 89200,
+        "status": "converged"
+      },
+      {
+        "seed": 1010,
+        "run_id": "20260911T005050.166248-0700_organic",
+        "steps": 50400,
+        "status": "converged"
+      },
+      {
+        "seed": 1011,
+        "run_id": "20260911T005053.093152-0700_convex (3 points)",
+        "steps": 103400,
+        "status": "converged"
+      },
+      {
+        "seed": 1012,
+        "run_id": "20260911T005055.910827-0700_convex (4 points)",
+        "steps": 100000,
+        "status": "converged"
+      },
+      {
+        "seed": 1013,
+        "run_id": "20260911T005057.718021-0700_organic, organic",
+        "steps": 64400,
+        "status": "converged"
+      },
+      {
+        "seed": 1014,
+        "run_id": "20260911T005059.810570-0700_organic",
+        "steps": 74400,
+        "status": "converged"
+      },
+      {
+        "seed": 1015,
+        "run_id": "20260911T005102.098433-0700_convex (3 points)",
+        "steps": 81300,
+        "status": "converged"
+      },
+      {
+        "seed": 1016,
+        "run_id": "20260911T005104.594193-0700_convex (4 points)",
+        "steps": 88700,
+        "status": "converged"
+      },
+      {
+        "seed": 1017,
+        "run_id": "20260911T005106.316939-0700_convex (3 points), organic, convex (3 points)",
+        "steps": 61100,
+        "status": "converged"
+      },
+      {
+        "seed": 1018,
+        "run_id": "20260911T005109.020598-0700_organic, organic",
+        "steps": 96400,
+        "status": "converged"
+      },
+      {
+        "seed": 1019,
+        "run_id": "20260911T005111.239636-0700_convex (4 points)",
+        "steps": 78600,
+        "status": "converged"
+      },
+      {
+        "seed": 1020,
+        "run_id": "20260911T005113.364307-0700_convex (3 points), organic",
+        "steps": 75300,
+        "status": "converged"
+      },
+      {
+        "seed": 1021,
+        "run_id": "20260911T005115.902539-0700_convex (5 points)",
+        "steps": 90300,
+        "status": "converged"
+      },
+      {
+        "seed": 1022,
+        "run_id": "20260911T005118.241544-0700_organic",
+        "steps": 83000,
+        "status": "converged"
+      },
+      {
+        "seed": 1023,
+        "run_id": "20260911T005119.740814-0700_organic",
+        "steps": 52400,
+        "status": "converged"
+      },
+      {
+        "seed": 1024,
+        "run_id": "20260911T005122.594826-0700_organic",
+        "steps": 101400,
+        "status": "converged"
+      },
+      {
+        "seed": 1025,
+        "run_id": "20260911T005124.363745-0700_convex (4 points), organic",
+        "steps": 62700,
+        "status": "converged"
+      },
+      {
+        "seed": 1026,
+        "run_id": "20260911T005126.348810-0700_organic",
+        "steps": 70600,
+        "status": "converged"
+      },
+      {
+        "seed": 1027,
+        "run_id": "20260911T005128.498119-0700_organic",
+        "steps": 76200,
+        "status": "converged"
+      },
+      {
+        "seed": 1028,
+        "run_id": "20260911T005130.880611-0700_organic, organic",
+        "steps": 84100,
+        "status": "converged"
+      },
+      {
+        "seed": 1029,
+        "run_id": "20260911T005132.474549-0700_convex (4 points), convex (5 points)",
+        "steps": 56400,
+        "status": "converged"
+      },
+      {
+        "seed": 1030,
+        "run_id": "20260911T005135.278320-0700_organic",
+        "steps": 99600,
+        "status": "converged"
+      },
+      {
+        "seed": 1031,
+        "run_id": "20260911T005136.833298-0700_convex (4 points), convex (3 points)",
+        "steps": 54800,
+        "status": "converged"
+      },
+      {
+        "seed": 1032,
+        "run_id": "20260911T005139.157980-0700_organic, convex (5 points), convex (3 points)",
+        "steps": 81300,
+        "status": "converged"
+      },
+      {
+        "seed": 1033,
+        "run_id": "20260911T005140.904519-0700_organic, convex (3 points)",
+        "steps": 62400,
+        "status": "converged"
+      },
+      {
+        "seed": 1034,
+        "run_id": "20260911T005148.866050-0700_organic, organic, organic, convex (3 points)",
+        "steps": 286000,
+        "status": "converged"
+      },
+      {
+        "seed": 1035,
+        "run_id": "20260911T005150.518673-0700_organic",
+        "steps": 59000,
+        "status": "converged"
+      },
+      {
+        "seed": 1036,
+        "run_id": "20260911T005152.515703-0700_convex (3 points)",
+        "steps": 71200,
+        "status": "converged"
+      },
+      {
+        "seed": 1037,
+        "run_id": "20260911T005154.927622-0700_organic",
+        "steps": 86300,
+        "status": "converged"
+      },
+      {
+        "seed": 1038,
+        "run_id": "20260911T005157.630657-0700_organic",
+        "steps": 96000,
+        "status": "converged"
+      },
+      {
+        "seed": 1039,
+        "run_id": "20260911T005159.649926-0700_organic, convex (3 points), convex (3 points)",
+        "steps": 72000,
+        "status": "converged"
+      },
+      {
+        "seed": 1040,
+        "run_id": "20260911T005201.613555-0700_convex (4 points), convex (4 points)",
+        "steps": 70400,
+        "status": "converged"
+      },
+      {
+        "seed": 1041,
+        "run_id": "20260911T005204.013888-0700_organic, convex (3 points), convex (4 points)",
+        "steps": 83900,
+        "status": "converged"
+      },
+      {
+        "seed": 1042,
+        "run_id": "20260911T005206.885621-0700_convex (4 points)",
+        "steps": 101100,
+        "status": "converged"
+      },
+      {
+        "seed": 1043,
+        "run_id": "20260911T005208.352343-0700_convex (4 points)",
+        "steps": 52300,
+        "status": "converged"
+      },
+      {
+        "seed": 1044,
+        "run_id": "20260911T005211.052441-0700_organic",
+        "steps": 96600,
+        "status": "converged"
+      },
+      {
+        "seed": 1045,
+        "run_id": "20260911T005212.094083-0700_organic, convex (4 points)",
+        "steps": 37000,
+        "status": "converged"
+      },
+      {
+        "seed": 1046,
+        "run_id": "20260911T005214.075039-0700_convex (3 points)",
+        "steps": 70800,
+        "status": "converged"
+      },
+      {
+        "seed": 1047,
+        "run_id": "20260911T005217.111774-0700_organic, convex (3 points)",
+        "steps": 107300,
+        "status": "converged"
+      },
+      {
+        "seed": 1048,
+        "run_id": "20260911T005218.655653-0700_organic, convex (3 points)",
+        "steps": 54900,
+        "status": "converged"
+      },
+      {
+        "seed": 1049,
+        "run_id": "20260911T005220.550137-0700_convex (4 points)",
+        "steps": 67700,
+        "status": "converged"
+      },
+      {
+        "seed": 1050,
+        "run_id": "20260911T005223.638939-0700_organic, organic",
+        "steps": 110400,
+        "status": "converged"
+      },
+      {
+        "seed": 1051,
+        "run_id": "20260911T005226.254477-0700_organic, convex (3 points)",
+        "steps": 92600,
+        "status": "converged"
+      },
+      {
+        "seed": 1052,
+        "run_id": "20260911T005228.241567-0700_organic",
+        "steps": 71000,
+        "status": "converged"
+      },
+      {
+        "seed": 1053,
+        "run_id": "20260911T005230.749371-0700_organic, organic",
+        "steps": 89800,
+        "status": "converged"
+      },
+      {
+        "seed": 1054,
+        "run_id": "20260911T005233.536066-0700_convex (3 points)",
+        "steps": 99300,
+        "status": "converged"
+      },
+      {
+        "seed": 1055,
+        "run_id": "20260911T005235.067272-0700_convex (3 points), organic",
+        "steps": 54500,
+        "status": "converged"
+      },
+      {
+        "seed": 1056,
+        "run_id": "20260911T005237.648607-0700_organic, organic, convex (3 points)",
+        "steps": 92000,
+        "status": "converged"
+      },
+      {
+        "seed": 1057,
+        "run_id": "20260911T005240.372566-0700_convex (4 points)",
+        "steps": 97500,
+        "status": "converged"
+      },
+      {
+        "seed": 1058,
+        "run_id": "20260911T005243.055546-0700_convex (4 points)",
+        "steps": 95600,
+        "status": "converged"
+      },
+      {
+        "seed": 1059,
+        "run_id": "20260911T005245.688320-0700_organic, convex (4 points)",
+        "steps": 94100,
+        "status": "converged"
+      },
+      {
+        "seed": 1060,
+        "run_id": "20260911T005246.952154-0700_convex (3 points), convex (4 points), convex (4 points), convex (3 points)",
+        "steps": 45000,
+        "status": "converged"
+      },
+      {
+        "seed": 1061,
+        "run_id": "20260911T005248.886489-0700_convex (4 points), convex (3 points)",
+        "steps": 69200,
+        "status": "converged"
+      },
+      {
+        "seed": 1062,
+        "run_id": "20260911T005250.106070-0700_organic, convex (3 points)",
+        "steps": 43400,
+        "status": "converged"
+      },
+      {
+        "seed": 1063,
+        "run_id": "20260911T005251.636457-0700_convex (4 points), organic, organic",
+        "steps": 54500,
+        "status": "converged"
+      },
+      {
+        "seed": 1064,
+        "run_id": "20260911T005253.257074-0700_convex (3 points)",
+        "steps": 57800,
+        "status": "converged"
+      },
+      {
+        "seed": 1065,
+        "run_id": "20260911T005255.786995-0700_convex (3 points), convex (4 points), convex (3 points), organic",
+        "steps": 90300,
+        "status": "converged"
+      },
+      {
+        "seed": 1066,
+        "run_id": "20260911T005257.462044-0700_organic",
+        "steps": 59400,
+        "status": "converged"
+      },
+      {
+        "seed": 1067,
+        "run_id": "20260911T005259.172654-0700_organic, organic, organic",
+        "steps": 60900,
+        "status": "converged"
+      },
+      {
+        "seed": 1068,
+        "run_id": "20260911T005300.800110-0700_convex (3 points), organic",
+        "steps": 58100,
+        "status": "converged"
+      },
+      {
+        "seed": 1069,
+        "run_id": "20260911T005302.006015-0700_organic, organic, organic, organic",
+        "steps": 42800,
+        "status": "converged"
+      },
+      {
+        "seed": 1070,
+        "run_id": "20260911T005304.212012-0700_organic",
+        "steps": 78800,
+        "status": "converged"
+      },
+      {
+        "seed": 1071,
+        "run_id": "20260911T005308.619182-0700_convex (4 points)",
+        "steps": 158100,
+        "status": "converged"
+      },
+      {
+        "seed": 1072,
+        "run_id": "20260911T005310.216773-0700_organic, organic",
+        "steps": 57000,
+        "status": "converged"
+      },
+      {
+        "seed": 1073,
+        "run_id": "20260911T005312.722628-0700_convex (4 points)",
+        "steps": 89500,
+        "status": "converged"
+      },
+      {
+        "seed": 1074,
+        "run_id": "20260911T005314.544186-0700_organic, organic, convex (4 points), organic",
+        "steps": 64300,
+        "status": "converged"
+      },
+      {
+        "seed": 1075,
+        "run_id": "20260911T005316.814642-0700_convex (3 points), organic",
+        "steps": 80900,
+        "status": "converged"
+      },
+      {
+        "seed": 1076,
+        "run_id": "20260911T005319.647232-0700_organic",
+        "steps": 101000,
+        "status": "converged"
+      },
+      {
+        "seed": 1077,
+        "run_id": "20260911T005321.473340-0700_organic, convex (4 points), convex (4 points)",
+        "steps": 65200,
+        "status": "converged"
+      },
+      {
+        "seed": 1078,
+        "run_id": "20260911T005324.078337-0700_convex (3 points), convex (4 points), convex (3 points)",
+        "steps": 91800,
+        "status": "converged"
+      },
+      {
+        "seed": 1079,
+        "run_id": "20260911T005325.318866-0700_organic, organic, convex (3 points)",
+        "steps": 43100,
+        "status": "converged"
+      },
+      {
+        "seed": 1080,
+        "run_id": "20260911T005326.948849-0700_organic, convex (4 points), convex (3 points)",
+        "steps": 56700,
+        "status": "converged"
+      },
+      {
+        "seed": 1081,
+        "run_id": "20260911T005329.365287-0700_organic",
+        "steps": 84200,
+        "status": "converged"
+      },
+      {
+        "seed": 1082,
+        "run_id": "20260911T005331.029807-0700_convex (3 points), convex (4 points)",
+        "steps": 58100,
+        "status": "converged"
+      },
+      {
+        "seed": 1083,
+        "run_id": "20260911T005333.351696-0700_organic",
+        "steps": 81300,
+        "status": "converged"
+      },
+      {
+        "seed": 1084,
+        "run_id": "20260911T005334.877614-0700_organic, convex (3 points)",
+        "steps": 53200,
+        "status": "converged"
+      },
+      {
+        "seed": 1085,
+        "run_id": "20260911T005338.401113-0700_organic, organic, organic",
+        "steps": 123300,
+        "status": "converged"
+      },
+      {
+        "seed": 1086,
+        "run_id": "20260911T005340.015604-0700_organic, convex (4 points)",
+        "steps": 56400,
+        "status": "converged"
+      },
+      {
+        "seed": 1087,
+        "run_id": "20260911T005341.601649-0700_organic, convex (4 points)",
+        "steps": 55100,
+        "status": "converged"
+      },
+      {
+        "seed": 1088,
+        "run_id": "20260911T005343.079787-0700_organic, convex (4 points)",
+        "steps": 51400,
+        "status": "converged"
+      },
+      {
+        "seed": 1089,
+        "run_id": "20260911T005345.335881-0700_organic",
+        "steps": 79100,
+        "status": "converged"
+      },
+      {
+        "seed": 1090,
+        "run_id": "20260911T005347.643686-0700_convex (5 points), convex (3 points)",
+        "steps": 80600,
+        "status": "converged"
+      },
+      {
+        "seed": 1091,
+        "run_id": "20260911T005349.393373-0700_organic",
+        "steps": 61100,
+        "status": "converged"
+      },
+      {
+        "seed": 1092,
+        "run_id": "20260911T005350.922476-0700_organic",
+        "steps": 53400,
+        "status": "converged"
+      },
+      {
+        "seed": 1093,
+        "run_id": "20260911T005352.483098-0700_convex (4 points), convex (3 points)",
+        "steps": 54800,
+        "status": "converged"
+      },
+      {
+        "seed": 1094,
+        "run_id": "20260911T005353.904233-0700_convex (3 points), convex (4 points)",
+        "steps": 50500,
+        "status": "converged"
+      },
+      {
+        "seed": 1095,
+        "run_id": "20260911T005356.224168-0700_organic, convex (4 points)",
+        "steps": 81800,
+        "status": "converged"
+      },
+      {
+        "seed": 1096,
+        "run_id": "20260911T005357.418195-0700_organic, convex (4 points), organic",
+        "steps": 41600,
+        "status": "converged"
+      },
+      {
+        "seed": 1097,
+        "run_id": "20260911T005359.006968-0700_organic, convex (4 points)",
+        "steps": 55600,
+        "status": "converged"
+      },
+      {
+        "seed": 1098,
+        "run_id": "20260911T005403.373856-0700_organic, convex (3 points)",
+        "steps": 153100,
+        "status": "converged"
+      },
+      {
+        "seed": 1099,
+        "run_id": "20260911T005405.487108-0700_organic",
+        "steps": 74200,
+        "status": "converged"
+      },
+      {
+        "seed": 1100,
+        "run_id": "20260911T005408.025321-0700_convex (4 points)",
+        "steps": 89200,
+        "status": "converged"
+      },
+      {
+        "seed": 1101,
+        "run_id": "20260911T005409.468869-0700_convex (4 points), organic, convex (3 points)",
+        "steps": 50500,
+        "status": "converged"
+      },
+      {
+        "seed": 1102,
+        "run_id": "20260911T005411.979338-0700_convex (3 points), convex (4 points)",
+        "steps": 88000,
+        "status": "converged"
+      },
+      {
+        "seed": 1103,
+        "run_id": "20260911T005414.327689-0700_organic",
+        "steps": 82300,
+        "status": "converged"
+      },
+      {
+        "seed": 1104,
+        "run_id": "20260911T005415.711645-0700_convex (3 points)",
+        "steps": 48400,
+        "status": "converged"
+      },
+      {
+        "seed": 1105,
+        "run_id": "20260911T005417.602075-0700_organic, convex (4 points)",
+        "steps": 66100,
+        "status": "converged"
+      },
+      {
+        "seed": 1106,
+        "run_id": "20260911T005419.207637-0700_organic, organic",
+        "steps": 55900,
+        "status": "converged"
+      },
+      {
+        "seed": 1107,
+        "run_id": "20260911T005420.878774-0700_organic, convex (5 points)",
+        "steps": 58500,
+        "status": "converged"
+      },
+      {
+        "seed": 1108,
+        "run_id": "20260911T005423.587110-0700_organic",
+        "steps": 95100,
+        "status": "converged"
+      },
+      {
+        "seed": 1109,
+        "run_id": "20260911T005425.111578-0700_convex (4 points)",
+        "steps": 53200,
+        "status": "converged"
+      },
+      {
+        "seed": 1110,
+        "run_id": "20260911T005427.627550-0700_organic, organic",
+        "steps": 88100,
+        "status": "converged"
+      },
+      {
+        "seed": 1111,
+        "run_id": "20260911T005429.552399-0700_organic, convex (3 points), organic",
+        "steps": 67000,
+        "status": "converged"
+      },
+      {
+        "seed": 1112,
+        "run_id": "20260911T005430.510739-0700_convex (4 points), convex (4 points)",
+        "steps": 33900,
+        "status": "converged"
+      },
+      {
+        "seed": 1113,
+        "run_id": "20260911T005434.222029-0700_convex (4 points), convex (3 points), convex (4 points), convex (4 points)",
+        "steps": 131600,
+        "status": "converged"
+      },
+      {
+        "seed": 1114,
+        "run_id": "20260911T005435.945307-0700_organic",
+        "steps": 61600,
+        "status": "converged"
+      },
+      {
+        "seed": 1115,
+        "run_id": "20260911T005437.648332-0700_organic",
+        "steps": 60800,
+        "status": "converged"
+      },
+      {
+        "seed": 1116,
+        "run_id": "20260911T005439.162511-0700_organic, convex (3 points), organic",
+        "steps": 53900,
+        "status": "converged"
+      },
+      {
+        "seed": 1117,
+        "run_id": "20260911T005440.893475-0700_organic, organic",
+        "steps": 61800,
+        "status": "converged"
+      },
+      {
+        "seed": 1118,
+        "run_id": "20260911T005442.767001-0700_convex (4 points)",
+        "steps": 67000,
+        "status": "converged"
+      },
+      {
+        "seed": 1119,
+        "run_id": "20260911T005444.689412-0700_organic, organic",
+        "steps": 68100,
+        "status": "converged"
+      },
+      {
+        "seed": 1120,
+        "run_id": "20260911T005447.493356-0700_convex (4 points)",
+        "steps": 100200,
+        "status": "converged"
+      },
+      {
+        "seed": 1121,
+        "run_id": "20260911T005449.378860-0700_convex (4 points)",
+        "steps": 67300,
+        "status": "converged"
+      },
+      {
+        "seed": 1122,
+        "run_id": "20260911T005450.546158-0700_organic, convex (3 points), organic, organic",
+        "steps": 41500,
+        "status": "converged"
+      },
+      {
+        "seed": 1123,
+        "run_id": "20260911T005452.501578-0700_convex (3 points)",
+        "steps": 69600,
+        "status": "converged"
+      },
+      {
+        "seed": 1124,
+        "run_id": "20260911T005454.101207-0700_convex (4 points)",
+        "steps": 57200,
+        "status": "converged"
+      },
+      {
+        "seed": 1125,
+        "run_id": "20260911T005455.346072-0700_convex (3 points), convex (3 points), organic, convex (5 points)",
+        "steps": 44200,
+        "status": "converged"
+      },
+      {
+        "seed": 1126,
+        "run_id": "20260911T005458.044778-0700_convex (3 points)",
+        "steps": 96700,
+        "status": "converged"
+      },
+      {
+        "seed": 1127,
+        "run_id": "20260911T005500.048943-0700_organic, convex (3 points)",
+        "steps": 71400,
+        "status": "converged"
+      },
+      {
+        "seed": 1128,
+        "run_id": "20260911T005501.610542-0700_organic, convex (5 points), convex (3 points)",
+        "steps": 55600,
+        "status": "converged"
+      },
+      {
+        "seed": 1129,
+        "run_id": "20260911T005503.980756-0700_organic, convex (4 points)",
+        "steps": 84800,
+        "status": "converged"
+      },
+      {
+        "seed": 1130,
+        "run_id": "20260911T005507.041491-0700_convex (4 points)",
+        "steps": 107700,
+        "status": "converged"
+      },
+      {
+        "seed": 1131,
+        "run_id": "20260911T005509.399764-0700_organic, organic",
+        "steps": 83900,
+        "status": "converged"
+      },
+      {
+        "seed": 1132,
+        "run_id": "20260911T005511.538379-0700_convex (3 points)",
+        "steps": 76300,
+        "status": "converged"
+      },
+      {
+        "seed": 1133,
+        "run_id": "20260911T005514.678306-0700_convex (3 points)",
+        "steps": 111900,
+        "status": "converged"
+      },
+      {
+        "seed": 1134,
+        "run_id": "20260911T005516.685603-0700_organic, convex (3 points)",
+        "steps": 71200,
+        "status": "converged"
+      },
+      {
+        "seed": 1135,
+        "run_id": "20260911T005518.271251-0700_organic, organic",
+        "steps": 56000,
+        "status": "converged"
+      },
+      {
+        "seed": 1136,
+        "run_id": "20260911T005522.368768-0700_convex (3 points), organic, organic, organic",
+        "steps": 145900,
+        "status": "converged"
+      },
+      {
+        "seed": 1137,
+        "run_id": "20260911T005524.585331-0700_convex (4 points)",
+        "steps": 79000,
+        "status": "converged"
+      },
+      {
+        "seed": 1138,
+        "run_id": "20260911T005526.554309-0700_convex (4 points), organic",
+        "steps": 70100,
+        "status": "converged"
+      },
+      {
+        "seed": 1139,
+        "run_id": "20260911T005528.457809-0700_organic, convex (3 points)",
+        "steps": 67900,
+        "status": "converged"
+      },
+      {
+        "seed": 1140,
+        "run_id": "20260911T005531.377405-0700_convex (3 points)",
+        "steps": 104300,
+        "status": "converged"
+      },
+      {
+        "seed": 1141,
+        "run_id": "20260911T005533.980611-0700_convex (3 points)",
+        "steps": 92900,
+        "status": "converged"
+      },
+      {
+        "seed": 1142,
+        "run_id": "20260911T005535.577727-0700_organic",
+        "steps": 56900,
+        "status": "converged"
+      },
+      {
+        "seed": 1143,
+        "run_id": "20260911T005536.892469-0700_convex (3 points), convex (3 points)",
+        "steps": 46400,
+        "status": "converged"
+      },
+      {
+        "seed": 1144,
+        "run_id": "20260911T005539.529522-0700_convex (4 points), organic",
+        "steps": 94100,
+        "status": "converged"
+      },
+      {
+        "seed": 1145,
+        "run_id": "20260911T005541.514230-0700_organic",
+        "steps": 70700,
+        "status": "converged"
+      },
+      {
+        "seed": 1146,
+        "run_id": "20260911T005543.283680-0700_organic",
+        "steps": 62800,
+        "status": "converged"
+      },
+      {
+        "seed": 1147,
+        "run_id": "20260911T005544.811029-0700_organic, organic",
+        "steps": 54100,
+        "status": "converged"
+      },
+      {
+        "seed": 1148,
+        "run_id": "20260911T005546.641322-0700_convex (5 points), organic, organic",
+        "steps": 64600,
+        "status": "converged"
+      },
+      {
+        "seed": 1149,
+        "run_id": "20260911T005548.505073-0700_convex (4 points), convex (4 points)",
+        "steps": 65700,
+        "status": "converged"
+      },
+      {
+        "seed": 1150,
+        "run_id": "20260911T005551.411774-0700_convex (3 points), organic",
+        "steps": 102600,
+        "status": "converged"
+      },
+      {
+        "seed": 1151,
+        "run_id": "20260911T005553.277634-0700_organic, organic",
+        "steps": 65200,
+        "status": "converged"
+      },
+      {
+        "seed": 1152,
+        "run_id": "20260911T005555.904468-0700_organic",
+        "steps": 94100,
+        "status": "converged"
+      },
+      {
+        "seed": 1153,
+        "run_id": "20260911T005558.154245-0700_convex (4 points)",
+        "steps": 80200,
+        "status": "converged"
+      },
+      {
+        "seed": 1154,
+        "run_id": "20260911T005559.416003-0700_organic, convex (4 points)",
+        "steps": 44800,
+        "status": "converged"
+      },
+      {
+        "seed": 1155,
+        "run_id": "20260911T005601.254845-0700_convex (4 points)",
+        "steps": 65600,
+        "status": "converged"
+      },
+      {
+        "seed": 1156,
+        "run_id": "20260911T005604.279931-0700_organic, convex (4 points)",
+        "steps": 107700,
+        "status": "converged"
+      },
+      {
+        "seed": 1157,
+        "run_id": "20260911T005607.667321-0700_organic, convex (3 points)",
+        "steps": 119800,
+        "status": "converged"
+      },
+      {
+        "seed": 1158,
+        "run_id": "20260911T005610.645069-0700_convex (4 points)",
+        "steps": 104200,
+        "status": "converged"
+      },
+      {
+        "seed": 1159,
+        "run_id": "20260911T005612.345036-0700_organic, organic, convex (3 points)",
+        "steps": 59600,
+        "status": "converged"
+      },
+      {
+        "seed": 1160,
+        "run_id": "20260911T005614.476091-0700_convex (4 points)",
+        "steps": 74500,
+        "status": "converged"
+      },
+      {
+        "seed": 1161,
+        "run_id": "20260911T005615.983326-0700_organic, organic",
+        "steps": 52800,
+        "status": "converged"
+      },
+      {
+        "seed": 1162,
+        "run_id": "20260911T005617.884007-0700_organic",
+        "steps": 66400,
+        "status": "converged"
+      },
+      {
+        "seed": 1163,
+        "run_id": "20260911T005619.847502-0700_organic",
+        "steps": 68500,
+        "status": "converged"
+      },
+      {
+        "seed": 1164,
+        "run_id": "20260911T005622.536463-0700_convex (4 points), convex (3 points)",
+        "steps": 93500,
+        "status": "converged"
+      },
+      {
+        "seed": 1165,
+        "run_id": "20260911T005624.322357-0700_convex (3 points), organic",
+        "steps": 62600,
+        "status": "converged"
+      },
+      {
+        "seed": 1166,
+        "run_id": "20260911T005626.820905-0700_organic, organic, organic",
+        "steps": 87700,
+        "status": "converged"
+      },
+      {
+        "seed": 1167,
+        "run_id": "20260911T005628.365018-0700_convex (4 points), organic",
+        "steps": 54200,
+        "status": "converged"
+      },
+      {
+        "seed": 1168,
+        "run_id": "20260911T005630.388422-0700_convex (4 points)",
+        "steps": 70900,
+        "status": "converged"
+      },
+      {
+        "seed": 1169,
+        "run_id": "20260911T005633.081703-0700_organic",
+        "steps": 94200,
+        "status": "converged"
+      },
+      {
+        "seed": 1170,
+        "run_id": "20260911T005634.982405-0700_organic",
+        "steps": 66500,
+        "status": "converged"
+      },
+      {
+        "seed": 1171,
+        "run_id": "20260911T005636.916520-0700_organic, convex (5 points)",
+        "steps": 67500,
+        "status": "converged"
+      },
+      {
+        "seed": 1172,
+        "run_id": "20260911T005638.645188-0700_convex (3 points), convex (4 points), organic",
+        "steps": 60400,
+        "status": "converged"
+      },
+      {
+        "seed": 1173,
+        "run_id": "20260911T005639.856090-0700_convex (5 points), convex (4 points)",
+        "steps": 42500,
+        "status": "converged"
+      },
+      {
+        "seed": 1174,
+        "run_id": "20260911T005641.371578-0700_convex (3 points), convex (4 points)",
+        "steps": 53100,
+        "status": "converged"
+      },
+      {
+        "seed": 1175,
+        "run_id": "20260911T005643.861885-0700_organic, organic",
+        "steps": 87500,
+        "status": "converged"
+      },
+      {
+        "seed": 1176,
+        "run_id": "20260911T005646.694182-0700_convex (4 points), convex (4 points)",
+        "steps": 99300,
+        "status": "converged"
+      },
+      {
+        "seed": 1177,
+        "run_id": "20260911T005648.837171-0700_convex (4 points)",
+        "steps": 74500,
+        "status": "converged"
+      },
+      {
+        "seed": 1178,
+        "run_id": "20260911T005651.264178-0700_organic",
+        "steps": 83900,
+        "status": "converged"
+      },
+      {
+        "seed": 1179,
+        "run_id": "20260911T005653.429252-0700_convex (3 points)",
+        "steps": 75400,
+        "status": "converged"
+      },
+      {
+        "seed": 1180,
+        "run_id": "20260911T005655.150451-0700_convex (4 points), convex (5 points)",
+        "steps": 60300,
+        "status": "converged"
+      },
+      {
+        "seed": 1181,
+        "run_id": "20260911T005657.576332-0700_convex (4 points)",
+        "steps": 84900,
+        "status": "converged"
+      },
+      {
+        "seed": 1182,
+        "run_id": "20260911T005659.431509-0700_convex (4 points), organic",
+        "steps": 65000,
+        "status": "converged"
+      },
+      {
+        "seed": 1183,
+        "run_id": "20260911T005701.923929-0700_organic",
+        "steps": 87400,
+        "status": "converged"
+      },
+      {
+        "seed": 1184,
+        "run_id": "20260911T005703.440772-0700_organic, convex (3 points)",
+        "steps": 53000,
+        "status": "converged"
+      },
+      {
+        "seed": 1185,
+        "run_id": "20260911T005705.778593-0700_convex (3 points), organic",
+        "steps": 81200,
+        "status": "converged"
+      },
+      {
+        "seed": 1186,
+        "run_id": "20260911T005707.521020-0700_organic, convex (4 points), convex (3 points)",
+        "steps": 60800,
+        "status": "converged"
+      },
+      {
+        "seed": 1187,
+        "run_id": "20260911T005709.502476-0700_organic, convex (3 points)",
+        "steps": 69400,
+        "status": "converged"
+      },
+      {
+        "seed": 1188,
+        "run_id": "20260911T005712.494990-0700_convex (4 points)",
+        "steps": 107200,
+        "status": "converged"
+      },
+      {
+        "seed": 1189,
+        "run_id": "20260911T005714.447588-0700_organic, organic",
+        "steps": 69700,
+        "status": "converged"
+      },
+      {
+        "seed": 1190,
+        "run_id": "20260911T005716.003412-0700_organic, convex (4 points)",
+        "steps": 56100,
+        "status": "converged"
+      },
+      {
+        "seed": 1191,
+        "run_id": "20260911T005717.989697-0700_organic",
+        "steps": 71800,
+        "status": "converged"
+      },
+      {
+        "seed": 1192,
+        "run_id": "20260911T005719.063279-0700_convex (5 points), convex (3 points), organic",
+        "steps": 39000,
+        "status": "converged"
+      },
+      {
+        "seed": 1193,
+        "run_id": "20260911T005720.899727-0700_organic",
+        "steps": 67200,
+        "status": "converged"
+      },
+      {
+        "seed": 1194,
+        "run_id": "20260911T005722.900489-0700_organic, convex (3 points)",
+        "steps": 71000,
+        "status": "converged"
+      },
+      {
+        "seed": 1195,
+        "run_id": "20260911T005724.085093-0700_convex (3 points), convex (4 points), convex (4 points)",
+        "steps": 41100,
+        "status": "converged"
+      },
+      {
+        "seed": 1196,
+        "run_id": "20260911T005725.597962-0700_convex (4 points)",
+        "steps": 52800,
+        "status": "converged"
+      },
+      {
+        "seed": 1197,
+        "run_id": "20260911T005727.627278-0700_organic, organic",
+        "steps": 71100,
+        "status": "converged"
+      },
+      {
+        "seed": 1198,
+        "run_id": "20260911T005730.370449-0700_organic",
+        "steps": 98000,
+        "status": "converged"
+      },
+      {
+        "seed": 1199,
+        "run_id": "20260911T005732.608600-0700_convex (4 points), organic, convex (4 points), organic",
+        "steps": 79700,
+        "status": "converged"
+      },
+      {
+        "seed": 1200,
+        "run_id": "20260911T005733.785031-0700_convex (3 points), organic",
+        "steps": 41500,
+        "status": "converged"
+      },
+      {
+        "seed": 1201,
+        "run_id": "20260911T005735.946011-0700_organic",
+        "steps": 77100,
+        "status": "converged"
+      },
+      {
+        "seed": 1202,
+        "run_id": "20260911T005738.287019-0700_organic",
+        "steps": 83300,
+        "status": "converged"
+      },
+      {
+        "seed": 1203,
+        "run_id": "20260911T005740.320119-0700_organic",
+        "steps": 72200,
+        "status": "converged"
+      },
+      {
+        "seed": 1204,
+        "run_id": "20260911T005743.050516-0700_organic, convex (4 points)",
+        "steps": 97300,
+        "status": "converged"
+      },
+      {
+        "seed": 1205,
+        "run_id": "20260911T005745.482906-0700_organic, organic",
+        "steps": 86000,
+        "status": "converged"
+      },
+      {
+        "seed": 1206,
+        "run_id": "20260911T005747.103364-0700_convex (4 points)",
+        "steps": 56500,
+        "status": "converged"
+      },
+      {
+        "seed": 1207,
+        "run_id": "20260911T005749.583628-0700_convex (4 points)",
+        "steps": 88400,
+        "status": "converged"
+      },
+      {
+        "seed": 1208,
+        "run_id": "20260911T005751.078347-0700_organic, organic",
+        "steps": 53100,
+        "status": "converged"
+      },
+      {
+        "seed": 1209,
+        "run_id": "20260911T005753.506367-0700_convex (4 points)",
+        "steps": 86100,
+        "status": "converged"
+      },
+      {
+        "seed": 1210,
+        "run_id": "20260911T005755.677840-0700_convex (4 points)",
+        "steps": 76700,
+        "status": "converged"
+      },
+      {
+        "seed": 1211,
+        "run_id": "20260911T005757.603475-0700_organic, convex (3 points)",
+        "steps": 68800,
+        "status": "converged"
+      },
+      {
+        "seed": 1212,
+        "run_id": "20260911T005759.495489-0700_organic",
+        "steps": 67100,
+        "status": "converged"
+      },
+      {
+        "seed": 1213,
+        "run_id": "20260911T005800.708665-0700_organic, organic",
+        "steps": 42900,
+        "status": "converged"
+      },
+      {
+        "seed": 1214,
+        "run_id": "20260911T005802.267142-0700_organic, convex (3 points), organic",
+        "steps": 55100,
+        "status": "converged"
+      },
+      {
+        "seed": 1215,
+        "run_id": "20260911T005804.271378-0700_convex (3 points)",
+        "steps": 71300,
+        "status": "converged"
+      },
+      {
+        "seed": 1216,
+        "run_id": "20260911T005806.841618-0700_organic",
+        "steps": 91700,
+        "status": "converged"
+      },
+      {
+        "seed": 1217,
+        "run_id": "20260911T005809.392699-0700_organic, organic",
+        "steps": 91100,
+        "status": "converged"
+      },
+      {
+        "seed": 1218,
+        "run_id": "20260911T005810.664655-0700_convex (4 points), organic",
+        "steps": 45200,
+        "status": "converged"
+      },
+      {
+        "seed": 1219,
+        "run_id": "20260911T005812.218353-0700_convex (3 points), organic",
+        "steps": 55100,
+        "status": "converged"
+      },
+      {
+        "seed": 1220,
+        "run_id": "20260911T005814.061724-0700_convex (5 points), convex (3 points)",
+        "steps": 65600,
+        "status": "converged"
+      },
+      {
+        "seed": 1221,
+        "run_id": "20260911T005817.808702-0700_convex (3 points), convex (4 points)",
+        "steps": 134200,
+        "status": "converged"
+      },
+      {
+        "seed": 1222,
+        "run_id": "20260911T005819.356246-0700_convex (3 points)",
+        "steps": 55100,
+        "status": "converged"
+      },
+      {
+        "seed": 1223,
+        "run_id": "20260911T005820.884807-0700_organic",
+        "steps": 54200,
+        "status": "converged"
+      },
+      {
+        "seed": 1224,
+        "run_id": "20260911T005822.357229-0700_convex (3 points)",
+        "steps": 52400,
+        "status": "converged"
+      },
+      {
+        "seed": 1225,
+        "run_id": "20260911T005824.109526-0700_organic, convex (3 points)",
+        "steps": 62200,
+        "status": "converged"
+      },
+      {
+        "seed": 1226,
+        "run_id": "20260911T005825.981491-0700_convex (4 points)",
+        "steps": 66600,
+        "status": "converged"
+      },
+      {
+        "seed": 1227,
+        "run_id": "20260911T005827.591412-0700_convex (3 points)",
+        "steps": 57000,
+        "status": "converged"
+      },
+      {
+        "seed": 1228,
+        "run_id": "20260911T005829.587105-0700_organic, organic",
+        "steps": 71100,
+        "status": "converged"
+      },
+      {
+        "seed": 1229,
+        "run_id": "20260911T005832.312433-0700_convex (3 points)",
+        "steps": 97400,
+        "status": "converged"
+      },
+      {
+        "seed": 1230,
+        "run_id": "20260911T005834.364435-0700_convex (3 points)",
+        "steps": 73300,
+        "status": "converged"
+      },
+      {
+        "seed": 1231,
+        "run_id": "20260911T005836.740083-0700_convex (4 points), convex (4 points), organic, organic",
+        "steps": 84700,
+        "status": "converged"
+      },
+      {
+        "seed": 1232,
+        "run_id": "20260911T005838.356161-0700_convex (4 points), convex (3 points), organic, convex (3 points)",
+        "steps": 57500,
+        "status": "converged"
+      },
+      {
+        "seed": 1233,
+        "run_id": "20260911T005840.796452-0700_organic, convex (3 points)",
+        "steps": 87100,
+        "status": "converged"
+      },
+      {
+        "seed": 1234,
+        "run_id": "20260911T005845.229958-0700_convex (3 points), organic, organic, convex (3 points)",
+        "steps": 158600,
+        "status": "converged"
+      },
+      {
+        "seed": 1235,
+        "run_id": "20260911T005847.367442-0700_organic",
+        "steps": 76400,
+        "status": "converged"
+      },
+      {
+        "seed": 1236,
+        "run_id": "20260911T005850.080873-0700_organic, organic",
+        "steps": 96900,
+        "status": "converged"
+      },
+      {
+        "seed": 1237,
+        "run_id": "20260911T005851.446283-0700_convex (4 points), organic",
+        "steps": 48400,
+        "status": "converged"
+      },
+      {
+        "seed": 1238,
+        "run_id": "20260911T005852.848268-0700_convex (3 points), organic, organic",
+        "steps": 49800,
+        "status": "converged"
+      },
+      {
+        "seed": 1239,
+        "run_id": "20260911T005854.648351-0700_organic, organic",
+        "steps": 64300,
+        "status": "converged"
+      },
+      {
+        "seed": 1240,
+        "run_id": "20260911T005856.979097-0700_convex (4 points)",
+        "steps": 81500,
+        "status": "converged"
+      },
+      {
+        "seed": 1241,
+        "run_id": "20260911T005858.631826-0700_organic, convex (4 points)",
+        "steps": 58700,
+        "status": "converged"
+      },
+      {
+        "seed": 1242,
+        "run_id": "20260911T005900.778846-0700_convex (4 points)",
+        "steps": 76300,
+        "status": "converged"
+      },
+      {
+        "seed": 1243,
+        "run_id": "20260911T005902.345926-0700_convex (4 points)",
+        "steps": 55700,
+        "status": "converged"
+      },
+      {
+        "seed": 1244,
+        "run_id": "20260911T005903.870063-0700_organic, convex (4 points), organic",
+        "steps": 54000,
+        "status": "converged"
+      },
+      {
+        "seed": 1245,
+        "run_id": "20260911T005906.214660-0700_convex (4 points), organic",
+        "steps": 83900,
+        "status": "converged"
+      },
+      {
+        "seed": 1246,
+        "run_id": "20260911T005907.966806-0700_organic, organic",
+        "steps": 61300,
+        "status": "converged"
+      },
+      {
+        "seed": 1247,
+        "run_id": "20260911T005910.253049-0700_organic",
+        "steps": 82000,
+        "status": "converged"
+      },
+      {
+        "seed": 1248,
+        "run_id": "20260911T005911.680581-0700_organic",
+        "steps": 50900,
+        "status": "converged"
+      },
+      {
+        "seed": 1249,
+        "run_id": "20260911T005913.489534-0700_convex (4 points)",
+        "steps": 64700,
+        "status": "converged"
+      },
+      {
+        "seed": 1250,
+        "run_id": "20260911T005914.728292-0700_organic, organic",
+        "steps": 44100,
+        "status": "converged"
+      },
+      {
+        "seed": 1251,
+        "run_id": "20260911T005916.964575-0700_organic",
+        "steps": 79800,
+        "status": "converged"
+      },
+      {
+        "seed": 1252,
+        "run_id": "20260911T005918.361775-0700_organic",
+        "steps": 49900,
+        "status": "converged"
+      },
+      {
+        "seed": 1253,
+        "run_id": "20260911T005920.597758-0700_organic, organic",
+        "steps": 80000,
+        "status": "converged"
+      },
+      {
+        "seed": 1254,
+        "run_id": "20260911T005922.633304-0700_convex (4 points)",
+        "steps": 72800,
+        "status": "converged"
+      },
+      {
+        "seed": 1255,
+        "run_id": "20260911T005924.921299-0700_organic",
+        "steps": 81800,
+        "status": "converged"
+      },
+      {
+        "seed": 1256,
+        "run_id": "20260911T005927.235017-0700_organic",
+        "steps": 81200,
+        "status": "converged"
+      },
+      {
+        "seed": 1257,
+        "run_id": "20260911T005928.979852-0700_organic",
+        "steps": 61100,
+        "status": "converged"
+      },
+      {
+        "seed": 1258,
+        "run_id": "20260911T005930.620642-0700_organic, organic",
+        "steps": 57600,
+        "status": "converged"
+      },
+      {
+        "seed": 1259,
+        "run_id": "20260911T005933.096799-0700_convex (3 points)",
+        "steps": 86800,
+        "status": "converged"
+      },
+      {
+        "seed": 1260,
+        "run_id": "20260911T005935.666841-0700_organic, organic",
+        "steps": 90700,
+        "status": "converged"
+      },
+      {
+        "seed": 1261,
+        "run_id": "20260911T005938.238212-0700_convex (3 points)",
+        "steps": 90500,
+        "status": "converged"
+      },
+      {
+        "seed": 1262,
+        "run_id": "20260911T005939.942003-0700_organic, organic, convex (3 points)",
+        "steps": 59900,
+        "status": "converged"
+      },
+      {
+        "seed": 1263,
+        "run_id": "20260911T005941.668339-0700_convex (3 points)",
+        "steps": 60800,
+        "status": "converged"
+      },
+      {
+        "seed": 1264,
+        "run_id": "20260911T005943.579622-0700_convex (5 points), organic, convex (4 points)",
+        "steps": 68000,
+        "status": "converged"
+      },
+      {
+        "seed": 1265,
+        "run_id": "20260911T005945.604754-0700_organic, convex (4 points)",
+        "steps": 71700,
+        "status": "converged"
+      },
+      {
+        "seed": 1266,
+        "run_id": "20260911T005947.173966-0700_convex (3 points), organic",
+        "steps": 54100,
+        "status": "converged"
+      },
+      {
+        "seed": 1267,
+        "run_id": "20260911T005949.647503-0700_organic",
+        "steps": 86300,
+        "status": "converged"
+      },
+      {
+        "seed": 1268,
+        "run_id": "20260911T005951.276508-0700_convex (3 points), organic, organic",
+        "steps": 56900,
+        "status": "converged"
+      },
+      {
+        "seed": 1269,
+        "run_id": "20260911T005953.973155-0700_convex (3 points)",
+        "steps": 94800,
+        "status": "converged"
+      },
+      {
+        "seed": 1270,
+        "run_id": "20260911T005955.788294-0700_convex (3 points), organic, convex (4 points)",
+        "steps": 62900,
+        "status": "converged"
+      },
+      {
+        "seed": 1271,
+        "run_id": "20260911T005958.315056-0700_organic, convex (4 points), convex (3 points)",
+        "steps": 88400,
+        "status": "converged"
+      },
+      {
+        "seed": 1272,
+        "run_id": "20260911T010000.808079-0700_convex (4 points), organic",
+        "steps": 87500,
+        "status": "converged"
+      },
+      {
+        "seed": 1273,
+        "run_id": "20260911T010002.872161-0700_organic, organic",
+        "steps": 72100,
+        "status": "converged"
+      },
+      {
+        "seed": 1274,
+        "run_id": "20260911T010005.341447-0700_convex (3 points)",
+        "steps": 86700,
+        "status": "converged"
+      },
+      {
+        "seed": 1275,
+        "run_id": "20260911T010007.818847-0700_organic",
+        "steps": 87100,
+        "status": "converged"
+      },
+      {
+        "seed": 1276,
+        "run_id": "20260911T010009.569540-0700_convex (4 points)",
+        "steps": 60900,
+        "status": "converged"
+      },
+      {
+        "seed": 1277,
+        "run_id": "20260911T010011.984502-0700_organic",
+        "steps": 85400,
+        "status": "converged"
+      },
+      {
+        "seed": 1278,
+        "run_id": "20260911T010014.279382-0700_convex (4 points), organic",
+        "steps": 83100,
+        "status": "converged"
+      },
+      {
+        "seed": 1279,
+        "run_id": "20260911T010020.955388-0700_organic, convex (4 points)",
+        "steps": 242300,
+        "status": "converged"
+      },
+      {
+        "seed": 1280,
+        "run_id": "20260911T010023.007431-0700_convex (4 points), organic, organic",
+        "steps": 74200,
+        "status": "converged"
+      },
+      {
+        "seed": 1281,
+        "run_id": "20260911T010025.080395-0700_organic, organic",
+        "steps": 73800,
+        "status": "converged"
+      },
+      {
+        "seed": 1282,
+        "run_id": "20260911T010027.762688-0700_organic, organic",
+        "steps": 96400,
+        "status": "converged"
+      },
+      {
+        "seed": 1283,
+        "run_id": "20260911T010029.338817-0700_organic, convex (3 points)",
+        "steps": 56200,
+        "status": "converged"
+      },
+      {
+        "seed": 1284,
+        "run_id": "20260911T010031.155986-0700_convex (4 points)",
+        "steps": 65000,
+        "status": "converged"
+      },
+      {
+        "seed": 1285,
+        "run_id": "20260911T010033.148667-0700_organic",
+        "steps": 71700,
+        "status": "converged"
+      },
+      {
+        "seed": 1286,
+        "run_id": "20260911T010034.634656-0700_organic",
+        "steps": 53100,
+        "status": "converged"
+      },
+      {
+        "seed": 1287,
+        "run_id": "20260911T010036.079863-0700_convex (3 points), organic",
+        "steps": 51600,
+        "status": "converged"
+      },
+      {
+        "seed": 1288,
+        "run_id": "20260911T010038.919172-0700_convex (4 points)",
+        "steps": 102100,
+        "status": "converged"
+      },
+      {
+        "seed": 1289,
+        "run_id": "20260911T010040.692942-0700_convex (5 points)",
+        "steps": 63500,
+        "status": "converged"
+      },
+      {
+        "seed": 1290,
+        "run_id": "20260911T010042.759683-0700_organic, organic",
+        "steps": 74000,
+        "status": "converged"
+      },
+      {
+        "seed": 1291,
+        "run_id": "20260911T010044.440816-0700_organic",
+        "steps": 60400,
+        "status": "converged"
+      },
+      {
+        "seed": 1292,
+        "run_id": "20260911T010045.963264-0700_convex (5 points), convex (4 points)",
+        "steps": 54300,
+        "status": "converged"
+      },
+      {
+        "seed": 1293,
+        "run_id": "20260911T010049.362961-0700_convex (3 points), convex (3 points), convex (3 points), convex (3 points)",
+        "steps": 122000,
+        "status": "converged"
+      },
+      {
+        "seed": 1294,
+        "run_id": "20260911T010050.637464-0700_convex (3 points)",
+        "steps": 45500,
+        "status": "converged"
+      },
+      {
+        "seed": 1295,
+        "run_id": "20260911T010053.417056-0700_organic",
+        "steps": 99900,
+        "status": "converged"
+      },
+      {
+        "seed": 1296,
+        "run_id": "20260911T010055.796949-0700_convex (3 points)",
+        "steps": 85100,
+        "status": "converged"
+      },
+      {
+        "seed": 1297,
+        "run_id": "20260911T010100.935403-0700_organic, convex (4 points)",
+        "steps": 184800,
+        "status": "converged"
+      },
+      {
+        "seed": 1298,
+        "run_id": "20260911T010103.476064-0700_organic",
+        "steps": 91100,
+        "status": "converged"
+      },
+      {
+        "seed": 1299,
+        "run_id": "20260911T010105.549229-0700_organic",
+        "steps": 74300,
+        "status": "converged"
+      }
+    ],
+    "validation": [],
+    "test": []
+  },
+  "failed": []
+}

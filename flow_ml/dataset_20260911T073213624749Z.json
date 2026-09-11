@@ -1,0 +1,2481 @@
+{
+  "started_at": "2026-09-11T07:32:13.624749+00:00",
+  "manifest_path": "/home/william/NavierStokes/flow_ml/dataset_20260911T073213624749Z.json",
+  "run_root": "solver_runs",
+  "config": {
+    "nx": 64,
+    "ny": 64,
+    "ux_range": [
+      0.01,
+      0.01
+    ],
+    "tau_range": [
+      0.53,
+      0.53
+    ],
+    "uy": 0.0,
+    "convex_probability": 0.5,
+    "radius_range": [
+      4.0,
+      9.0
+    ],
+    "component_count_choices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "component_count_weights": [
+      45,
+      40,
+      12,
+      3
+    ],
+    "convex_point_choices": [
+      3,
+      4,
+      5
+    ],
+    "convex_point_weights": [
+      45,
+      45,
+      10
+    ],
+    "convex_options": {
+      "irregularity": 0.35,
+      "normalize_area": true
+    },
+    "organic_options": {
+      "roughness": 0.4,
+      "harmonics": 6,
+      "smoothness": 1.5
+    },
+    "boundary_clearance": 4,
+    "max_attempts": 100,
+    "x_mean": 32.0,
+    "y_mean": 32.0,
+    "x_std": 10.666666666666666,
+    "y_std": 10.666666666666666
+  },
+  "num_cases": 300,
+  "attempted": 300,
+  "start_seed": 1000,
+  "next_seed": 1300,
+  "split_weights": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "requested_counts": {
+    "train": 300,
+    "validation": 0,
+    "test": 0
+  },
+  "splits": {
+    "train": [],
+    "validation": [],
+    "test": []
+  },
+  "failed": [
+    {
+      "seed": 1000,
+      "run_id": "20260911T003213.708341-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1001,
+      "run_id": "20260911T003213.720126-0700_convex (3 points), convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1002,
+      "run_id": "20260911T003213.731705-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1003,
+      "run_id": "20260911T003213.742604-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1004,
+      "run_id": "20260911T003213.753599-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1005,
+      "run_id": "20260911T003213.764884-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1006,
+      "run_id": "20260911T003213.772879-0700_organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1007,
+      "run_id": "20260911T003213.788867-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1008,
+      "run_id": "20260911T003213.800088-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1009,
+      "run_id": "20260911T003213.811864-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1010,
+      "run_id": "20260911T003213.822884-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1011,
+      "run_id": "20260911T003213.834609-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1012,
+      "run_id": "20260911T003213.847238-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1013,
+      "run_id": "20260911T003213.858200-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1014,
+      "run_id": "20260911T003213.869014-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1015,
+      "run_id": "20260911T003213.880624-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1016,
+      "run_id": "20260911T003213.890763-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1017,
+      "run_id": "20260911T003213.901323-0700_convex (3 points), organic, convex (3 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1018,
+      "run_id": "20260911T003213.911371-0700_organic, organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1019,
+      "run_id": "20260911T003213.923723-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1020,
+      "run_id": "20260911T003213.934858-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1021,
+      "run_id": "20260911T003213.946619-0700_convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1022,
+      "run_id": "20260911T003213.956777-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1023,
+      "run_id": "20260911T003213.968529-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1024,
+      "run_id": "20260911T003213.980333-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1025,
+      "run_id": "20260911T003213.990863-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1026,
+      "run_id": "20260911T003214.001648-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1027,
+      "run_id": "20260911T003214.013132-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1028,
+      "run_id": "20260911T003214.023978-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1029,
+      "run_id": "20260911T003214.036157-0700_convex (4 points), convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1030,
+      "run_id": "20260911T003214.048426-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1031,
+      "run_id": "20260911T003214.058887-0700_convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1032,
+      "run_id": "20260911T003214.069699-0700_organic, convex (5 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1033,
+      "run_id": "20260911T003214.079020-0700_organic, convex (3 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1034,
+      "run_id": "20260911T003214.091994-0700_organic, organic, organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1035,
+      "run_id": "20260911T003214.102729-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1036,
+      "run_id": "20260911T003214.114698-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1037,
+      "run_id": "20260911T003214.125056-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1038,
+      "run_id": "20260911T003214.135660-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1039,
+      "run_id": "20260911T003214.148050-0700_organic, convex (3 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1040,
+      "run_id": "20260911T003214.158612-0700_convex (4 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1041,
+      "run_id": "20260911T003214.169879-0700_organic, convex (3 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1042,
+      "run_id": "20260911T003214.178934-0700_convex (4 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1043,
+      "run_id": "20260911T003214.189986-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1044,
+      "run_id": "20260911T003214.198776-0700_organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1045,
+      "run_id": "20260911T003214.215909-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1046,
+      "run_id": "20260911T003214.226374-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1047,
+      "run_id": "20260911T003214.237362-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1048,
+      "run_id": "20260911T003214.249146-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1049,
+      "run_id": "20260911T003214.259519-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1050,
+      "run_id": "20260911T003214.270421-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1051,
+      "run_id": "20260911T003214.282483-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1052,
+      "run_id": "20260911T003214.292931-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1053,
+      "run_id": "20260911T003214.303841-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1054,
+      "run_id": "20260911T003214.315884-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1055,
+      "run_id": "20260911T003214.326667-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1056,
+      "run_id": "20260911T003214.337875-0700_organic, organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1057,
+      "run_id": "20260911T003214.350035-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1058,
+      "run_id": "20260911T003214.360890-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1059,
+      "run_id": "20260911T003214.371638-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1060,
+      "run_id": "20260911T003214.383774-0700_convex (3 points), convex (4 points), convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1061,
+      "run_id": "20260911T003214.392348-0700_convex (4 points), convex (3 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1062,
+      "run_id": "20260911T003214.405065-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1063,
+      "run_id": "20260911T003214.417592-0700_convex (4 points), organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1064,
+      "run_id": "20260911T003214.428965-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1065,
+      "run_id": "20260911T003214.440035-0700_convex (3 points), convex (4 points), convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1066,
+      "run_id": "20260911T003214.452651-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1067,
+      "run_id": "20260911T003214.464610-0700_organic, organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1068,
+      "run_id": "20260911T003214.473154-0700_convex (3 points), organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1069,
+      "run_id": "20260911T003214.484696-0700_organic, organic, organic, organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1070,
+      "run_id": "20260911T003214.500924-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1071,
+      "run_id": "20260911T003214.512518-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1072,
+      "run_id": "20260911T003214.523442-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1073,
+      "run_id": "20260911T003214.534991-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1074,
+      "run_id": "20260911T003214.547484-0700_organic, organic, convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1075,
+      "run_id": "20260911T003214.558267-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1076,
+      "run_id": "20260911T003214.569072-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1077,
+      "run_id": "20260911T003214.581202-0700_organic, convex (4 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1078,
+      "run_id": "20260911T003214.592078-0700_convex (3 points), convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1079,
+      "run_id": "20260911T003214.603417-0700_organic, organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1080,
+      "run_id": "20260911T003214.616035-0700_organic, convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1081,
+      "run_id": "20260911T003214.627273-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1082,
+      "run_id": "20260911T003214.638439-0700_convex (3 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1083,
+      "run_id": "20260911T003214.651289-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1084,
+      "run_id": "20260911T003214.663413-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1085,
+      "run_id": "20260911T003214.674392-0700_organic, organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1086,
+      "run_id": "20260911T003214.685971-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1087,
+      "run_id": "20260911T003214.697701-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1088,
+      "run_id": "20260911T003214.708852-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1089,
+      "run_id": "20260911T003214.719405-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1090,
+      "run_id": "20260911T003214.731483-0700_convex (5 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1091,
+      "run_id": "20260911T003214.741981-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1092,
+      "run_id": "20260911T003214.752668-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1093,
+      "run_id": "20260911T003214.764257-0700_convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1094,
+      "run_id": "20260911T003214.775332-0700_convex (3 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1095,
+      "run_id": "20260911T003214.786152-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1096,
+      "run_id": "20260911T003214.798594-0700_organic, convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1097,
+      "run_id": "20260911T003214.809717-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1098,
+      "run_id": "20260911T003214.820846-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1099,
+      "run_id": "20260911T003214.832269-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1100,
+      "run_id": "20260911T003214.842498-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1101,
+      "run_id": "20260911T003214.853651-0700_convex (4 points), organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1102,
+      "run_id": "20260911T003214.866028-0700_convex (3 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1103,
+      "run_id": "20260911T003214.876781-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1104,
+      "run_id": "20260911T003214.887804-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1105,
+      "run_id": "20260911T003214.899583-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1106,
+      "run_id": "20260911T003214.910538-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1107,
+      "run_id": "20260911T003214.921747-0700_organic, convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1108,
+      "run_id": "20260911T003214.933904-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1109,
+      "run_id": "20260911T003214.945143-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1110,
+      "run_id": "20260911T003214.956054-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1111,
+      "run_id": "20260911T003214.967985-0700_organic, convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1112,
+      "run_id": "20260911T003214.980504-0700_convex (4 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1113,
+      "run_id": "20260911T003214.989356-0700_convex (4 points), convex (3 points), convex (4 points), convex (4 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1114,
+      "run_id": "20260911T003215.001443-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1115,
+      "run_id": "20260911T003215.013336-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1116,
+      "run_id": "20260911T003215.024535-0700_organic, convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1117,
+      "run_id": "20260911T003215.035670-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1118,
+      "run_id": "20260911T003215.048253-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1119,
+      "run_id": "20260911T003215.058883-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1120,
+      "run_id": "20260911T003215.069573-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1121,
+      "run_id": "20260911T003215.081991-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1122,
+      "run_id": "20260911T003215.091021-0700_organic, convex (3 points), organic, organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1123,
+      "run_id": "20260911T003215.103119-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1124,
+      "run_id": "20260911T003215.114796-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1125,
+      "run_id": "20260911T003215.125676-0700_convex (3 points), convex (3 points), organic, convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1126,
+      "run_id": "20260911T003215.136885-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1127,
+      "run_id": "20260911T003215.149613-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1128,
+      "run_id": "20260911T003215.161085-0700_organic, convex (5 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1129,
+      "run_id": "20260911T003215.172672-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1130,
+      "run_id": "20260911T003215.184513-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1131,
+      "run_id": "20260911T003215.196991-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1132,
+      "run_id": "20260911T003215.207537-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1133,
+      "run_id": "20260911T003215.219287-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1134,
+      "run_id": "20260911T003215.231014-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1135,
+      "run_id": "20260911T003215.242133-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1136,
+      "run_id": "20260911T003215.253918-0700_convex (3 points), organic, organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1137,
+      "run_id": "20260911T003215.266204-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1138,
+      "run_id": "20260911T003215.274782-0700_convex (4 points), organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1139,
+      "run_id": "20260911T003215.284330-0700_organic, convex (3 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1140,
+      "run_id": "20260911T003215.297119-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1141,
+      "run_id": "20260911T003215.307608-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1142,
+      "run_id": "20260911T003215.319393-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1143,
+      "run_id": "20260911T003215.331525-0700_convex (3 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1144,
+      "run_id": "20260911T003215.342365-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1145,
+      "run_id": "20260911T003215.353318-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1146,
+      "run_id": "20260911T003215.364802-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1147,
+      "run_id": "20260911T003215.375745-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1148,
+      "run_id": "20260911T003215.387128-0700_convex (5 points), organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1149,
+      "run_id": "20260911T003215.397215-0700_convex (4 points), convex (4 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1150,
+      "run_id": "20260911T003215.408600-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1151,
+      "run_id": "20260911T003215.419879-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1152,
+      "run_id": "20260911T003215.431326-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1153,
+      "run_id": "20260911T003215.441793-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1154,
+      "run_id": "20260911T003215.453359-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1155,
+      "run_id": "20260911T003215.465113-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1156,
+      "run_id": "20260911T003215.476139-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1157,
+      "run_id": "20260911T003215.487581-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1158,
+      "run_id": "20260911T003215.499641-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1159,
+      "run_id": "20260911T003215.511072-0700_organic, organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1160,
+      "run_id": "20260911T003215.522182-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1161,
+      "run_id": "20260911T003215.533871-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1162,
+      "run_id": "20260911T003215.545440-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1163,
+      "run_id": "20260911T003215.556285-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1164,
+      "run_id": "20260911T003215.568426-0700_convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1165,
+      "run_id": "20260911T003215.581222-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1166,
+      "run_id": "20260911T003215.592875-0700_organic, organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1167,
+      "run_id": "20260911T003215.604320-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1168,
+      "run_id": "20260911T003215.616832-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1169,
+      "run_id": "20260911T003215.627959-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1170,
+      "run_id": "20260911T003215.639277-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1171,
+      "run_id": "20260911T003215.651139-0700_organic, convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1172,
+      "run_id": "20260911T003215.659975-0700_convex (3 points), convex (4 points), organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1173,
+      "run_id": "20260911T003215.671508-0700_convex (5 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1174,
+      "run_id": "20260911T003215.683795-0700_convex (3 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1175,
+      "run_id": "20260911T003215.695714-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1176,
+      "run_id": "20260911T003215.706426-0700_convex (4 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1177,
+      "run_id": "20260911T003215.718635-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1178,
+      "run_id": "20260911T003215.730810-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1179,
+      "run_id": "20260911T003215.741482-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1180,
+      "run_id": "20260911T003215.752531-0700_convex (4 points), convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1181,
+      "run_id": "20260911T003215.764435-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1182,
+      "run_id": "20260911T003215.775547-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1183,
+      "run_id": "20260911T003215.786567-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1184,
+      "run_id": "20260911T003215.798422-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1185,
+      "run_id": "20260911T003215.809667-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1186,
+      "run_id": "20260911T003215.821358-0700_organic, convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1187,
+      "run_id": "20260911T003215.833235-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1188,
+      "run_id": "20260911T003215.844343-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1189,
+      "run_id": "20260911T003215.855738-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1190,
+      "run_id": "20260911T003215.868566-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1191,
+      "run_id": "20260911T003215.881096-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1192,
+      "run_id": "20260911T003215.892304-0700_convex (5 points), convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1193,
+      "run_id": "20260911T003215.903240-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1194,
+      "run_id": "20260911T003215.915418-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1195,
+      "run_id": "20260911T003215.924183-0700_convex (3 points), convex (4 points), convex (4 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1196,
+      "run_id": "20260911T003215.935937-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1197,
+      "run_id": "20260911T003215.948485-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1198,
+      "run_id": "20260911T003215.959238-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1199,
+      "run_id": "20260911T003215.969967-0700_convex (4 points), organic, convex (4 points), organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1200,
+      "run_id": "20260911T003215.984265-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1201,
+      "run_id": "20260911T003215.996113-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1202,
+      "run_id": "20260911T003216.007124-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1203,
+      "run_id": "20260911T003216.019214-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1204,
+      "run_id": "20260911T003216.031746-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1205,
+      "run_id": "20260911T003216.042855-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1206,
+      "run_id": "20260911T003216.054218-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1207,
+      "run_id": "20260911T003216.065362-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1208,
+      "run_id": "20260911T003216.074055-0700_organic, organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1209,
+      "run_id": "20260911T003216.086495-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1210,
+      "run_id": "20260911T003216.098214-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1211,
+      "run_id": "20260911T003216.109228-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1212,
+      "run_id": "20260911T003216.120517-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1213,
+      "run_id": "20260911T003216.132724-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1214,
+      "run_id": "20260911T003216.168054-0700_organic, convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1215,
+      "run_id": "20260911T003216.180315-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1216,
+      "run_id": "20260911T003216.191745-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1217,
+      "run_id": "20260911T003216.203502-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1218,
+      "run_id": "20260911T003216.216103-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1219,
+      "run_id": "20260911T003216.227529-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1220,
+      "run_id": "20260911T003216.238500-0700_convex (5 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1221,
+      "run_id": "20260911T003216.251803-0700_convex (3 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1222,
+      "run_id": "20260911T003216.263408-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1223,
+      "run_id": "20260911T003216.274086-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1224,
+      "run_id": "20260911T003216.285432-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1225,
+      "run_id": "20260911T003216.297821-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1226,
+      "run_id": "20260911T003216.308611-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1227,
+      "run_id": "20260911T003216.319770-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1228,
+      "run_id": "20260911T003216.331482-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1229,
+      "run_id": "20260911T003216.342534-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1230,
+      "run_id": "20260911T003216.353633-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1231,
+      "run_id": "20260911T003216.366572-0700_convex (4 points), convex (4 points), organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1232,
+      "run_id": "20260911T003216.379835-0700_convex (4 points), convex (3 points), organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1233,
+      "run_id": "20260911T003216.390966-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1234,
+      "run_id": "20260911T003216.402833-0700_convex (3 points), organic, organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1235,
+      "run_id": "20260911T003216.415273-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1236,
+      "run_id": "20260911T003216.426680-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1237,
+      "run_id": "20260911T003216.437927-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1238,
+      "run_id": "20260911T003216.450254-0700_convex (3 points), organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1239,
+      "run_id": "20260911T003216.461975-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1240,
+      "run_id": "20260911T003216.472587-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1241,
+      "run_id": "20260911T003216.484855-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1242,
+      "run_id": "20260911T003216.497393-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1243,
+      "run_id": "20260911T003216.508676-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1244,
+      "run_id": "20260911T003216.520364-0700_organic, convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1245,
+      "run_id": "20260911T003216.532294-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1246,
+      "run_id": "20260911T003216.543905-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1247,
+      "run_id": "20260911T003216.554997-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1248,
+      "run_id": "20260911T003216.567494-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1249,
+      "run_id": "20260911T003216.579583-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1250,
+      "run_id": "20260911T003216.590708-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1251,
+      "run_id": "20260911T003216.602538-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1252,
+      "run_id": "20260911T003216.614914-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1253,
+      "run_id": "20260911T003216.625980-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1254,
+      "run_id": "20260911T003216.637114-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1255,
+      "run_id": "20260911T003216.649606-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1256,
+      "run_id": "20260911T003216.661038-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1257,
+      "run_id": "20260911T003216.671877-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1258,
+      "run_id": "20260911T003216.684448-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1259,
+      "run_id": "20260911T003216.696974-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1260,
+      "run_id": "20260911T003216.708478-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1261,
+      "run_id": "20260911T003216.719887-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1262,
+      "run_id": "20260911T003216.732321-0700_organic, organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1263,
+      "run_id": "20260911T003216.743609-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1264,
+      "run_id": "20260911T003216.754950-0700_convex (5 points), organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1265,
+      "run_id": "20260911T003216.767237-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1266,
+      "run_id": "20260911T003216.779548-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1267,
+      "run_id": "20260911T003216.790361-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1268,
+      "run_id": "20260911T003216.801923-0700_convex (3 points), organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1269,
+      "run_id": "20260911T003216.813054-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1270,
+      "run_id": "20260911T003216.822003-0700_convex (3 points), organic, convex (4 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1271,
+      "run_id": "20260911T003216.836585-0700_organic, convex (4 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1272,
+      "run_id": "20260911T003216.849603-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1273,
+      "run_id": "20260911T003216.861355-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1274,
+      "run_id": "20260911T003216.872506-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1275,
+      "run_id": "20260911T003216.884869-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1276,
+      "run_id": "20260911T003216.897866-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1277,
+      "run_id": "20260911T003216.910625-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1278,
+      "run_id": "20260911T003216.921913-0700_convex (4 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1279,
+      "run_id": "20260911T003216.933463-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1280,
+      "run_id": "20260911T003216.942636-0700_convex (4 points), organic, organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1281,
+      "run_id": "20260911T003216.954594-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1282,
+      "run_id": "20260911T003216.964490-0700_organic, organic",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1283,
+      "run_id": "20260911T003216.978000-0700_organic, convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1284,
+      "run_id": "20260911T003216.989257-0700_convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1285,
+      "run_id": "20260911T003217.000953-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1286,
+      "run_id": "20260911T003217.013125-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1287,
+      "run_id": "20260911T003217.024303-0700_convex (3 points), organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1288,
+      "run_id": "20260911T003217.033741-0700_convex (4 points)",
+      "steps": 200,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1289,
+      "run_id": "20260911T003217.046929-0700_convex (5 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1290,
+      "run_id": "20260911T003217.058155-0700_organic, organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1291,
+      "run_id": "20260911T003217.069578-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1292,
+      "run_id": "20260911T003217.083110-0700_convex (5 points), convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1293,
+      "run_id": "20260911T003217.095036-0700_convex (3 points), convex (3 points), convex (3 points), convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1294,
+      "run_id": "20260911T003217.106857-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1295,
+      "run_id": "20260911T003217.119213-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1296,
+      "run_id": "20260911T003217.130813-0700_convex (3 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1297,
+      "run_id": "20260911T003217.142055-0700_organic, convex (4 points)",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1298,
+      "run_id": "20260911T003217.153583-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    },
+    {
+      "seed": 1299,
+      "run_id": "20260911T003217.166356-0700_organic",
+      "steps": 300,
+      "split": "train",
+      "failed": "convergence",
+      "stop_reason": "nonfinite_fields"
+    }
+  ]
+}
