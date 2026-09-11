@@ -41,3 +41,10 @@ class GNN(nn.Module):
             h = processor(h, edge_index, edge_attr)
 
         return self.decoder(h)
+
+def load_model(path):
+    memory = torch.load(path, weights_only=True)
+    model = GNN(memory["hidden"], memory["layers"])
+
+    model.load_state_dict(memory["model_state"])
+    return model
